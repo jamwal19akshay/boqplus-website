@@ -9,8 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        navy: "#0B1424",
+        amber: "#F2A900",
+        paper: "#F7F5EF",
+        "gray-light": "#D8D7D1",
+      },
+      fontFamily: {
+        display: ["var(--font-oswald)", "sans-serif"],
+        body: ["var(--font-hanken)", "sans-serif"],
+        mono: ["var(--font-plex-mono)", "monospace"],
+      },
+      boxShadow: {
+        card: "0 2px 8px rgba(0,0,0,0.08)",
       },
     },
   },
