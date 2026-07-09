@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "Z9Z9883857.com.verkzo.boq",
+        "paths": ["/tender/*"]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": ["Z9Z9883857.com.verkzo.boq"]
+  }
+}
