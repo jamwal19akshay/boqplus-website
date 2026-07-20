@@ -1,0 +1,189 @@
+# Decisions Log
+
+## 2026-07-20 — Warm-human design ported into the production Next.js app
+
+**What:** `design-explorations/v3-warm-human-v2.html` (the approved final
+direction) was ported into the real app, replacing the v2 navy/amber build.
+Not a copy-paste: the design system lives in `tailwind.config.ts` (warm
+palette, Fraunces/Source Sans 3/Kalam via `next/font`) and `app/globals.css`
+(ported component classes + media queries), and the page is componentized to
+match the app's structure:
+
+- `Hero` (desk-scene SVG), `ProblemSection` (diary card + hard-numbers
+  strip), `FeatureSections` (five taped-polaroid rows with annotations),
+  `FlywheelSection`, `StraightTalk` (anti-hype block), `PricingSection`,
+  `ClosingSection` + `StoreBadges`, `Nav`, `Footer`, `StickyCTA` (mobile,
+  restyled warm), `Reveal` (client component reproducing the design's
+  IntersectionObserver reveal, reduced-motion safe).
+- Fraunces is loaded with `axes: ["opsz"]` — without the optical-size axis
+  the headlines render measurably wider than the approved design.
+- Deleted `SocialProof.tsx` (the Straight-talk block now carries the
+  no-testimonials stance) and `FaqTeaser.tsx` (FAQ is linked from the
+  footer, per the design). The old `getStats()` fetch was removed;
+  `lib/stats.ts` now holds the `MARKET_CAPTURE` constants used by the stats
+  strip and the Market-feature copy.
+
+**Legal pages (Privacy / Terms / Refund / FAQ / Support):** visual restyle
+only — `LegalShell`, `FaqList`, and the `.legal-prose` styles moved to the
+warm palette/typography (Fraunces headings, hand-written "Last updated"
+line, warm table and link treatments). Every word of the legal copy is
+unchanged; the page content files were not edited.
+
+**Hard-numbers strip re-verified against production (20 July 2026):**
+queried the live Railway Postgres behind android-api.boq.co.in, replicating
+the backend's own definitions (`_market_aggregate` and
+`load_percentage_bids` in `app/api/intelligence.py` /
+`services/intelligence_engine.py`):
+
+- comparatives = distinct `tender_ref` in `comparative_items` → **45,584**
+- avg bidders = mean distinct real bidders per tender (pseudo "quoted
+  rate…" rows excluded) → **3.52**
+- decided value = Σ L1 `amount` over real rows → **₹14,277 Cr**
+- median winning discount = median winner below-% over percentage
+  comparatives (valid range −60…99, lowest-total winner per tender,
+  n = 36,833) → **9.21%**
+
+All four match the Market Report capture exactly — no drift, no copy
+changes needed. The figures stay hardcoded in lock-step with the screenshot
+because the page's provenance claim is "read off the capture".
+
+**Verified before review:** `next build` clean; zero horizontal overflow on
+all 6 pages at 1440 and 390 (measured, not eyeballed); every internal link
+and hash anchor resolves (nav → sections from any page, footer → legal
+pages, legal cross-links, wordmark → home); store badges/CTAs consistent
+site-wide (in-page CTAs → `/#get`, store buttons → `lib/links.ts`
+placeholders, honest "links go live with launch" note kept).
+
+**Review artifacts:** `screenshots/{landing,privacy,terms,refund,faq,support}-desktop-1440.png`
+and `…-mobile-390.png`. Not committed pending review.
+
+## 2026-07-20 — v3 warm-human chosen; refined to production candidate (v2)
+
+**What:** `v3-warm-human.html` was chosen as the direction. Refined it into
+`design-explorations/v3-warm-human-v2.html` (original kept for comparison).
+
+**Changes in the refinement:**
+- Borrowed v4-brutalist's "What you won't find here" anti-hype block,
+  rewritten in v3's warm register as a "Straight talk" section (before
+  pricing): no testimonials / no invented numbers / no countdowns / no staged
+  mockups, closing with "An app built to read the record straight shouldn't
+  bend it on its own website."
+- Added a "here's that part, counted:" hard-numbers strip after the empathy
+  card — 45,584 comparatives, ₹14,277 Cr covered, 3.5 avg bidders, 9.2%
+  median winning discount — all four read off the Market Report capture
+  (the one screen captioned "actual app screen"), with that provenance
+  stated on the page. Same figures repeated in the Market feature copy.
+- Illustration tightening: hero-phone histogram now uses a dashed median
+  marker (echoing the real report) instead of a pennant flag; removed dead
+  SVG path in the closing art.
+- Responsive/production fixes: replaced the tenders row's inline 560px grid
+  with a `.feature.wide` class so it collapses on mobile; annotation offsets
+  pulled in so nothing clips at 1440; `overflow-x:clip`; width/height attrs
+  on all screenshots; meta description. Verified zero horizontal overflow at
+  1440px and 390px.
+
+**Honesty rules re-verified after edits:** sample-data captions intact
+(rate-fill + BidIQ "sample data shown", Track Record "product mockup, empty
+state"), every number on the page traceable to a screenshot, no invented
+urgency (founding "first 100" is the real cap), store links still honest
+placeholders.
+
+**Review artifacts:** `screenshots/v3-warm-human-v2-desktop-1440.png` and
+`screenshots/v3-warm-human-v2-mobile-390.png`.
+
+## 2026-07-20 — Design exploration: 5 alternative landing-page directions
+
+**What:** Built 5 competing single-page static HTML prototypes in
+`design-explorations/` (not wired into the Next.js app) to explore genuinely
+different aesthetic directions before committing to a final design. The
+committed site is treated as a functional foundation — its copy honesty and
+information architecture carry over, but each prototype has its own type
+system, layout philosophy, headline, and section copy.
+
+**The five directions:**
+- `v1-editorial-serif.html` — broadsheet/business-magazine longform;
+  Fraunces/Newsreader + IBM Plex Mono, ink-on-warm-paper with oxblood accent,
+  drop caps, pull-quotes, screenshots as numbered documentary "plates".
+- `v2-technical-mono.html` — precision-instrument/terminal aesthetic;
+  JetBrains Mono throughout, dark panel with amber signal color, keyed
+  sections (§00–§04), spec tables, registration-tick screenshot frames.
+- `v3-warm-human.html` — warm/human/illustration-forward; Fraunces +
+  Source Sans 3, warm paper palette, hand-authored inline SVG illustrations
+  (desk scene, teacup, tape measure), taped-photo screenshot treatment.
+- `v4-brutalist.html` — disciplined structural brutalism; Archivo at extreme
+  scale, raw black/white, default-styled tables, screenshots as Exhibits A–F,
+  zero JS, no radius/shadow/gradient.
+- `v5-dashboard-dense.html` — information-dense intelligence terminal; the
+  page reads like the product, with an illustrative L1 comparative-statement
+  table and discount-band distribution, every invented figure visibly
+  labelled SAMPLE/ILLUSTRATIVE.
+
+**Constants across all five:** same real app screenshots (from
+`design-explorations/assets/`, android + ios sets, paywall excluded), same
+honesty rules (no fabricated stats/testimonials/urgency; 02 rate-fill and
+03 BidIQ captioned sample/demo data; 05 track record captioned product
+mockup), same exact pricing figures with the credits 12-month expiry
+disclosed, `#` store-link placeholders. Each wrote its own hero headline —
+none reuse "Know your Below % before you bid" verbatim.
+
+**Review artifacts:** full-page 1440px captures in
+`design-explorations/screenshots/v1…v5.png`. No direction has been chosen;
+nothing in the committed site was changed.
+
+## 2026-07-19 — Full marketing site rebuild (v2)
+
+**What:** Rebuilt the entire site: landing page + Privacy Policy + Refund
+Policy + Terms of Service + FAQ + Support, replacing the v1
+"Find·Fill·Finish editorial" build.
+
+**Brand system:** Navy scale (`#070D18 → #F2F5F9`) with amber `#F2A900` as
+the only accent, per `boqplus-android-backend/docs/WEBSITE_DESIGN_DECISION.md`.
+Typography per the brief for this build: IBM Plex Sans (body), IBM Plex Mono
+(all numbers/microlabels, tabular figures site-wide), Playfair Display for
+display headlines only. Note: the design doc's spec section names
+Inter/Noto Devanagari — the brief's IBM Plex + Playfair system was followed
+deliberately as the more recent decision.
+
+**Hero:** "Know your Below % before you bid." (established direction), with a
+GePNIC-style L1/L2 financial-evaluation table as the recognition moment
+(borrowed from direction D's cold open in the design doc) and the real
+Market Report screenshot (winning-discount histogram) as visual proof.
+
+**Trust rules carried from the design doc:** bare, unretouched app
+screenshots with status bars (no device bezels/mockups); no stock or AI
+imagery, no humans; flat design, hairline borders, no gradients; no
+countdown timers, "Most Popular" badges, or exclamation marks; no fabricated
+numbers or testimonials; amber used sparingly (CTAs, markers, one accent).
+
+**Screenshots:** Android set from `~/Desktop/boqplus-website-assets/android/`
+copied to `public/screens/android/`. Paywall screenshot (08) deliberately
+excluded — pricing is a native designed section. BidIQ and rate-fill screens
+are captioned as sample/demo data; Track Record is shown in its honest empty
+state and captioned as a product mockup, not a real contractor's data.
+
+**Pricing (native section, must stay in sync with the in-app paywall):**
+Annual ₹7,999/yr (struck ₹11,999, "Founding Member — first 100"),
+Quarterly ₹3,999, Credits ₹999/5 BOQs with 12-month expiry disclosed in the
+section itself, in Refund Policy, and in FAQ. No fake spots-remaining
+counter (no live number available — per design doc, real number or nothing).
+
+**Social proof:** `SocialProof.tsx` exists but renders nothing
+(`SHOW_TESTIMONIALS = false`) — no real testimonials exist yet, and
+fabricating them is explicitly banned. Flip the flag only with real,
+permissioned quotes.
+
+**Legal pages:** Written as thorough, India-specific drafts — Privacy under
+DPDP Act 2023 (data fiduciary framing, actual data collected incl.
+comparative-statement handling, DPB grievance path), Refund under Consumer
+Protection Act 2019 / E-Commerce Rules 2020 norms (credits 12-month expiry,
+store-mediated refunds, service-failure re-credit), Terms with India
+governing law (Jammu jurisdiction), free/credits/subscription structure, and
+an explicit no-bid-rigging acceptable-use clause. **Pending lawyer review
+before publish.**
+
+**Still TODO before launch:**
+- Real Play Store / App Store URLs in `lib/links.ts` (currently `#`)
+- Official store badge art (currently flat custom buttons)
+- OG share image
+- Lawyer review of Privacy / Terms / Refund
+- Verify hero stats endpoint numbers against prod before publicising

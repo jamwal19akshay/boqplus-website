@@ -1,44 +1,46 @@
 import type { Metadata } from "next";
-import { Oswald, Hanken_Grotesk, IBM_Plex_Mono } from "next/font/google";
+import { Fraunces, Source_Sans_3, Kalam } from "next/font/google";
 import "./globals.css";
 
-const oswald = Oswald({
+const fraunces = Fraunces({
   subsets: ["latin"],
-  variable: "--font-oswald",
-  weight: ["400", "500", "600", "700"],
+  variable: "--font-fraunces",
+  style: ["normal", "italic"],
+  axes: ["opsz"],
 });
 
-const hanken = Hanken_Grotesk({
+const sourceSans = Source_Sans_3({
   subsets: ["latin"],
-  variable: "--font-hanken",
-  weight: ["400", "500", "600", "700"],
+  variable: "--font-source-sans",
+  style: ["normal", "italic"],
 });
 
-const plexMono = IBM_Plex_Mono({
+const kalam = Kalam({
   subsets: ["latin"],
-  variable: "--font-plex-mono",
-  weight: ["400", "500", "600"],
+  variable: "--font-kalam",
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "BOQ+ — Government Tender & BOQ App India",
+  metadataBase: new URL("https://boq.co.in"),
+  title: "BOQ+ — The winning number, in your hand",
   description:
-    "India's only mobile app to find government tenders AND fill BOQ on your phone. Works with all 46 GePNIC portals. 2 free BOQs, no card required.",
+    "BOQ+ reads the comparative statements published on GePNIC and state e-procurement portals and shows the winning discount band, item by item, while you price your BOQ on your phone.",
   keywords: [
-    "government tender",
     "BOQ",
+    "government tender",
     "GePNIC",
     "eTender",
-    "contractor",
-    "CPWD",
-    "PWD",
-    "JPDCL",
-    "mobile app India",
+    "CPWD DSR",
+    "MES SSR",
+    "L1",
+    "comparative statement",
+    "contractor app India",
   ],
   openGraph: {
-    title: "BOQ+ — Find. Fill. Finish.",
+    title: "BOQ+ — The winning number, in your hand",
     description:
-      "India's only mobile app to find government tenders AND fill BOQ on your phone. Works with all 46 GePNIC portals. 2 free BOQs, no card required.",
+      "BOQ+ reads the comparative statements published on GePNIC and state e-procurement portals and shows the winning discount band, item by item, while you price your BOQ on your phone.",
     url: "https://boq.co.in",
     type: "website",
   },
@@ -52,7 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${oswald.variable} ${hanken.variable} ${plexMono.variable} font-body antialiased`}
+        className={`${fraunces.variable} ${sourceSans.variable} ${kalam.variable} font-body antialiased`}
       >
         {children}
       </body>

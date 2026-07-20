@@ -9,18 +9,29 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        navy: "#0B1424",
-        amber: "#F2A900",
-        paper: "#F7F5EF",
-        "gray-light": "#D8D7D1",
+        paper: "#F6EFE2",
+        "paper-deep": "#EFE4CF",
+        card: "#FBF6EB",
+        ink: "#33291D",
+        "ink-soft": "#6E5F4B",
+        "ink-faint": "#94836B",
+        terracotta: "#B5502A",
+        "terracotta-deep": "#93401F",
+        ochre: "#C98C1F",
+        "ochre-soft": "#D9A93F",
+        olive: "#5C6B45",
+        hairline: "#DECFB4",
+        // Legacy alias (used by a couple of utility classes on legal pages);
+        // maps to the warm ochre accent.
+        amber: "#C98C1F",
       },
       fontFamily: {
-        display: ["var(--font-oswald)", "sans-serif"],
-        body: ["var(--font-hanken)", "sans-serif"],
-        mono: ["var(--font-plex-mono)", "monospace"],
+        display: ["var(--font-fraunces)", "Georgia", "serif"],
+        body: ["var(--font-source-sans)", "system-ui", "sans-serif"],
+        hand: ["var(--font-kalam)", "cursive"],
       },
       boxShadow: {
-        card: "0 2px 8px rgba(0,0,0,0.08)",
+        warm: "0 14px 36px rgba(51,41,29,.13)",
       },
     },
   },

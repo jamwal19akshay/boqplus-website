@@ -8,7 +8,7 @@ export default function FaqList({ faqs }: { faqs: Faq[] }) {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
 
   return (
-    <div className="divide-y divide-gray-light rounded-[14px] border border-gray-light bg-white shadow-card">
+    <div className="divide-y divide-hairline overflow-hidden rounded-[14px] border-[1.5px] border-hairline bg-card shadow-warm">
       {faqs.map((faq, i) => {
         const open = openIdx === i;
         return (
@@ -18,9 +18,9 @@ export default function FaqList({ faqs }: { faqs: Faq[] }) {
               onClick={() => setOpenIdx(open ? null : i)}
               aria-expanded={open}
             >
-              <span className="font-semibold text-navy">{faq.q}</span>
+              <span className="font-semibold text-ink">{faq.q}</span>
               <span
-                className={`shrink-0 font-display text-2xl text-amber transition-transform ${
+                className={`hand shrink-0 text-2xl text-terracotta transition-transform ${
                   open ? "rotate-45" : ""
                 }`}
               >
@@ -28,7 +28,7 @@ export default function FaqList({ faqs }: { faqs: Faq[] }) {
               </span>
             </button>
             {open && (
-              <p className="px-6 pb-6 leading-relaxed text-navy/70">{faq.a}</p>
+              <p className="px-6 pb-6 leading-relaxed text-ink-soft">{faq.a}</p>
             )}
           </div>
         );

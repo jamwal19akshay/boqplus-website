@@ -1,28 +1,27 @@
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
-import SocialProofBar from "./components/SocialProofBar";
-import FindSection from "./components/FindSection";
-import FillSection from "./components/FillSection";
-import BidIQSection from "./components/BidIQSection";
-import FeatureGrid from "./components/FeatureGrid";
+import ProblemSection from "./components/ProblemSection";
+import FeatureSections from "./components/FeatureSections";
+import FlywheelSection from "./components/FlywheelSection";
+import StraightTalk from "./components/StraightTalk";
 import PricingSection from "./components/PricingSection";
+import ClosingSection from "./components/ClosingSection";
 import Footer from "./components/Footer";
 import StickyCTA from "./components/StickyCTA";
-import { getStats } from "@/lib/stats";
 
-export default async function Home() {
-  const stats = await getStats();
-
+export default function Home() {
   return (
     <main>
       <Nav />
-      <Hero stats={stats} />
-      <SocialProofBar />
-      <FindSection stats={stats} />
-      <FillSection />
-      <BidIQSection />
-      <FeatureGrid />
+      <Hero />
+      <hr className="divider" />
+      <ProblemSection />
+      <FeatureSections />
+      <hr className="divider" />
+      <FlywheelSection />
+      <StraightTalk />
       <PricingSection />
+      <ClosingSection />
       <Footer />
       <StickyCTA />
     </main>

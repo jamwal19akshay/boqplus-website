@@ -1,110 +1,69 @@
-import FadeUp from "./animations/FadeUp";
-
-function Check({ off = false }: { off?: boolean }) {
-  return off ? (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="mt-1 h-4 w-4 shrink-0">
-      <path d="M18 6L6 18M6 6l12 12" />
-    </svg>
-  ) : (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" className="mt-1 h-4 w-4 shrink-0 text-amber">
-      <path d="M5 13l4 4L19 7" />
-    </svg>
-  );
-}
+import Reveal from "./Reveal";
 
 export default function PricingSection() {
   return (
-    <section className="bg-white py-24" id="pricing">
-      <div className="mx-auto max-w-6xl px-6">
-        <FadeUp className="mx-auto max-w-3xl text-center">
-          <p className="mb-4 font-mono text-sm uppercase tracking-[0.2em] text-amber">
-            05 / Pricing
-          </p>
-          <h2 className="font-display text-4xl font-bold uppercase leading-tight tracking-tight text-navy md:text-[56px] md:leading-[1.05]">
-            One winning tender pays for years of BOQ+
-          </h2>
-          <p className="mt-4 text-lg text-navy/60">
-            Start free. No card required.
-          </p>
-        </FadeUp>
+    <section className="section pricing" id="pricing">
+      <div className="wrap">
+        <span className="kicker">what it costs</span>
+        <h2>Priced like a tool you keep in the van.</h2>
+        <p className="sub">
+          Start free, no card. Pay only when it&rsquo;s earning its keep.
+        </p>
 
-        <FadeUp delay={0.1}>
-          <div className="mx-auto mt-12 max-w-2xl rounded bg-amber px-6 py-4 text-center">
-            <p className="font-mono text-sm font-semibold uppercase tracking-wider text-navy">
-              ⚡ Early Bird — 94 of 100 spots remaining
-            </p>
-            <div className="mt-3 h-2 w-full overflow-hidden rounded-full bg-navy/15">
-              <div className="h-full rounded-full bg-navy" style={{ width: "6%" }} />
-            </div>
+        <Reveal className="price-grid">
+          <div className="price-card">
+            <div className="plan-name">Free</div>
+            <div className="plan-price">₹0</div>
+            <p className="plan-blurb">Your first 2 BOQs, on us. No card needed.</p>
+            <a className="btn ghost" href="/#get">
+              Start free
+            </a>
           </div>
-        </FadeUp>
 
-        <div className="mt-12 grid items-stretch gap-8 lg:grid-cols-2">
-          <FadeUp delay={0.1}>
-            <div className="flex h-full flex-col rounded-[14px] border border-gray-light bg-white p-8 shadow-card">
-              <p className="font-mono text-xs uppercase tracking-wider text-navy/50">
-                Pay per use
-              </p>
-              <p className="mt-4 font-display text-5xl font-bold text-navy">
-                ₹799
-              </p>
-              <p className="mt-1 text-navy/60">for 5 BOQs</p>
-
-              <ul className="mt-8 flex-1 space-y-3 text-navy/80">
-                <li className="flex gap-3"><Check /> BOQ filling + export</li>
-                <li className="flex gap-3"><Check /> Tender discovery</li>
-                <li className="flex gap-3"><Check /> All calculators</li>
-                <li className="flex gap-3 text-navy/35"><Check off /> BidIQ Intelligence</li>
-                <li className="flex gap-3 text-navy/35"><Check off /> Rate suggestions</li>
-              </ul>
-
-              <button className="mt-8 rounded border-2 border-navy px-6 py-3.5 font-display font-bold uppercase text-navy hover:bg-navy hover:text-white">
-                Buy Tokens
-              </button>
+          <div className="price-card">
+            <div className="plan-name">Quarterly</div>
+            <div className="plan-price">
+              ₹3,999 <span className="per">/ quarter</span>
             </div>
-          </FadeUp>
+            <p className="plan-blurb">Three months of BOQ+, season by season.</p>
+            <a className="btn ghost" href="/#get">
+              Choose quarterly
+            </a>
+          </div>
 
-          <FadeUp delay={0.2}>
-            <div className="relative flex h-full flex-col rounded-[14px] bg-navy p-8 text-white shadow-card lg:scale-[1.03]">
-              <span className="absolute right-6 top-6 rounded bg-amber px-3 py-1 font-mono text-xs font-semibold uppercase text-navy">
-                Best Value
-              </span>
-              <p className="font-mono text-xs uppercase tracking-wider text-white/50">
-                Annual Unlimited
-              </p>
-              <p className="mt-4 font-display text-6xl font-bold text-amber">
-                ₹7,999{" "}
-                <span className="text-2xl font-normal text-white/40 line-through">
-                  ₹11,999
-                </span>
-              </p>
-              <p className="mt-1 text-white/60">per year · early bird price</p>
-
-              <ul className="mt-8 flex-1 space-y-3 text-white/85">
-                <li className="flex gap-3"><Check /> Everything in Tokens</li>
-                <li className="flex gap-3"><Check /> BidIQ Intelligence</li>
-                <li className="flex gap-3"><Check /> Rate suggestions (market data)</li>
-                <li className="flex gap-3"><Check /> Competitor tracker</li>
-                <li className="flex gap-3"><Check /> Priority template support</li>
-                <li className="flex gap-3"><Check /> Price locked forever</li>
-              </ul>
-
-              <button className="mt-8 w-full rounded bg-amber px-6 py-4 font-display text-lg font-bold uppercase text-navy hover:brightness-110">
-                Get Early Access
-              </button>
-              <p className="mt-3 text-center text-sm text-white/50">
-                Price rises to ₹11,999 after 100 subscribers
-              </p>
+          <div className="price-card featured">
+            <div className="founder-tag">Founding Member &mdash; first 100</div>
+            <div className="plan-name">Annual</div>
+            <div className="plan-price">
+              <span className="strike">₹11,999</span>₹7,999{" "}
+              <span className="per">/ year</span>
             </div>
-          </FadeUp>
-        </div>
+            <p className="plan-blurb">
+              A full year of tenders with BOQ+ at your side.
+            </p>
+            <a className="btn" href="/#get">
+              Choose annual
+            </a>
+          </div>
 
-        <FadeUp delay={0.2}>
-          <p className="mt-12 text-center font-mono text-sm text-navy/50">
-            2 BOQs always free · No credit card · Cancel anytime · Instant
-            access
-          </p>
-        </FadeUp>
+          <div className="price-card">
+            <div className="plan-name">Credits</div>
+            <div className="plan-price">
+              ₹999 <span className="per">/ 5 BOQs</span>
+            </div>
+            <p className="plan-blurb">
+              For the occasional bidder.
+              <small>Credits expire 12 months after purchase.</small>
+            </p>
+            <a className="btn ghost" href="/#get">
+              Buy credits
+            </a>
+          </div>
+        </Reveal>
+        <p className="price-note">
+          Same figures as the in-app paywall, fine print included — no
+          asterisks to hunt for.
+        </p>
       </div>
     </section>
   );
