@@ -23,10 +23,21 @@ trade-off, and the reason is commented in `app/sitemap.ts`.
 from `metadataBase` in `app/layout.tsx`; if the domain ever moves, all three
 places need updating.
 
-**Verified:** `npm run build` succeeds; both routes prerender as static, and
-the generated `.next/server/app/sitemap.xml.body` contains all six URLs as
-valid XML. Live verification at `https://boq.co.in/sitemap.xml` still pending
-deploy.
+**Verified in production** (not just locally): `https://boq.co.in/sitemap.xml`
+returns 200 as `content-type: application/xml`, is well-formed per `xmllint`,
+and lists all six URLs — each of which was fetched and returns 200.
+`https://boq.co.in/robots.txt` returns 200 as `text/plain` with the correct
+`Sitemap:` line.
+
+**Found while deploying: this project has no working GitHub → Vercel
+auto-deploy.** Pushing `d9a46af` to `main` produced no Vercel build, no
+GitHub deployment record, and zero check-runs; `/sitemap.xml` stayed 404
+until deployed by hand. Every prior production deploy was a manual CLI push
+(the previous one carries `gitDirty: "1"`, i.e. deployed from a working tree,
+so production was not guaranteed to match committed `main`). This deploy was
+made from a clean `git archive` of `d9a46af` specifically to reconcile
+production to committed `main`. **A future "just push the fix" will silently
+not ship** — wiring up the Vercel GitHub integration is an open TODO.
 
 ## 2026-07-20 — Warm-human design ported into the production Next.js app
 
