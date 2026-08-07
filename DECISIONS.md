@@ -1,5 +1,38 @@
 # Decisions Log
 
+## 2026-08-07 — pricing copy corrected, and a candidate redesign on a branch
+
+**Pricing (applies to whichever design ships).** The annual plan was described
+everywhere as "₹7,999 — Founding Member, first 100", struck against ₹11,999.
+That framing is outdated and was not what is actually offered. The real
+structure is **₹7,999 for the first year as an introductory price, open to
+everyone and not capped at a number of seats, then ₹11,999 per year from year
+two.** Corrected on the landing page, in Terms §3, in the Refund Policy §3,
+and in the FAQ (the "what happens after the first 100" question is now "what
+does the annual plan cost after the first year"). Quarterly ₹3,999, Credits
+₹999 / 5 BOQs / 12-month validity are unchanged.
+
+All figures now come from `lib/pricing.ts` rather than being hard-coded per
+page. Six separate copies of the same numbers are what let the old framing
+survive in four files after it stopped being true — the constant makes the
+next change one edit.
+
+**Redesign candidate.** `codex-design-review` branch carries a "dossier"
+redesign adapted from a Codex-generated static mockup
+(`codex-boq-experiment/website-test/BOQ-plus-exact-html/`). The mockup was
+landing-page only — 121 lines of HTML, no inner pages — so the five legal
+pages are new work in the same visual language (folio rail, mono section
+labels, hard hairlines, amber accent). Legal *content* is unchanged from the
+reviewed drafts apart from the pricing corrections above.
+
+Two honesty fixes were made against the mockup as generated: it labelled a
+block of hard-coded tender rows as a "LIVE OPPORTUNITY FEED" with a scan
+timestamp and a "● RECEIVING" indicator (now marked as a sample view), and it
+carried the outdated "FIRST 100" pricing badge.
+
+**Not merged.** Production is untouched pending review of the preview
+deployment.
+
 ## 2026-08-01 — sitemap.xml and robots.txt
 
 **What:** Added `app/sitemap.ts` and `app/robots.ts` using Next.js's built-in

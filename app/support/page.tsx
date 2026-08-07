@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import LegalShell from "../components/LegalShell";
-import FaqList, { Faq } from "./FaqList";
+import QaList, { Qa } from "./QaList";
 
 export const metadata: Metadata = {
   title: "Support — BOQ+",
   description: "How-to answers and support contact for BOQ+.",
 };
 
-const faqs: Faq[] = [
+const items: Qa[] = [
   {
     q: "How do I upload a BOQ?",
     a: 'Tap the "+" button on the Home screen, then choose a BOQ file from your phone\'s storage or downloads. BOQ+ parses the items, units, and quantities automatically — check the parsed result before you start filling rates.',
@@ -26,7 +26,7 @@ const faqs: Faq[] = [
   },
   {
     q: "How do I upload a comparative statement?",
-    a: "Open the BidIQ tab and tap \"Upload another comparative\". Every upload where your firm appears also becomes a win/loss entry in My Track Record.",
+    a: 'Open the BidIQ tab and tap "Upload another comparative". Every upload where your firm appears also becomes a win/loss entry in My Track Record.',
   },
   {
     q: "How do I cancel my subscription?",
@@ -37,20 +37,19 @@ const faqs: Faq[] = [
 export default function SupportPage() {
   return (
     <LegalShell
+      fileNo="S-01"
       title="Support"
-      updated="19 July 2026"
+      updated="19 JULY 2026"
       intro={
         <p>
-          How-to answers, and a real inbox behind them. We respond to all
-          support emails within 24 hours:{" "}
-          <a className="underline decoration-amber underline-offset-2" href="mailto:support@boq.co.in">
-            support@boq.co.in
-          </a>
+          How-to answers, and a real inbox behind them. We respond to all support
+          emails within 24 hours:{" "}
+          <a href="mailto:support@boq.co.in">support@boq.co.in</a>
         </p>
       }
     >
-      <FaqList faqs={faqs} />
-      <p className="mt-8">
+      <QaList items={items} />
+      <p style={{ marginTop: "34px" }}>
         For product questions, see the <a href="/faq">FAQ</a>. For refunds and
         cancellations, see the <a href="/refund">Refund Policy</a>.
       </p>
