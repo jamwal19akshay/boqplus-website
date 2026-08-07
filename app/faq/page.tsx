@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import LegalShell from "../components/LegalShell";
+import { PRICING } from "@/lib/pricing";
 
 export const metadata: Metadata = {
   title: "FAQ — BOQ+",
@@ -13,8 +14,8 @@ const faqs: { q: string; a: React.ReactNode }[] = [
     a: (
       <>
         No one else sees your rates. Your BOQs, the rates you enter, and your
-        track record are private to your account. What is shared into the
-        market index is only data that government departments have{" "}
+        track record are private to your account. What is shared into the market
+        index is only data that government departments have{" "}
         <em>already published</em> in comparative statements — bidder names and
         bid amounts after tender opening. Details in the{" "}
         <a href="/privacy">Privacy Policy</a>.
@@ -25,11 +26,10 @@ const faqs: { q: string; a: React.ReactNode }[] = [
     q: "Does BOQ+ replace the official portal?",
     a: (
       <>
-        No, and it doesn&apos;t try to. You still log in to GePNIC or your
-        state portal with your DSC and submit there, exactly as before. BOQ+ is
-        where you <em>prepare</em> the bid — fill the BOQ, check market rates,
-        decide your Below&nbsp;% — then you enter the final figures on the
-        portal.
+        No, and it doesn&apos;t try to. You still log in to GePNIC or your state
+        portal with your DSC and submit there, exactly as before. BOQ+ is where
+        you <em>prepare</em> the bid — fill the BOQ, check market rates, decide
+        your Below&nbsp;% — then you enter the final figures on the portal.
       </>
     ),
   },
@@ -37,10 +37,10 @@ const faqs: { q: string; a: React.ReactNode }[] = [
     q: "Which portals and departments do you support?",
     a: (
       <>
-        Tender discovery covers GePNIC-based portals — the central CPPP and
-        state e-procurement portals built on it — across departments like PWD,
-        PDD/electricity distribution, irrigation, and rural development. The
-        BOQ filler itself works with any portal&apos;s Excel BOQ (.xlsx/.xls),
+        Tender discovery covers GePNIC-based portals — the central CPPP and state
+        e-procurement portals built on it — across departments like PWD,
+        PDD/electricity distribution, irrigation, and rural development. The BOQ
+        filler itself works with any portal&apos;s Excel BOQ (.xlsx/.xls),
         uploaded exactly as downloaded.
       </>
     ),
@@ -61,12 +61,11 @@ const faqs: { q: string; a: React.ReactNode }[] = [
     q: "Where do BidIQ's numbers come from? Are they guesses?",
     a: (
       <>
-        From comparative statements — the sheets departments publish after
-        tender opening showing every bidder and every amount. BOQ+ reads
-        thousands of them and turns them into rate bands, winning-discount
-        distributions, and competitor profiles. Where the data is thin for your
-        department or item, the app says so on screen instead of inventing a
-        number.
+        From comparative statements — the sheets departments publish after tender
+        opening showing every bidder and every amount. BOQ+ reads thousands of
+        them and turns them into rate bands, winning-discount distributions, and
+        competitor profiles. Where the data is thin for your department or item,
+        the app says so on screen instead of inventing a number.
       </>
     ),
   },
@@ -81,13 +80,27 @@ const faqs: { q: string; a: React.ReactNode }[] = [
     ),
   },
   {
+    q: "What does the annual plan cost after the first year?",
+    a: (
+      <>
+        The annual plan is {PRICING.annualIntro} for your first year as an
+        introductory price, and {PRICING.annualStandard} a year from the second
+        year onwards. The introductory price is open to everyone signing up — it
+        is not capped at a number of seats — and the renewal price is shown to
+        you before you are charged for it.
+      </>
+    ),
+  },
+  {
     q: "What happens when my credits expire?",
     a: (
       <>
-        Credits (₹999 for 5 BOQs) are valid for 12 months from purchase — this
-        is stated at purchase and on the pricing section, not hidden. Unused
-        credits lapse after 12 months. A completely unused pack can be refunded
-        within 7 days of purchase; see the <a href="/refund">Refund Policy</a>.
+        Credits ({PRICING.credits} for {PRICING.creditBoqs} BOQs) are valid for{" "}
+        {PRICING.creditValidityMonths} months from purchase — this is stated at
+        purchase and on the pricing section, not hidden. Unused credits lapse
+        after {PRICING.creditValidityMonths} months. A completely unused pack can
+        be refunded within 7 days of purchase; see the{" "}
+        <a href="/refund">Refund Policy</a>.
       </>
     ),
   },
@@ -95,8 +108,8 @@ const faqs: { q: string; a: React.ReactNode }[] = [
     q: "Will money be deducted automatically?",
     a: (
       <>
-        The free tier needs no card at all. If you buy a subscription, it
-        renews through your Play Store / App Store account until you cancel —
+        The free tier needs no card at all. If you buy a subscription, it renews
+        through your Play Store / App Store account until you cancel —
         cancellation is in the store&apos;s subscription settings and takes two
         taps. We never hold your card details.
       </>
@@ -106,9 +119,9 @@ const faqs: { q: string; a: React.ReactNode }[] = [
     q: "Does it work without internet?",
     a: (
       <>
-        BOQ filling works fully offline — at site, in the bus, wherever. You
-        need a connection once to fetch a tender or generate BidIQ analysis,
-        and things sync when network returns.
+        BOQ filling works fully offline — at site, in the bus, wherever. You need
+        a connection once to fetch a tender or generate BidIQ analysis, and
+        things sync when network returns.
       </>
     ),
   },
@@ -116,20 +129,11 @@ const faqs: { q: string; a: React.ReactNode }[] = [
     q: "What does uploading my tender results actually get me?",
     a: (
       <>
-        Two things. Your private track record — real win rate and typical
-        margin vs L1 — starts building. And the recommendations you see get
-        tuned to your firm&apos;s pattern instead of a market average. The
-        honest trade: BOQ+ runs on real results, and contractors who feed it
-        theirs get the sharpest numbers.
-      </>
-    ),
-  },
-  {
-    q: "What happens after the first 100 Founding Members?",
-    a: (
-      <>
-        The Annual price goes to the standard ₹11,999. Founding Members keep
-        ₹7,999 locked for their continuous renewals.
+        Two things. Your private track record — real win rate and typical margin
+        vs L1 — starts building. And the recommendations you see get tuned to
+        your firm&apos;s pattern instead of a market average. The honest trade:
+        BOQ+ runs on real results, and contractors who feed it theirs get the
+        sharpest numbers.
       </>
     ),
   },
@@ -148,8 +152,9 @@ const faqs: { q: string; a: React.ReactNode }[] = [
 export default function FaqPage() {
   return (
     <LegalShell
+      fileNo="Q-01"
       title="Frequently Asked Questions"
-      updated="19 July 2026"
+      updated="7 AUGUST 2026"
       intro={
         <p>
           The questions careful contractors actually ask before trusting an app
@@ -157,9 +162,11 @@ export default function FaqPage() {
         </p>
       }
     >
-      {faqs.map((f) => (
+      {faqs.map((f, i) => (
         <section key={f.q}>
-          <h2>{f.q}</h2>
+          <h2>
+            {String(i + 1).padStart(2, "0")} — {f.q}
+          </h2>
           <p>{f.a}</p>
         </section>
       ))}

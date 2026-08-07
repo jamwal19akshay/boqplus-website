@@ -9,29 +9,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        paper: "#F6EFE2",
-        "paper-deep": "#EFE4CF",
-        card: "#FBF6EB",
-        ink: "#33291D",
-        "ink-soft": "#6E5F4B",
-        "ink-faint": "#94836B",
-        terracotta: "#B5502A",
-        "terracotta-deep": "#93401F",
-        ochre: "#C98C1F",
-        "ochre-soft": "#D9A93F",
-        olive: "#5C6B45",
-        hairline: "#DECFB4",
-        // Legacy alias (used by a couple of utility classes on legal pages);
-        // maps to the warm ochre accent.
-        amber: "#C98C1F",
+        ink: "#0b1424",
+        paper: "#f2efe6",
+        "paper-2": "#e7e2d5",
+        amber: "#f2a900",
+        red: "#c03b30",
+        green: "#178a50",
+        steel: "#5c6e89",
+        line: "#b7b3a8",
+        white: "#fffdf7",
       },
       fontFamily: {
-        display: ["var(--font-fraunces)", "Georgia", "serif"],
-        body: ["var(--font-source-sans)", "system-ui", "sans-serif"],
-        hand: ["var(--font-kalam)", "cursive"],
-      },
-      boxShadow: {
-        warm: "0 14px 36px rgba(51,41,29,.13)",
+        display: ["var(--font-archivo)", "Impact", "sans-serif"],
+        body: ["var(--font-plex-sans)", "Arial", "sans-serif"],
+        mono: ["var(--font-plex-mono)", "monospace"],
       },
     },
   },

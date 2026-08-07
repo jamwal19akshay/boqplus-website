@@ -1,29 +1,29 @@
-import Nav from "./components/Nav";
-import Hero from "./components/Hero";
-import ProblemSection from "./components/ProblemSection";
-import FeatureSections from "./components/FeatureSections";
-import FlywheelSection from "./components/FlywheelSection";
-import StraightTalk from "./components/StraightTalk";
-import PricingSection from "./components/PricingSection";
-import ClosingSection from "./components/ClosingSection";
-import Footer from "./components/Footer";
-import StickyCTA from "./components/StickyCTA";
+import Masthead from "./components/Masthead";
+import OpeningSheet from "./components/OpeningSheet";
+import DispatchLine from "./components/DispatchLine";
+import RecordSection from "./components/RecordSection";
+import RateRuler from "./components/RateRuler";
+import MachineSection from "./components/MachineSection";
+import TenderWire from "./components/TenderWire";
+import NightShift from "./components/NightShift";
+import TariffSection from "./components/TariffSection";
+import ClosingSheet from "./components/ClosingSheet";
+import SiteFooter from "./components/SiteFooter";
 
 export default function Home() {
   return (
-    <main>
-      <Nav />
-      <Hero />
-      <hr className="divider" />
-      <ProblemSection />
-      <FeatureSections />
-      <hr className="divider" />
-      <FlywheelSection />
-      <StraightTalk />
-      <PricingSection />
-      <ClosingSection />
-      <Footer />
-      <StickyCTA />
+    <main id="top">
+      <Masthead />
+      <OpeningSheet />
+      <DispatchLine />
+      <RecordSection />
+      <RateRuler />
+      <MachineSection />
+      <TenderWire />
+      <NightShift />
+      <TariffSection />
+      <ClosingSheet />
+      <SiteFooter />
     </main>
   );
 }

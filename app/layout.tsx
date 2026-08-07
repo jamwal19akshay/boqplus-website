@@ -1,29 +1,31 @@
 import type { Metadata } from "next";
-import { Fraunces, Source_Sans_3, Kalam } from "next/font/google";
+import { Archivo_Black, IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 
-const fraunces = Fraunces({
+const archivoBlack = Archivo_Black({
   subsets: ["latin"],
-  variable: "--font-fraunces",
-  style: ["normal", "italic"],
-  axes: ["opsz"],
+  weight: "400",
+  variable: "--font-archivo",
+  display: "swap",
 });
 
-const sourceSans = Source_Sans_3({
+const plexSans = IBM_Plex_Sans({
   subsets: ["latin"],
-  variable: "--font-source-sans",
-  style: ["normal", "italic"],
+  weight: ["400", "500", "600"],
+  variable: "--font-plex-sans",
+  display: "swap",
 });
 
-const kalam = Kalam({
+const plexMono = IBM_Plex_Mono({
   subsets: ["latin"],
-  variable: "--font-kalam",
-  weight: ["400", "700"],
+  weight: ["400", "500", "600"],
+  variable: "--font-plex-mono",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://boq.co.in"),
-  title: "BOQ+ — The winning number, in your hand",
+  title: "BOQ+ — The bid is won before the portal opens",
   description:
     "BOQ+ reads the comparative statements published on GePNIC and state e-procurement portals and shows the winning discount band, item by item, while you price your BOQ on your phone.",
   keywords: [
@@ -38,7 +40,7 @@ export const metadata: Metadata = {
     "contractor app India",
   ],
   openGraph: {
-    title: "BOQ+ — The winning number, in your hand",
+    title: "BOQ+ — The bid is won before the portal opens",
     description:
       "BOQ+ reads the comparative statements published on GePNIC and state e-procurement portals and shows the winning discount band, item by item, while you price your BOQ on your phone.",
     url: "https://boq.co.in",
@@ -52,12 +54,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${fraunces.variable} ${sourceSans.variable} ${kalam.variable} font-body antialiased`}
-      >
-        {children}
-      </body>
+    // The font variables must land on <html>, not <body>: globals.css defines
+    // --display/--sans/--mono on :root in terms of them, and a variable scoped
+    // to <body> is not visible to a :root rule.
+    <html
+      lang="en"
+      className={`${archivoBlack.variable} ${plexSans.variable} ${plexMono.variable}`}
+    >
+      <body>{children}</body>
     </html>
   );
 }

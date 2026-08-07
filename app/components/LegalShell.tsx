@@ -1,41 +1,49 @@
-import Nav from "./Nav";
-import Footer from "./Footer";
+import Masthead from "./Masthead";
+import SiteFooter from "./SiteFooter";
 
 export default function LegalShell({
+  fileNo,
   title,
   updated,
   intro,
   children,
 }: {
+  fileNo: string;
   title: string;
   updated: string;
   intro?: React.ReactNode;
   children: React.ReactNode;
 }) {
   return (
-    <main>
-      <Nav />
-      <div className="border-b border-hairline bg-paper-deep">
-        <div className="mx-auto max-w-3xl px-5 py-14">
-          <h1 className="font-display text-4xl font-semibold text-ink sm:text-5xl">
-            {title}
-          </h1>
-          <p className="hand mt-3 rotate-[-0.5deg] text-[1.05rem] text-ink-soft">
-            Last updated: {updated}
-          </p>
-          {intro && (
-            <div className="mt-5 max-w-[36em] text-[1.08rem] text-ink-soft">
-              {intro}
-            </div>
-          )}
+    <main id="top">
+      <Masthead />
+
+      <div className="legal-head">
+        <aside className="legal-folio" aria-hidden="true">
+          <span>BOQ+</span>
+          <b>
+            FILE
+            <br />
+            NO. {fileNo}
+          </b>
+        </aside>
+        <div className="legal-head-main">
+          <div className="legal-clearance">
+            <span>BOQ+ / OFFICIAL RECORD</span>
+            <i>PLAIN LANGUAGE, NO ASTERISKS</i>
+          </div>
+          <h1>{title}</h1>
+          {intro && <div className="legal-intro">{intro}</div>}
+          <div className="legal-updated">LAST UPDATED · {updated}</div>
         </div>
       </div>
-      <div className="bg-paper">
-        <article className="legal-prose mx-auto max-w-3xl px-5 py-12 text-[16.5px]">
-          {children}
-        </article>
+
+      <div className="legal-body">
+        <div className="legal-rail" aria-hidden="true" />
+        <article className="legal-prose">{children}</article>
       </div>
-      <Footer />
+
+      <SiteFooter />
     </main>
   );
 }
