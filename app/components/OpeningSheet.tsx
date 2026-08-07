@@ -1,3 +1,4 @@
+import StoreBadges from "./StoreBadges";
 import { MARKET_CAPTURE } from "@/lib/stats";
 import { PRICING } from "@/lib/pricing";
 
@@ -40,6 +41,10 @@ export default function OpeningSheet() {
               Examine the evidence
             </a>
           </div>
+        </div>
+        <div className="opening-store">
+          <span>GET THE APP</span>
+          <StoreBadges />
         </div>
       </div>
 

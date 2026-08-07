@@ -1,5 +1,38 @@
 # Decisions Log
 
+## 2026-08-07 — store badges: iOS is live, Android is not
+
+**The iOS app is published.** Verified against Apple's lookup API
+(`itunes.apple.com/lookup?id=6760415552`): trackName "BOQ+", seller Akshay
+Jamwal, version 2.3.0, first released 2026-04-24. Its `bundleId`
+(`com.verkzo.boq`) matches `public/.well-known/apple-app-site-association`,
+which is what confirms it is our listing and not a name collision. The Apple
+ID **6760415552 is correct**, though it appears nowhere in this repo or its
+git history — it was verified externally, not read from a doc.
+
+**The Android app is not published.** The canonical URL for the package named
+in `assetlinks.json` —
+`play.google.com/store/apps/details?id=com.verkzo.boq` — 404s in both the
+default and Indian storefronts.
+
+**Consequence for the site:** the App Store badge is a real, working link
+(region-less URL so Apple routes each visitor to their own storefront). The
+Google Play badge renders greyed out with a "COMING SOON" chip and points at
+`#play-store-coming-soon`. Flipping `PLAY_STORE_LIVE` in `lib/links.ts` and
+setting the real URL is the whole change needed when Android ships.
+
+Badge art is the official, unmodified asset from each vendor
+(`public/badges/`), not a custom-styled button. The Google badge carries 41px
+of built-in clear space in a 646×250 canvas; CSS accounts for that so both
+badges render at the same ~46px visible height and align on their real edges.
+The "COMING SOON" chip is positioned clear of the badge artwork — obscuring
+an official badge breaches both vendors' brand guidelines.
+
+Placement follows the design's own CTA convention: the hero (beneath "UNSEAL
+2 FREE BOQs") and the closing sheet's existing store slot, which previously
+held the text "LISTINGS COMING SOON" and now reads "ANDROID LISTING COMING
+SOON" since that is no longer true of iOS.
+
 ## 2026-08-07 — pricing copy corrected, and a candidate redesign on a branch
 
 **Pricing (applies to whichever design ships).** The annual plan was described
@@ -254,7 +287,8 @@ an explicit no-bid-rigging acceptable-use clause. **Pending lawyer review
 before publish.**
 
 **Still TODO before launch:**
-- Real Play Store / App Store URLs in `lib/links.ts` (currently `#`)
+- ~~Real App Store URL~~ — done 2026-08-07, see below
+- Real Play Store URL in `lib/links.ts` (still `#play-store-coming-soon`)
 - Official store badge art (currently flat custom buttons)
 - OG share image
 - Lawyer review of Privacy / Terms / Refund

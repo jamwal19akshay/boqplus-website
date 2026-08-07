@@ -343,6 +343,74 @@ h1 span {
   color: var(--steel);
 }
 
+/* --- Store badges -------------------------------------------------------- */
+
+.store-badges {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.store-badge {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  transition: transform 0.18s;
+}
+.store-badge img {
+  display: block;
+  width: auto;
+}
+/* Apple's badge has no built-in padding, so its height is the visible height. */
+.badge-apple {
+  height: 46px;
+}
+/* Google's has 41/250 of vertical padding baked in, so 68px of image gives
+   ~46px of visible badge; the negative margin cancels the matching 41/646 of
+   horizontal padding so both badges align on their real left/right edges. */
+.badge-play {
+  height: 68px;
+  margin: 0 -11px;
+}
+.store-badge:not(.is-soon):hover {
+  transform: translateY(-2px);
+}
+.store-badge.is-soon {
+  cursor: default;
+}
+.store-badge.is-soon img {
+  opacity: 0.5;
+  filter: grayscale(1);
+}
+/* Sits clear of the badge artwork — the official badge must not be obscured.
+   The Play badge's own top padding is ~11px at this size, so a -10px offset
+   keeps the chip entirely above the printed badge. */
+.store-badge.is-soon b {
+  position: absolute;
+  right: -2px;
+  top: -10px;
+  background: var(--amber);
+  color: var(--ink);
+  font: 600 8px var(--mono);
+  letter-spacing: 0.06em;
+  padding: 5px 7px;
+  transform: rotate(2deg);
+}
+
+/* Hero placement */
+.opening-store {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.opening-store > span {
+  font: 500 9px var(--mono);
+  letter-spacing: 0.08em;
+  color: var(--steel);
+}
+
 /* --- Dispatch marquee ---------------------------------------------------- */
 
 .dispatch-line {
@@ -1024,7 +1092,9 @@ input[type="range"]::-moz-range-thumb {
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   padding-top: 20px;
   display: flex;
+  align-items: center;
   gap: 40px;
+  flex-wrap: wrap;
   font: 500 10px var(--mono);
 }
 .store-line small {
@@ -1619,7 +1689,10 @@ footer.site-footer > span {
   }
   .store-line {
     flex-direction: column;
-    gap: 12px;
+    /* align-items:center is right for the desktop row, but would centre the
+       badges against the left-aligned CTA once this becomes a column. */
+    align-items: flex-start;
+    gap: 14px;
   }
   .store-line small {
     margin: 0;

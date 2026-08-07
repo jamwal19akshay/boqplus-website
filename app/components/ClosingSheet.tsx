@@ -1,3 +1,4 @@
+import StoreBadges from "./StoreBadges";
 import { PRICING } from "@/lib/pricing";
 
 export default function ClosingSheet() {
@@ -21,9 +22,8 @@ export default function ClosingSheet() {
         START WITH {PRICING.freeBoqs} FREE BOQs <b>↗</b>
       </a>
       <div className="store-line">
-        <span>ANDROID · GOOGLE PLAY</span>
-        <span>iOS · APP STORE</span>
-        <small>LISTINGS COMING SOON</small>
+        <StoreBadges />
+        <small>ANDROID LISTING COMING SOON</small>
       </div>
     </section>
   );
