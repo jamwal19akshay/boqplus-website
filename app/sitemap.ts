@@ -15,6 +15,7 @@ const routes: {
   { path: "/faq", changeFrequency: "monthly", priority: 0.7 },
   { path: "/support", changeFrequency: "monthly", priority: 0.7 },
   { path: "/privacy", changeFrequency: "yearly", priority: 0.3 },
+  { path: "/delete-account", changeFrequency: "yearly", priority: 0.3 },
   { path: "/terms", changeFrequency: "yearly", priority: 0.3 },
   { path: "/refund", changeFrequency: "yearly", priority: 0.3 },
 ];
