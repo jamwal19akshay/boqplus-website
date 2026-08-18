@@ -4,7 +4,7 @@
     "details": [
       {
         "appID": "Z9Z9883857.com.verkzo.boq",
-        "paths": ["/tender/*"]
+        "paths": ["/tender/*", "/boq/*", "/upgrade"]
       }
     ]
   },
