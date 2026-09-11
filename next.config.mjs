@@ -8,6 +8,16 @@ const nextConfig = {
         source: "/.well-known/apple-app-site-association",
         headers: [{ key: "Content-Type", value: "application/json" }],
       },
+      {
+        // Closed-testing sample BOQs (/test-files). Forcing a download stops
+        // mobile browsers opening an in-browser preview, so the file lands in
+        // Downloads where the BOQ+ file picker can find it.
+        source: "/samples/:file*.xls",
+        headers: [
+          { key: "Content-Type", value: "application/vnd.ms-excel" },
+          { key: "Content-Disposition", value: "attachment" },
+        ],
+      },
     ];
   },
 

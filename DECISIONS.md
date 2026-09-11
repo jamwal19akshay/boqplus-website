@@ -1,5 +1,36 @@
 # Decisions Log
 
+## 2026-09-11 — /test-files: sample BOQs for Play closed testers
+
+**What:** a public, no-login page at `/test-files` (`app/test-files/page.tsx`,
+built on `LegalShell`) with three downloadable sample BOQs and the closed-test
+checklist. Files live in `public/samples/`; `next.config.mjs` serves
+`/samples/*.xls` as `application/vnd.ms-excel` with `Content-Disposition:
+attachment` so phones save the file to Downloads instead of previewing it.
+The page is `noindex` and deliberately left out of the sitemap — it is a
+tester handout, not marketing.
+
+**Files — unmodified copies of public GePNIC tender workbooks** (blank bidder
+name, no bidder-entered rates, no personal data; each read by the BOQ+ parser
+at confidence 0.97 with zero warnings):
+
+- `sample-item-rate-boq.xls` — JKPTCL tower-foundation protection works,
+  Item Rate, 18 items / 3 sections, every rate blank.
+- `sample-percentage-tender.xls` — SMC Srinagar road macadamisation,
+  Percentage, 7 items; the percentage file already used in device QA.
+- `sample-large-item-rate-boq.xls` — JPDCL 250 KVA sub-station + HT/LT,
+  Item Rate, 104 items / 8 sections; the primary device-QA BOQ.
+
+Excluded on purpose: the two HOLD-set BOQs (`BOQ_1066791`, `NH44_Road_BOQ`),
+every workbook or PDF carrying a filled bidder name or quoted rates, and
+macro-hidden / variant templates.
+
+**No PDF sample.** No local PDF was both safe and clean-parsing: the only
+unfilled government BOQ PDF found (a Percentage BoQ printed from Excel) parses
+with one junk "1 2 3 4 5" row per printed page and loses its percentage type;
+the others carry the owner's firm name, author metadata or real quoted rates.
+Add a PDF card only once a clean public PDF exists.
+
 ## 2026-08-07 — store badges: iOS is live, Android is not
 
 **The iOS app is published.** Verified against Apple's lookup API
