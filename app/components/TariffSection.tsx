@@ -1,4 +1,4 @@
-import { FREE_TIER_SUMMARY, PRICING } from "@/lib/pricing";
+import { PRICING } from "@/lib/pricing";
 
 export default function TariffSection() {
   return (
@@ -27,7 +27,10 @@ export default function TariffSection() {
           </div>
           <strong>₹0</strong>
           <em>{PRICING.freeBoqPreviews} BOQ previews</em>
-          <p>{FREE_TIER_SUMMARY}. No card.</p>
+          <p>
+            Plus {PRICING.freeExports} exports, calculators, SSR rate books and
+            tender alerts. No card.
+          </p>
           <a href="#final">
             ISSUE THIS FILE <b>→</b>
           </a>
