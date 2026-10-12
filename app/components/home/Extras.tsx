@@ -80,7 +80,7 @@ const EXTRAS: Extra[] = [
 export default function Extras() {
   return (
     <section id="extras" className="bg-navy-900 py-[72px] md:py-[120px]">
-      <div className="container mx-auto max-w-site px-4 sm:px-6">
+      <div className="mx-auto max-w-site px-4 sm:px-6">
         <h2 className="text-[32px] font-semibold leading-tight text-white md:text-[44px]">
           Everything else on site
         </h2>

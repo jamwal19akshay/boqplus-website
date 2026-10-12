@@ -41,7 +41,7 @@ export default function Pricing() {
 
   return (
     <section id="pricing" className="bg-white py-[72px] md:py-[120px]">
-      <div className="container mx-auto max-w-site px-4 sm:px-6">
+      <div className="mx-auto max-w-site px-4 sm:px-6">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-[32px] font-semibold leading-tight text-navy-900 md:text-5xl">
             Simple pricing. Pay in the app.

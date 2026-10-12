@@ -6,7 +6,7 @@ export default function HomeFaq() {
   return (
     <section id="faq" className="bg-cloud py-[72px] md:py-[120px]">
       <HomeFaqJsonLd />
-      <div className="container mx-auto grid max-w-site gap-10 px-4 sm:px-6 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-16">
+      <div className="mx-auto grid max-w-site gap-10 px-4 sm:px-6 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-16">
         <div>
           <h2 className="text-[32px] font-semibold leading-tight text-navy-900 md:text-5xl">
             Questions contractors ask

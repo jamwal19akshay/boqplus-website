@@ -48,7 +48,7 @@ const FEATURES: Feature[] = [
 export default function Features() {
   return (
     <section id="features" className="bg-cloud py-[72px] md:py-[120px]">
-      <div className="container mx-auto max-w-site px-4 sm:px-6">
+      <div className="mx-auto max-w-site px-4 sm:px-6">
         <div className="max-w-2xl">
           <h2 className="text-[32px] font-semibold leading-tight text-navy-900 md:text-[44px]">
             What BOQ+ does for your bid
