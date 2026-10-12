@@ -6,14 +6,20 @@
 // "₹7,999 for the first 100 founding members" long after that framing was
 // dropped), and separate hard-coded strings are what allowed that.
 //
-// Current structure, confirmed 7 August 2026:
-//   Annual — ₹7,999 for the first year as an introductory price, open to
-//   everyone, not capped at a number of seats. ₹11,999 per year from year two.
+// Free tier is the app 3.0.0 tier (founder decision, 13 October 2026): the
+// site goes live only once 3.0.0 is out on both stores, so it describes that
+// build and nothing older.
+//
+// Annual — ₹7,999 for the first year as an introductory price, open to
+// everyone, not capped at a number of seats. ₹11,999 per year from year two.
 export const PRICING = {
-  freeBoqs: 2,
+  freeBoqPreviews: 3,
+  freeExports: 3,
 
   annualIntro: "₹7,999",
   annualStandard: "₹11,999",
+  // ₹7,999 vs 4 × ₹3,999 = ₹15,996 → 49.99% less in year one.
+  annualSavingVsQuarterly: "50%",
 
   quarterly: "₹3,999",
 
@@ -21,3 +27,6 @@ export const PRICING = {
   creditBoqs: 5,
   creditValidityMonths: 12,
 } as const;
+
+// The free tier as one phrase, for the places that describe it in a sentence.
+export const FREE_TIER_SUMMARY = `${PRICING.freeBoqPreviews} BOQ previews and ${PRICING.freeExports} exports, plus calculators, SSR rate books and tender alerts`;

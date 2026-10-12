@@ -1,5 +1,31 @@
 # Decisions Log
 
+## 2026-10-13 — home redesign (app palette); free-tier wording in Terms and Refund
+
+Branch `redesign/home-v3`, cut from `session-b/privacy-support` (rebase onto
+`main` once that merges). Plan and every founder decision: `docs/WEBSITE_PLAN.md`.
+Production only after app 3.0.0 is live on both stores and the founder says "go live".
+
+**Legal — for lawyer review:**
+- **Terms (§03, "Free tier" bullet): free-tier wording updated — for lawyer review.**
+- **Refund (§01 "Try before you pay"): free-tier wording updated — for lawyer review.**
+
+Both sentences now read the app 3.0.0 tier from `FREE_TIER_SUMMARY` in
+`lib/pricing.ts`: 3 BOQ previews and 3 exports, plus calculators, SSR rate
+books and tender alerts. Nothing else in either page changed, including the
+"last updated" dates.
+
+**Other facts the redesign relies on:**
+- The big number is 2,194,581 **quoted line-item rates** (`rate_observations`), shown
+  as "2,190,000+ quoted rates analysed", from "69,000+ government tender results",
+  as of 11 Oct 2026. These are not "bids". Refresh steps are in `lib/stats.ts`.
+- Hindi is not claimed anywhere because neither app has it.
+- Store links carry attribution: App Store `pt=128575647&ct=website-home`, Play
+  `referrer=utm_source=website&utm_medium=organic&utm_campaign=home`. The site
+  still runs no tracking scripts.
+- "Best value" on Annual is a price claim (lowest per month), which the founder
+  approved. The "no Most Popular badge" rule still stands.
+
 ## 2026-09-11 — /test-files: sample BOQs for Play closed testers
 
 **What:** a public, no-login page at `/test-files` (`app/test-files/page.tsx`,

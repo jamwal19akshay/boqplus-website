@@ -1,49 +1,46 @@
-import Masthead from "./Masthead";
 import SiteFooter from "./SiteFooter";
+import SiteHeader from "./SiteHeader";
 
+// Shell for the legal and help pages. Only the frame and typography live
+// here; each page's words are its own and are not touched by restyles.
+// `fileNo` is kept in the signature so existing pages keep compiling, but the
+// dossier-era folio it fed is no longer drawn.
 export default function LegalShell({
-  fileNo,
   title,
   updated,
   intro,
   children,
 }: {
-  fileNo: string;
+  fileNo?: string;
   title: string;
   updated: string;
   intro?: React.ReactNode;
   children: React.ReactNode;
 }) {
   return (
-    <main id="top">
-      <Masthead />
-
-      <div className="legal-head">
-        <aside className="legal-folio" aria-hidden="true">
-          <span>BOQ+</span>
-          <b>
-            FILE
-            <br />
-            NO. {fileNo}
-          </b>
-        </aside>
-        <div className="legal-head-main">
-          <div className="legal-clearance">
-            <span>BOQ+ / OFFICIAL RECORD</span>
-            <i>PLAIN LANGUAGE, NO ASTERISKS</i>
+    <>
+      <SiteHeader />
+      <main id="top">
+        <div className="bg-navy-900">
+          <div className="mx-auto max-w-site px-4 pb-14 pt-14 sm:px-6 md:pb-20 md:pt-20">
+            <h1 className="max-w-3xl text-[34px] font-semibold leading-[1.15] tracking-[-0.01em] text-white md:text-[48px]">
+              {title}
+            </h1>
+            {intro && (
+              <div className="mt-5 max-w-2xl text-[17px] leading-relaxed text-slate-300 [&_p]:m-0">
+                {intro}
+              </div>
+            )}
+            <p className="mt-6 text-[13px] font-medium uppercase tracking-[0.08em] text-amber-light">
+              Last updated · {updated}
+            </p>
           </div>
-          <h1>{title}</h1>
-          {intro && <div className="legal-intro">{intro}</div>}
-          <div className="legal-updated">LAST UPDATED · {updated}</div>
         </div>
-      </div>
-
-      <div className="legal-body">
-        <div className="legal-rail" aria-hidden="true" />
-        <article className="legal-prose">{children}</article>
-      </div>
-
+        <div className="mx-auto max-w-site px-4 py-14 sm:px-6 md:py-20">
+          <article className="legal-prose">{children}</article>
+        </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

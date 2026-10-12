@@ -1,15 +1,21 @@
-// Headline market figures, exactly as shown on the Market Intelligence Report
-// capture (public/screens/android/04-market-intelligence-report.png). The
-// landing page states these are read off that screen, so they must stay in
-// lock-step with the screenshot — if the capture is refreshed, update these
-// together with it.
+// Headline data figures for the home page. Static, checked values — there is
+// no public stats endpoint yet (see docs/WEBSITE_PLAN.md §2, B3).
 //
-// Last verified against the production database on 20 July 2026: exact match
-// (45,584 distinct comparatives · avg 3.52 bidders · ₹14,277 Cr summed L1
-// value · 9.21% median winning below-estimate). See DECISIONS.md.
-export const MARKET_CAPTURE = {
-  comparatives: "45,584",
-  decidedValue: "₹14,277 Cr",
-  avgBidders: "3.5",
-  medianDiscount: "9.2%",
+// Source: boqplus-android-backend/docs/DATA_INVENTORY.md, measured with
+// read-only SELECTs against the production database on 11 October 2026:
+//   rate_observations   2,194,581  quoted line-item rates from tender results
+//   tenders with comparatives  69,351
+//
+// They are QUOTED RATES (one bidder's rate for one BOQ item), not whole bids —
+// never label them "bids".
+//
+// To refresh (monthly is plenty; the results batch has no scheduled refresh):
+//   1. Against production, read-only:
+//        select count(*) from rate_observations;
+//        select count(distinct tender_ref) from comparative_items;
+//   2. Round DOWN to the precision below, update the values and `asOf`, push.
+export const DATA_STATS = {
+  quotedRates: "2,190,000+",
+  tenderResults: "69,000+",
+  asOf: "11 Oct 2026",
 } as const;
