@@ -162,7 +162,8 @@ export default function PrivacyPage() {
       <p>
         We advertise BOQ+ on Meta (Facebook and Instagram) and may advertise on
         Apple and Google. To know which ads bring people to BOQ+, and{" "}
-        <strong>only if you allow it</strong>, the app sends Meta a few events —
+        <strong>only if you allow it</strong>, the app sends Meta and Google a few
+        events —
         install/app open, BOQ uploaded, plans screen viewed, and purchases (with
         the amount) — together with your device&apos;s advertising identifier.
       </p>
@@ -179,7 +180,8 @@ export default function PrivacyPage() {
         </li>
       </ul>
       <p>
-        If you say no, nothing is sent to Meta for ad measurement and BOQ+ works
+        If you say no, nothing is sent to Meta or Google for ad measurement and
+        BOQ+ works
         exactly the same. Separately, Apple&apos;s ad attribution (iPhone) and
         the Google Play install referrer (Android) tell us which campaign led to
         an install. They don&apos;t follow you across other apps.
@@ -217,7 +219,9 @@ export default function PrivacyPage() {
         </li>
         <li>
           <strong>Google</strong> — Firebase / Google Analytics (usage
-          analytics), Google Sign-In, Google Play billing and install referrer.
+          analytics; your advertising identifier and ad measurement only with
+          your permission), Google Sign-In, Google Play billing and install
+          referrer.
         </li>
         <li>
           <strong>Apple</strong> — Sign in with Apple, App Store purchases, ad
