@@ -52,7 +52,7 @@ const faqs: { q: string; a: React.ReactNode }[] = [
         CPWD DSR, MES SSR, and state SORs (e.g., JK PWD SOR), so you can rate
         items against the schedule while you fill. If your state&apos;s SOR is
         missing, tell us at{" "}
-        <a href="mailto:support@boq.co.in">support@boq.co.in</a> — SOR coverage
+        <a href="mailto:akshay@boq.co.in">akshay@boq.co.in</a> — SOR coverage
         is driven by user requests.
       </>
     ),
@@ -142,8 +142,8 @@ const faqs: { q: string; a: React.ReactNode }[] = [
     a: (
       <>
         BOQ+ is an independent Indian product, not tied to any government body.
-        Email <a href="mailto:support@boq.co.in">support@boq.co.in</a> — real
-        replies, usually within a working day.
+        Email <a href="mailto:akshay@boq.co.in">akshay@boq.co.in</a> — real
+        replies, within one working day.
       </>
     ),
   },
@@ -154,7 +154,7 @@ export default function FaqPage() {
     <LegalShell
       fileNo="Q-01"
       title="Frequently Asked Questions"
-      updated="7 AUGUST 2026"
+      updated="13 OCTOBER 2026"
       intro={
         <p>
           The questions careful contractors actually ask before trusting an app

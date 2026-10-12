@@ -4,7 +4,7 @@ import LegalShell from "../components/LegalShell";
 export const metadata: Metadata = {
   title: "Delete Your Account — BOQ+",
   description:
-    "How to delete your BOQ+ account and data — from the app's settings, or by emailing support@boq.co.in.",
+    "How to delete your BOQ+ account and data — from the app's settings, or by emailing akshay@boq.co.in.",
 };
 
 export default function DeleteAccountPage() {
@@ -12,7 +12,7 @@ export default function DeleteAccountPage() {
     <LegalShell
       fileNo="D-01"
       title="Delete Your Account"
-      updated="13 AUGUST 2026"
+      updated="13 OCTOBER 2026"
       intro={
         <p>
           You can delete your BOQ+ account and the data attached to it at any
@@ -43,15 +43,15 @@ export default function DeleteAccountPage() {
       <p>
         If you cannot reach the in-app option — you have lost access to your
         device, or you can no longer sign in — email{" "}
-        <a href="mailto:support@boq.co.in">support@boq.co.in</a> from{" "}
+        <a href="mailto:akshay@boq.co.in">akshay@boq.co.in</a> from{" "}
         <strong>the email address registered on the account</strong>, asking us
         to delete it. Writing from the registered address is how we confirm the
         request is yours; if you write from a different address we will ask you
         for something that verifies ownership before we act.
       </p>
       <p>
-        We acknowledge within 48 hours and action the deletion within 7 working
-        days.
+        We reply within one working day and action the deletion within 7
+        working days.
       </p>
 
       <h2>03 — What deletion removes</h2>
@@ -131,7 +131,7 @@ export default function DeleteAccountPage() {
       <h2>06 — If something goes wrong</h2>
       <p>
         If a deletion request is not honoured, write to{" "}
-        <a href="mailto:support@boq.co.in">support@boq.co.in</a> — we aim to
+        <a href="mailto:akshay@boq.co.in">akshay@boq.co.in</a> — we aim to
         respond within 15 days. If you are not satisfied with our response, you
         may complain to the <strong>Data Protection Board of India</strong>{" "}
         under the Digital Personal Data Protection Act, 2023.

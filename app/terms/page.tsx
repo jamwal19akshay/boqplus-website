@@ -12,7 +12,7 @@ export default function TermsPage() {
     <LegalShell
       fileNo="T-01"
       title="Terms of Service"
-      updated="7 AUGUST 2026"
+      updated="13 OCTOBER 2026"
       intro={
         <p>
           These terms are a binding agreement between you and BOQ+ governing the
@@ -165,7 +165,7 @@ export default function TermsPage() {
         non-waivable consumer-forum rights you hold under the Consumer Protection
         Act, 2019, courts at Jammu, Jammu &amp; Kashmir shall have exclusive
         jurisdiction. We prefer to resolve issues directly — write to{" "}
-        <a href="mailto:support@boq.co.in">support@boq.co.in</a> first.
+        <a href="mailto:akshay@boq.co.in">akshay@boq.co.in</a> first.
       </p>
 
       <h2>10 — Changes to these terms</h2>

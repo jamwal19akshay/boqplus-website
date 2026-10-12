@@ -13,7 +13,7 @@ export default function RefundPage() {
     <LegalShell
       fileNo="R-01"
       title="Refund Policy"
-      updated="7 AUGUST 2026"
+      updated="13 OCTOBER 2026"
       intro={
         <p>
           BOQ+ sells digital services — subscriptions and credit packs — through
@@ -58,7 +58,7 @@ export default function RefundPage() {
           from the store (Google Play: within 48 hours via Play refund flow;
           Apple: via reportaproblem.apple.com). If the store window has passed,
           email us within 7 days of the charge at{" "}
-          <a href="mailto:support@boq.co.in">support@boq.co.in</a> and we will
+          <a href="mailto:akshay@boq.co.in">akshay@boq.co.in</a> and we will
           review it in good faith.
         </li>
         <li>
@@ -103,8 +103,9 @@ export default function RefundPage() {
         a BidIQ report fails to generate for a valid, parseable BOQ — we will
         re-credit your account, or refund that credit&apos;s value if
         re-crediting is not possible. Report failures to{" "}
-        <a href="mailto:support@boq.co.in">support@boq.co.in</a> with the BOQ in
-        question; we respond within 7 working days.
+        <a href="mailto:akshay@boq.co.in">akshay@boq.co.in</a> with the BOQ in
+        question; we reply within one working day and resolve it within 7
+        working days.
       </p>
 
       <h2>06 — What refunds don&apos;t cover</h2>
@@ -128,9 +129,9 @@ export default function RefundPage() {
           &ldquo;Report a Problem&rdquo;) — it is fastest.
         </li>
         <li>
-          Or email <a href="mailto:support@boq.co.in">support@boq.co.in</a> with
-          your registered email and store order ID. We acknowledge within 48
-          hours and resolve within 7 working days.
+          Or email <a href="mailto:akshay@boq.co.in">akshay@boq.co.in</a> with
+          your registered email and store order ID. We reply within one
+          working day and resolve within 7 working days.
         </li>
       </ol>
       <p className="legal-callout">

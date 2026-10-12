@@ -18,7 +18,7 @@ const items: Qa[] = [
   },
   {
     q: "My BOQ template isn't supported — what do I do?",
-    a: "Email support@boq.co.in with the tender reference number and the file. We review unsupported templates within 48 hours. If we can't support your template and a credit was consumed, we re-credit it — see the Refund Policy.",
+    a: "Email akshay@boq.co.in with the tender reference number and the file. We review unsupported templates within 48 hours. If we can't support your template and a credit was consumed, we re-credit it — see the Refund Policy.",
   },
   {
     q: "How do I use rate suggestions?",
@@ -39,12 +39,12 @@ export default function SupportPage() {
     <LegalShell
       fileNo="S-01"
       title="Support"
-      updated="19 JULY 2026"
+      updated="13 OCTOBER 2026"
       intro={
         <p>
-          How-to answers, and a real inbox behind them. We respond to all support
-          emails within 24 hours:{" "}
-          <a href="mailto:support@boq.co.in">support@boq.co.in</a>
+          How-to answers, and a real inbox behind them. We reply to every support
+          email within one working day:{" "}
+          <a href="mailto:akshay@boq.co.in">akshay@boq.co.in</a>
         </p>
       }
     >

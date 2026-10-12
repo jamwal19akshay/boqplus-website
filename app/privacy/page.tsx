@@ -4,7 +4,7 @@ import LegalShell from "../components/LegalShell";
 export const metadata: Metadata = {
   title: "Privacy Policy — BOQ+",
   description:
-    "How BOQ+ collects, uses, and protects your data under India's DPDP Act, 2023.",
+    "How BOQ+ (operated by Akshay Jamwal) collects, uses, shares and protects your data under India's DPDP Act, 2023.",
 };
 
 export default function PrivacyPage() {
@@ -12,23 +12,24 @@ export default function PrivacyPage() {
     <LegalShell
       fileNo="P-01"
       title="Privacy Policy"
-      updated="19 JULY 2026"
+      updated="13 OCTOBER 2026"
       intro={
         <p>
-          This policy explains, in plain language, what data the BOQ+ app and
-          boq.co.in collect, why, and what rights you have under the Digital
-          Personal Data Protection Act, 2023 (&ldquo;DPDP Act&rdquo;).
+          This policy explains, in plain language, what the BOQ+ app (Android
+          and iOS) and boq.co.in collect, why, who we share it with, and your
+          rights under India&apos;s Digital Personal Data Protection Act, 2023
+          (&ldquo;DPDP Act&rdquo;).
         </p>
       }
     >
       <h2>01 — Who we are</h2>
       <p>
-        BOQ+ (&ldquo;we&rdquo;, &ldquo;us&rdquo;) operates the BOQ+ mobile
-        application for Android and iOS and the website boq.co.in. For the
-        purposes of the DPDP Act, we are the <strong>Data Fiduciary</strong> for
-        the personal data described below, and you are the{" "}
-        <strong>Data Principal</strong>. You can reach us for anything in this
-        policy at <a href="mailto:support@boq.co.in">support@boq.co.in</a>.
+        BOQ+ is operated by Akshay Jamwal (&ldquo;we&rdquo;, &ldquo;us&rdquo;).
+        For the DPDP Act, we are the <strong>Data Fiduciary</strong> for the
+        personal data described here and you are the{" "}
+        <strong>Data Principal</strong>. For anything in this policy, including
+        grievances, write to{" "}
+        <a href="mailto:akshay@boq.co.in">akshay@boq.co.in</a>.
       </p>
 
       <h2>02 — What we collect, and why</h2>
@@ -38,78 +39,108 @@ export default function PrivacyPage() {
             <tr>
               <th>Data</th>
               <th>Where it comes from</th>
-              <th>Why we process it</th>
+              <th>Why</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Account details — email address, sign-in identifier</td>
-              <td>You, at sign-up</td>
-              <td>Creating and securing your account; support</td>
+              <td>
+                Account details — email address, name (if your Apple or Google
+                account shares it), sign-in identifier, or a guest ID if you
+                don&apos;t sign in
+              </td>
+              <td>You, at sign-in; the app, for guests</td>
+              <td>
+                Creating and securing your account, restoring purchases, support
+              </td>
             </tr>
             <tr>
               <td>
-                Firm profile — firm name and any registration details you choose
-                to add
+                Firm profile — your state, city (if you add it), and the
+                departments and work types you follow
               </td>
               <td>You, in the app</td>
+              <td>Showing relevant tenders and alerts, and sensible defaults</td>
+            </tr>
+            <tr>
+              <td>Firm name (optional)</td>
+              <td>You, in the app</td>
               <td>
-                Matching your firm in comparative statements you upload, to build
-                your private track record (win rate, margin vs L1)
+                Printing it on BOQs you export. If you add it, we also look for
+                your firm&apos;s bids in public tender results to build your
+                private track record (win rate, margin vs L1). Only you see this.
+                Remove the firm name to stop it.
               </td>
             </tr>
             <tr>
-              <td>BOQ files and the rates you enter</td>
-              <td>You, when you upload a tender BOQ and fill rates</td>
+              <td>BOQ files and comparative statements you upload</td>
+              <td>You</td>
               <td>
-                Providing the core service — parsing the BOQ, computing totals,
-                generating BidIQ analysis for you
+                We read the file to extract its items, then{" "}
+                <strong>delete the file right after reading</strong>. We keep the
+                extracted items, the file name and a fingerprint so you can keep
+                working on it.
               </td>
             </tr>
             <tr>
-              <td>Comparative statements you upload</td>
-              <td>You, when you upload tender results</td>
-              <td>
-                Building your track record, and improving the market-intelligence
-                index (bidder names, bid amounts, and results as published by the
-                procuring department)
-              </td>
+              <td>Rates you enter, scenarios, exports, and feedback you send</td>
+              <td>You</td>
+              <td>Providing the service and answering you</td>
             </tr>
             <tr>
               <td>
-                Tender preferences — departments, locations, value ranges,
-                keywords
+                Purchase data — plan, product, purchase and expiry dates, store
+                transaction ID
               </td>
-              <td>You, in tender search and filters</td>
-              <td>Showing you relevant tenders and closing-date alerts</td>
-            </tr>
-            <tr>
+              <td>Apple App Store / Google Play</td>
               <td>
-                Purchase data — plan, price, purchase and expiry dates, store
-                order ID
-              </td>
-              <td>Google Play / Apple App Store</td>
-              <td>
-                Activating your subscription or credits, honouring the 12-month
-                credit validity, handling refunds and disputes
+                Activating your plan or credits, refunds and disputes. We never
+                see card or bank details.
               </td>
             </tr>
             <tr>
               <td>
-                Device and usage data — device model, OS version, crash logs,
-                feature-usage events
+                App usage events — e.g. app opened, BOQ uploaded, report viewed,
+                plans screen viewed, purchase made
               </td>
-              <td>Automatically, from the app</td>
-              <td>Fixing bugs, keeping the app working on your device</td>
+              <td>The app, automatically</td>
+              <td>Understanding what works and fixing what doesn&apos;t</td>
+            </tr>
+            <tr>
+              <td>
+                Device identifiers — an install ID, a push-notification token,
+                and — only if you allow ad measurement — your device&apos;s
+                advertising identifier
+              </td>
+              <td>The app</td>
+              <td>
+                Sending notifications, analytics, and (with your permission) ad
+                measurement
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Crash reports — device model, OS and app version, and technical
+                error details. No screenshots and no BOQ content.
+              </td>
+              <td>The app, when it crashes</td>
+              <td>Fixing bugs</td>
+            </tr>
+            <tr>
+              <td>
+                How you found BOQ+ — on iPhone, Apple&apos;s ad attribution
+                token; on Android, the Google Play install referrer
+              </td>
+              <td>The app, on first launch</td>
+              <td>Knowing which campaign or link led to the install</td>
             </tr>
           </tbody>
         </table>
       </div>
       <p className="legal-callout">
-        We do <strong>not</strong> collect your card or bank details — payments
-        happen entirely inside the Play Store or App Store. We do not collect
-        your contacts, SMS, call logs, or precise location. We do not use your
-        data for advertising, and we do not sell it to anyone.
+        We do not collect your contacts, SMS, call logs, photos or precise
+        location. We never sell your data. We never send your BOQs, rates, firm
+        name or email to advertising companies.
       </p>
 
       <h3>A note on comparative statements</h3>
@@ -124,56 +155,117 @@ export default function PrivacyPage() {
         BOQs, rates, or track record.
       </p>
 
-      <h2>03 — Consent and legal basis</h2>
+      <h2>03 — Ad measurement</h2>
       <p>
-        We process your personal data on the basis of the consent you give when
-        you create an account and accept this policy, for the purposes listed
-        above and no others. Where the DPDP Act permits processing for certain
-        legitimate uses (Section 7) — for example, data you voluntarily provide
-        for a specified purpose, or compliance with law — we rely on that. You
-        may withdraw consent at any time by deleting your account (Section 06
-        below); withdrawal does not affect processing already done, and some
-        records (e.g., purchase records) may be retained where law requires.
+        We advertise BOQ+ on Meta (Facebook and Instagram) and may advertise on
+        Apple and Google. To know which ads bring people to BOQ+, and{" "}
+        <strong>only if you allow it</strong>, the app sends Meta a few events —
+        install/app open, BOQ uploaded, plans screen viewed, and purchases (with
+        the amount) — together with your device&apos;s advertising identifier.
       </p>
-
-      <h2>04 — Who we share data with</h2>
       <ul>
         <li>
-          <strong>Service providers (Data Processors):</strong> cloud hosting and
-          database providers, crash-reporting and analytics tooling — bound by
-          contract to process data only on our instructions.
+          <strong>iPhone:</strong> you choose in Apple&apos;s &ldquo;Allow
+          tracking&rdquo; prompt, and can change it any time in iOS Settings →
+          Privacy &amp; Security → Tracking.
         </li>
         <li>
-          <strong>Google / Apple:</strong> purchase processing and app
-          distribution, under their own privacy policies.
-        </li>
-        <li>
-          <strong>Authorities:</strong> where required by Indian law, court
-          order, or a lawful government request.
+          <strong>Android:</strong> you choose in our &ldquo;Allow ad
+          measurement&rdquo; prompt, which stays off until you answer, and can
+          change it any time in BOQ+ Settings.
         </li>
       </ul>
       <p>
-        We never share your BOQs, your entered rates, or your firm&apos;s track
-        record with other users or with third parties for their own use.
+        If you say no, nothing is sent to Meta for ad measurement and BOQ+ works
+        exactly the same. Separately, Apple&apos;s ad attribution (iPhone) and
+        the Google Play install referrer (Android) tell us which campaign led to
+        an install. They don&apos;t follow you across other apps.
       </p>
 
-      <h2>05 — Storage, security, and retention</h2>
+      <h2>04 — Consent and legal basis</h2>
       <p>
-        Data is stored on cloud infrastructure with encryption in transit and at
-        rest, access controls, and logging. We maintain reasonable security
-        safeguards as required by Section 8 of the DPDP Act; in the event of a
-        personal data breach we will notify the Data Protection Board of India
-        and affected users as the Act and its rules require.
-      </p>
-      <p>
-        We keep your data while your account is active. After account deletion,
-        personal data is erased or anonymised within 90 days, except records we
-        must keep under law (e.g., tax and purchase records). Market-index data
-        extracted from government-published comparative statements is retained in
-        de-identified form and is not linked to your account.
+        We process your personal data on the consent you give when you start
+        using BOQ+ and accept this policy, for the purposes above and no others.
+        Ad measurement has its own separate permission (Section 03). Where the
+        DPDP Act allows processing for legitimate uses (Section 7), such as data
+        you provide voluntarily for a specific purpose or compliance with law, we
+        rely on that. You can withdraw consent any time by switching off ad
+        measurement or deleting your account (Section 07); withdrawal
+        doesn&apos;t affect processing already done, and some records (e.g.
+        purchase records) may be kept where law requires.
       </p>
 
-      <h2>06 — Your rights under the DPDP Act</h2>
+      <h2>05 — Who we share data with</h2>
+      <p>
+        These companies process data for us, only for the purposes listed:
+      </p>
+      <ul>
+        <li>
+          <strong>Meta Platforms</strong> (Facebook SDK) — app events and
+          advertising identifier, <strong>only with your permission</strong> —
+          ad measurement.
+        </li>
+        <li>
+          <strong>OneSignal</strong> — your BOQ+ user ID and push token — sending
+          tender alerts and deadline reminders.
+        </li>
+        <li>
+          <strong>Sentry</strong> — crash reports — fixing crashes.
+        </li>
+        <li>
+          <strong>Google</strong> — Firebase / Google Analytics (usage
+          analytics), Google Sign-In, Google Play billing and install referrer.
+        </li>
+        <li>
+          <strong>Apple</strong> — Sign in with Apple, App Store purchases, ad
+          attribution.
+        </li>
+        <li>
+          <strong>Anthropic</strong> — when our parser can&apos;t read a BOQ
+          layout on its own, the column headers and a few sample rows are sent to
+          Anthropic&apos;s AI model to identify the columns. Anthropic does not
+          use this data to train its models.
+        </li>
+        <li>
+          <strong>TypeSafe</strong> (Jev) — when we fill rates, the descriptions
+          of some BOQ items are sent to TypeSafe&apos;s model to decide which
+          published tender items they match. Only the item descriptions are sent,
+          never your name, firm or rates.
+        </li>
+        <li>
+          <strong>Railway</strong> (servers and database) and{" "}
+          <strong>Cloudflare</strong> (storage for PDF reports you generate).
+        </li>
+        <li>
+          <strong>Authorities</strong> — where Indian law, a court order or a
+          lawful government request requires it.
+        </li>
+      </ul>
+      <p>
+        Some of these companies process data outside India, under contract, as
+        the DPDP Act permits. We never share your BOQs, rates or track record
+        with other users or with anyone for their own use.
+      </p>
+
+      <h2>06 — Storage, security and retention</h2>
+      <p>
+        Data is encrypted in transit and at rest, with access controls and
+        logging. We maintain reasonable security safeguards as Section 8 of the
+        DPDP Act requires, and will notify the Data Protection Board of India and
+        affected users of a personal data breach as the Act and its rules
+        require.
+      </p>
+      <p>
+        Uploaded BOQ files and comparative statements are deleted right after
+        they are read. Crash reports are kept for up to 90 days. We keep the rest
+        while your account is active. After account deletion, personal data is
+        erased or anonymised within 90 days, except records we must keep under
+        law (e.g. tax and purchase records). Market-index data from
+        government-published comparative statements is kept in de-identified
+        form and is not linked to your account.
+      </p>
+
+      <h2>07 — Your rights under the DPDP Act</h2>
       <ul>
         <li>
           <strong>Access:</strong> ask for a summary of the personal data we hold
@@ -187,11 +279,15 @@ export default function PrivacyPage() {
         <li>
           <strong>Account deletion:</strong> delete your account from the
           app&apos;s settings or by emailing us; this removes your BOQs, rates,
-          preferences, and profile as described in Section 05.
+          preferences, and profile as described in Section 06.
+        </li>
+        <li>
+          <strong>Ad measurement:</strong> switch it off any time — see Section
+          03.
         </li>
         <li>
           <strong>Grievance redressal:</strong> write to{" "}
-          <a href="mailto:support@boq.co.in">support@boq.co.in</a>; we aim to
+          <a href="mailto:akshay@boq.co.in">akshay@boq.co.in</a>; we aim to
           respond within 15 days. If you are not satisfied, you may complain to
           the <strong>Data Protection Board of India</strong>.
         </li>
@@ -201,13 +297,13 @@ export default function PrivacyPage() {
         </li>
       </ul>
 
-      <h2>07 — Children</h2>
+      <h2>08 — Children</h2>
       <p>
         BOQ+ is a business tool for contractors and is not directed at children.
         We do not knowingly process the data of anyone under 18.
       </p>
 
-      <h2>08 — Changes to this policy</h2>
+      <h2>09 — Changes to this policy</h2>
       <p>
         If we materially change this policy, we will notify you in the app before
         the change takes effect and update the date above. Continued use after
@@ -217,7 +313,7 @@ export default function PrivacyPage() {
       <p>
         <em>
           Questions? Write to{" "}
-          <a href="mailto:support@boq.co.in">support@boq.co.in</a>.
+          <a href="mailto:akshay@boq.co.in">akshay@boq.co.in</a>.
         </em>
       </p>
     </LegalShell>
