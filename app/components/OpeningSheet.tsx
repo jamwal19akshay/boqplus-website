@@ -1,5 +1,5 @@
 import StoreBadges from "./StoreBadges";
-import { MARKET_CAPTURE } from "@/lib/stats";
+import { DATA_STATS, MARKET_CAPTURE } from "@/lib/stats";
 import { PRICING } from "@/lib/pricing";
 
 export default function OpeningSheet() {
@@ -35,7 +35,7 @@ export default function OpeningSheet() {
           </p>
           <div className="opening-actions">
             <a href="#machine" className="seal-button">
-              UNSEAL {PRICING.freeBoqs} FREE BOQs <b>↘</b>
+              UNSEAL {PRICING.freeBoqPreviews} FREE BOQ PREVIEWS <b>↘</b>
             </a>
             <a href="#record" className="underlined">
               Examine the evidence
@@ -54,7 +54,7 @@ export default function OpeningSheet() {
         <div className="result-slip">
           <span>MARKET MEDIAN</span>
           <strong>&minus;{MARKET_CAPTURE.medianDiscount}</strong>
-          <small>BELOW ESTIMATE</small>
+          <small>BELOW ESTIMATE · JUL 2026</small>
         </div>
         <div className="result-stamp">
           PUBLISHED
@@ -65,18 +65,18 @@ export default function OpeningSheet() {
 
       <div className="hero-ledger">
         <div>
-          <span>COMPARATIVES READ</span>
-          <strong>{MARKET_CAPTURE.comparatives}</strong>
+          <span>QUOTED RATES ANALYSED</span>
+          <strong>{DATA_STATS.quotedRates}</strong>
         </div>
         <div>
-          <span>DECIDED VALUE</span>
-          <strong>{MARKET_CAPTURE.decidedValue}</strong>
+          <span>GOVT. TENDER RESULTS</span>
+          <strong>{DATA_STATS.tenderResults}</strong>
         </div>
         <div>
-          <span>AVG. BIDDERS</span>
-          <strong>{MARKET_CAPTURE.avgBidders}</strong>
+          <span>AS OF</span>
+          <strong>{DATA_STATS.asOf}</strong>
         </div>
-        <p>Numbers transcribed from the live Market Report. No invented counters.</p>
+        <p>Counted in the BOQ+ results database. No invented counters.</p>
       </div>
     </section>
   );

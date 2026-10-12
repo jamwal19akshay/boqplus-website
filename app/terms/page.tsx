@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import LegalShell from "../components/LegalShell";
 import { pageMetadata } from "@/lib/seo";
-import { PRICING } from "@/lib/pricing";
+import { FREE_TIER_SUMMARY, PRICING } from "@/lib/pricing";
 
 export const metadata: Metadata = pageMetadata({
   title: "Terms of Service — BOQ+",
@@ -64,8 +64,7 @@ export default function TermsPage() {
       <h2>03 — Plans, credits, and payment</h2>
       <ul>
         <li>
-          <strong>Free tier:</strong> {PRICING.freeBoqs} BOQs with rate books,
-          offline fill, and export. No card required. We may adjust what the free
+          <strong>Free tier:</strong> {FREE_TIER_SUMMARY}. No card required. We may adjust what the free
           tier includes for new users, but will not retroactively remove BOQs you
           have already created.
         </li>

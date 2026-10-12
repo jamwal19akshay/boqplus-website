@@ -7,7 +7,7 @@ export default function DispatchLine() {
       <span>●</span>
       <div>BIDIQ READS THE WINNING BAND</div>
       <span>●</span>
-      <div>YOUR FIRST {PRICING.freeBoqs} BOQs ARE FREE</div>
+      <div>{PRICING.freeBoqPreviews} FREE BOQ PREVIEWS + {PRICING.freeExports} EXPORTS</div>
       <span>●</span>
       <div aria-hidden="true">NEW TENDERS ENTER THE RECORD DAILY</div>
     </div>

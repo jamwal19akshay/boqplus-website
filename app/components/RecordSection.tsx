@@ -10,7 +10,7 @@ export default function RecordSection() {
 
       <div className="record-copy">
         <p className="kicker">THE GOVERNMENT ALREADY PUBLISHED THE ANSWER KEY.</p>
-        <h2>Forty-five thousand, five hundred and eighty-four decisions.</h2>
+        <h2>More than sixty-nine thousand decisions.</h2>
         <p className="big-deck">
           Not forecasts. Not &ldquo;AI confidence&rdquo;. Actual comparative
           statements&mdash;arranged so a contractor can use them before the next

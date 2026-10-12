@@ -1,3 +1,18 @@
+// Corpus counts from the production results database. Source:
+// boqplus-android-backend/docs/DATA_INVENTORY.md, read-only SELECTs on
+// 11 October 2026: rate_observations = 2,194,581 quoted line-item rates (one
+// bidder's rate for one BOQ item — never call them "bids"); 69,351 tenders
+// with published comparatives. Rounded down here.
+//
+// To refresh: run `select count(*) from rate_observations;` and
+// `select count(distinct tender_ref) from comparative_items;` against
+// production (read-only), round down, update the values and `asOf`.
+export const DATA_STATS = {
+  quotedRates: "2,190,000+",
+  tenderResults: "69,000+",
+  asOf: "11 Oct 2026",
+} as const;
+
 // Headline market figures, exactly as shown on the Market Intelligence Report
 // capture (public/screens/android/04-market-intelligence-report.png). The
 // landing page states these are read off that screen, so they must stay in

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import LegalShell from "../components/LegalShell";
 import { pageMetadata } from "@/lib/seo";
-import { PRICING } from "@/lib/pricing";
+import { FREE_TIER_SUMMARY, PRICING } from "@/lib/pricing";
 
 export const metadata: Metadata = pageMetadata({
   title: "Refund Policy — BOQ+",
@@ -27,8 +27,7 @@ export default function RefundPage() {
     >
       <h2>01 — Try before you pay</h2>
       <p>
-        The free tier — {PRICING.freeBoqs} BOQs, with rate books and offline fill
-        — exists so you can fully evaluate BOQ+ before paying anything. No card
+        The free tier — {FREE_TIER_SUMMARY} — exists so you can fully evaluate BOQ+ before paying anything. No card
         is needed. We encourage you to use it before buying a plan or credits.
       </p>
 

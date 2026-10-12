@@ -19,7 +19,7 @@ export default function ClosingSheet() {
       </h2>
       <p>Be on the right line of it.</p>
       <a href="#price" className="seal-button invert">
-        START WITH {PRICING.freeBoqs} FREE BOQs <b>↗</b>
+        START WITH {PRICING.freeBoqPreviews} FREE BOQ PREVIEWS <b>↗</b>
       </a>
       <div className="store-line">
         <StoreBadges />

@@ -1,4 +1,4 @@
-import { PRICING } from "@/lib/pricing";
+import { FREE_TIER_SUMMARY, PRICING } from "@/lib/pricing";
 
 export default function TariffSection() {
   return (
@@ -14,8 +14,8 @@ export default function TariffSection() {
           Not a transformation programme.
         </h2>
         <p>
-          Start with {PRICING.freeBoqs} files. Pay when BOQ+ earns a permanent
-          place in the van.
+          Start with {PRICING.freeBoqPreviews} free BOQ previews. Pay when BOQ+
+          earns a permanent place in the van.
         </p>
       </div>
 
@@ -26,8 +26,8 @@ export default function TariffSection() {
             <b>01</b>
           </div>
           <strong>₹0</strong>
-          <em>{PRICING.freeBoqs} BOQs</em>
-          <p>Open the first {PRICING.freeBoqs} files. No card.</p>
+          <em>{PRICING.freeBoqPreviews} BOQ previews</em>
+          <p>{FREE_TIER_SUMMARY}. No card.</p>
           <a href="#final">
             ISSUE THIS FILE <b>→</b>
           </a>
@@ -71,8 +71,7 @@ export default function TariffSection() {
           <strong>{PRICING.credits}</strong>
           <em>{PRICING.creditBoqs} BOQs</em>
           <p>
-            For the occasional bidder. {PRICING.creditValidityMonths}-month
-            validity.
+            For one-off bids. {PRICING.creditValidityMonths}-month validity.
           </p>
           <a href="#final">
             ISSUE THIS FILE <b>→</b>
@@ -85,8 +84,9 @@ export default function TariffSection() {
         introductory price is open to everyone, not a limited number of seats;
         it applies to your first year and renews at {PRICING.annualStandard} a
         year thereafter. Credits lapse{" "}
-        {PRICING.creditValidityMonths} months after purchase. All prices include
-        applicable taxes unless the store states otherwise.
+        {PRICING.creditValidityMonths} months after purchase. All purchases
+        happen in the app, through the App Store or Google Play. All prices
+        include applicable taxes unless the store states otherwise.
       </p>
     </section>
   );

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import LegalShell from "../components/LegalShell";
 import { pageMetadata } from "@/lib/seo";
 import { JsonLd, faqPage } from "@/lib/jsonld";
-import { PRICING } from "@/lib/pricing";
+import { FREE_TIER_SUMMARY, PRICING } from "@/lib/pricing";
 
 export const metadata: Metadata = pageMetadata({
   title: "FAQ — BOQ+",
@@ -83,6 +83,18 @@ const faqs: { q: string; a: React.ReactNode }[] = [
     ),
   },
   {
+    q: "What can I use for free, and what do plans cost?",
+    a: (
+      <>
+        Free: {FREE_TIER_SUMMARY}. No card needed. Plans: Quarterly{" "}
+        {PRICING.quarterly}; Annual {PRICING.annualIntro} for the first year,
+        then {PRICING.annualStandard} a year; or {PRICING.credits} for{" "}
+        {PRICING.creditBoqs} BOQs, for one-off bids. All purchases happen in the
+        app, through the App Store or Google Play.
+      </>
+    ),
+  },
+  {
     q: "What does the annual plan cost after the first year?",
     a: (
       <>
@@ -98,7 +110,8 @@ const faqs: { q: string; a: React.ReactNode }[] = [
     q: "What happens when my credits expire?",
     a: (
       <>
-        Credits ({PRICING.credits} for {PRICING.creditBoqs} BOQs) are valid for{" "}
+        Credits ({PRICING.credits} for {PRICING.creditBoqs} BOQs, for one-off
+        bids) are valid for{" "}
         {PRICING.creditValidityMonths} months from purchase — this is stated at
         purchase and on the pricing section, not hidden. Unused credits lapse
         after {PRICING.creditValidityMonths} months. A completely unused pack can
@@ -111,7 +124,8 @@ const faqs: { q: string; a: React.ReactNode }[] = [
     q: "Will money be deducted automatically?",
     a: (
       <>
-        The free tier needs no card at all. If you buy a subscription, it renews
+        The free tier needs no card at all. If you buy a subscription — all
+        purchases happen in the app — it renews
         through your Play Store / App Store account until you cancel —
         cancellation is in the store&apos;s subscription settings and takes two
         taps. We never hold your card details.

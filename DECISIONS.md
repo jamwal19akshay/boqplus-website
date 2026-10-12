@@ -1,5 +1,35 @@
 # Decisions Log
 
+## 2026-10-13 — content release 2: app 3.0.0 free tier, prices, accurate data figures
+
+Branch `content/release-2`, stacked on `content/release-1`. Content only, with no
+layout or design changes. It deploys only after the founder confirms 3.0.0 is
+live on both stores.
+
+**Legal — for lawyer review:**
+- **Terms (§03, "Free tier" bullet): free-tier wording updated — for lawyer review.**
+- **Refund (§01 "Try before you pay"): free-tier wording updated — for lawyer review.**
+
+Both sentences now read `FREE_TIER_SUMMARY` in `lib/pricing.ts`: 3 BOQ previews
+and 3 exports, plus calculators, SSR rate books and tender alerts. Nothing else
+in either page changed, including the "last updated" dates.
+
+**Free tier everywhere:** `PRICING.freeBoqs` (2) is replaced by `freeBoqPreviews`
+(3) and `freeExports` (3). The hero, dispatch line, machine, tariff and closing
+CTAs, and the FAQ, all read from it. No "2 free BOQs" text remains.
+
+**Prices:** unchanged in value (Quarterly ₹3,999; Annual ₹7,999 then ₹11,999;
+₹999 for 5 BOQs). Credits are now described as "for one-off bids". "All
+purchases happen in the app" is added to the tariff note and the FAQ.
+
+**Data figures:**
+- The hero ledger used to show July Market Report figures as "live". It now shows
+  counts measured on 11 Oct 2026 (`DATA_STATS` in `lib/stats.ts`): 2,190,000+
+  quoted rates analysed and 69,000+ government tender results. Source:
+  `boqplus-android-backend/docs/DATA_INVENTORY.md`.
+- The record-section headline is now "More than sixty-nine thousand decisions."
+  The figures that describe the July Market Report screenshot (−9.2% median, the
+  45,584 in its alt text) stay, dated "Jul 2026".
 ## 2026-10-13 — content release 1: privacy operator, store links, blog, search metadata
 
 Branch `content/release-1`, cut from `main`. The current design is kept: content

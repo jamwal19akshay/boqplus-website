@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { MARKET_CAPTURE } from "@/lib/stats";
+import { DATA_STATS } from "@/lib/stats";
 import { PRICING } from "@/lib/pricing";
 
 const PLATES = [
@@ -14,7 +14,7 @@ const PLATES = [
   {
     label: "Read the market",
     image: "market-report.png",
-    note: `${MARKET_CAPTURE.comparatives} comparatives`,
+    note: `${DATA_STATS.tenderResults} tender results`,
     copy: "See the centre of the market before you decide where to stand: winning bands, competition and bidder behaviour.",
   },
   {
@@ -93,7 +93,7 @@ export default function MachineSection() {
             <strong>{plate.note}</strong>
           </div>
           <a href="#price">
-            Open {PRICING.freeBoqs} files free <b>↗</b>
+            Preview {PRICING.freeBoqPreviews} BOQs free <b>↗</b>
           </a>
         </div>
 
