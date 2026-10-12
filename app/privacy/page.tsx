@@ -4,7 +4,7 @@ import LegalShell from "../components/LegalShell";
 export const metadata: Metadata = {
   title: "Privacy Policy — BOQ+",
   description:
-    "How BOQ+ (operated by Akshay Jamwal) collects, uses, shares and protects your data under India's DPDP Act, 2023.",
+    "How BOQ+ by Verkzo (operated by Akshay Pratap Singh Jamwal) collects, uses, shares and protects your data under India's DPDP Act, 2023.",
 };
 
 export default function PrivacyPage() {
@@ -24,7 +24,8 @@ export default function PrivacyPage() {
     >
       <h2>01 — Who we are</h2>
       <p>
-        BOQ+ is operated by Akshay Jamwal (&ldquo;we&rdquo;, &ldquo;us&rdquo;).
+        BOQ+ by Verkzo, operated by Akshay Pratap Singh Jamwal (&ldquo;we&rdquo;,
+        &ldquo;us&rdquo;).
         For the DPDP Act, we are the <strong>Data Fiduciary</strong> for the
         personal data described here and you are the{" "}
         <strong>Data Principal</strong>. For anything in this policy, including

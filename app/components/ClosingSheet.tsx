@@ -23,7 +23,7 @@ export default function ClosingSheet() {
       </a>
       <div className="store-line">
         <StoreBadges />
-        <small>ANDROID LISTING COMING SOON</small>
+        <small>ON ANDROID AND IPHONE</small>
       </div>
     </section>
   );

@@ -1,22 +1,20 @@
-// Store listing URLs.
+// Store listing URLs, both carrying campaign parameters so installs that start
+// on boq.co.in are attributable. The website itself runs no tracking scripts;
+// attribution happens entirely inside the stores' own consoles.
 //
-// iOS is LIVE. Verified 7 August 2026 against Apple's own lookup API
-// (itunes.apple.com/lookup?id=6760415552): trackName "BOQ+", seller Akshay
-// Jamwal, version 2.3.0, first released 2026-04-24. Its bundleId
-// (com.verkzo.boq) matches public/.well-known/apple-app-site-association, so
-// this is definitely the right listing. The region-less form is used
-// deliberately — Apple redirects each visitor to their own storefront, which
-// matters for a product sold to Indian contractors but linked to from
-// anywhere.
-export const APP_STORE_URL = "https://apps.apple.com/app/id6760415552";
+// iOS: Apple ID 6760415552, bundle com.verkzo.boq (matches
+// public/.well-known/apple-app-site-association). Link generated with App Store
+// Connect → Analytics → Campaigns → "Generate a Campaign Link" on 13 October
+// 2026: `pt` is the provider token of the publishing account, `ct` names the
+// campaign. Installs show under Analytics → Campaigns once at least five Apple
+// Accounts have installed through it.
+export const APP_STORE_URL =
+  "https://apps.apple.com/app/apple-store/id6760415552?pt=128575647&ct=website-home&mt=8";
 
-// Android is NOT live yet: the canonical URL for the package named in
-// public/.well-known/assetlinks.json —
-// play.google.com/store/apps/details?id=com.verkzo.boq — returns 404 in both
-// the default and Indian storefronts as of 7 August 2026.
-//
-// When the listing goes live, set PLAY_STORE_URL to that canonical URL and
-// flip PLAY_STORE_LIVE to true; the badge stops being a dimmed
-// "coming soon" placeholder and becomes a real link. Nothing else changes.
-export const PLAY_STORE_URL = "#play-store-coming-soon";
-export const PLAY_STORE_LIVE = false;
+// Android: the listing for com.verkzo.boq is public (open testing, open to
+// anyone) — verified 13 October 2026, title "BOQ+ — Fill Your Tender BOQ On
+// Your Phone". `referrer` is the URL-encoded UTM string Play passes to the
+// Install Referrer API and shows in Play Console's acquisition reports.
+export const PLAY_STORE_URL =
+  "https://play.google.com/store/apps/details?id=com.verkzo.boq&referrer=utm_source%3Dwebsite%26utm_medium%3Dorganic%26utm_campaign%3Dhome";
+export const PLAY_STORE_LIVE = true;
