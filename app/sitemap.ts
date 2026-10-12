@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { getPosts } from "@/lib/blog";
 
 const BASE_URL = "https://boq.co.in";
 
@@ -12,6 +13,7 @@ const routes: {
   priority: number;
 }[] = [
   { path: "/", changeFrequency: "weekly", priority: 1 },
+  { path: "/blog", changeFrequency: "weekly", priority: 0.8 },
   { path: "/faq", changeFrequency: "monthly", priority: 0.7 },
   { path: "/support", changeFrequency: "monthly", priority: 0.7 },
   { path: "/privacy", changeFrequency: "yearly", priority: 0.3 },
@@ -20,11 +22,20 @@ const routes: {
   { path: "/refund", changeFrequency: "yearly", priority: 0.3 },
 ];
 
+// /test-files is deliberately absent: it is a noindex tester handout.
 export default function sitemap(): MetadataRoute.Sitemap {
-  return routes.map(({ path, changeFrequency, priority }) => ({
+  const pages = routes.map(({ path, changeFrequency, priority }) => ({
     url: `${BASE_URL}${path}`,
     lastModified: LAST_MODIFIED,
     changeFrequency,
     priority,
   }));
+  // Published articles only — drafts never reach getPosts().
+  const articles = getPosts().map((p) => ({
+    url: `${BASE_URL}/blog/${p.slug}`,
+    lastModified: p.updated ?? p.date,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+  return [...pages, ...articles];
 }

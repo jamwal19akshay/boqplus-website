@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import LegalShell from "../components/LegalShell";
+import { pageMetadata } from "@/lib/seo";
 import { PRICING } from "@/lib/pricing";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Terms of Service — BOQ+",
-  description: "The terms that govern your use of the BOQ+ app and boq.co.in.",
-};
+  description:
+    "The terms that govern your use of the BOQ+ app and boq.co.in: plans, credits, payment, acceptable use and governing law.",
+  path: "/terms",
+});
 
 export default function TermsPage() {
   return (

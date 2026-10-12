@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import LegalShell from "../components/LegalShell";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Privacy Policy — BOQ+",
   description:
     "How BOQ+ by Verkzo (operated by Akshay Pratap Singh Jamwal) collects, uses, shares and protects your data under India's DPDP Act, 2023.",
-};
+  path: "/privacy",
+});
 
 export default function PrivacyPage() {
   return (

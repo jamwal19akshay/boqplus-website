@@ -10,6 +10,7 @@ const INDEX = [
   { n: "02", label: "The field machine", href: "/#machine" },
   { n: "03", label: "The tender wire", href: "/#wire" },
   { n: "04", label: "The tariff", href: "/#price" },
+  { n: "05", label: "Blog", href: "/blog" },
 ];
 
 export default function Masthead() {
@@ -25,15 +26,20 @@ export default function Masthead() {
         <span>GOVT. TENDER OPERATING SYSTEM</span>
         <b>IND / 2026</b>
       </div>
-      <button
-        className="menu-button"
-        type="button"
-        aria-expanded={open}
-        onClick={() => setOpen((v) => !v)}
-      >
-        <span>{open ? "CLOSE" : "INDEX"}</span>
-        <b>{open ? "×" : "+"}</b>
-      </button>
+      <div className="masthead-actions">
+        <Link href="/blog" className="masthead-link">
+          BLOG
+        </Link>
+        <button
+          className="menu-button"
+          type="button"
+          aria-expanded={open}
+          onClick={() => setOpen((v) => !v)}
+        >
+          <span>{open ? "CLOSE" : "INDEX"}</span>
+          <b>{open ? "×" : "+"}</b>
+        </button>
+      </div>
       <nav className={`file-index${open ? " open" : ""}`} aria-label="Page index">
         {INDEX.map((item) => (
           <Link key={item.n} href={item.href} onClick={() => setOpen(false)}>

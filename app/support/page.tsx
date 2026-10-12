@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import LegalShell from "../components/LegalShell";
+import { pageMetadata } from "@/lib/seo";
 import QaList, { Qa } from "./QaList";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Support — BOQ+",
-  description: "How-to answers and support contact for BOQ+.",
-};
+  description:
+    "How-to answers for BOQ+: uploading BOQs, supported file formats, rate suggestions, tender results and cancelling a subscription — and how to reach a person.",
+  path: "/support",
+});
 
 const items: Qa[] = [
   {

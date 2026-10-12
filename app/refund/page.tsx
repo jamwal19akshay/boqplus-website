@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import LegalShell from "../components/LegalShell";
+import { pageMetadata } from "@/lib/seo";
 import { PRICING } from "@/lib/pricing";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Refund Policy — BOQ+",
   description:
     "Refund and cancellation terms for BOQ+ subscriptions and credit packs.",
-};
+  path: "/refund",
+});
 
 export default function RefundPage() {
   return (

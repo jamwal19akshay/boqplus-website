@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
 import LegalShell from "../components/LegalShell";
+import { pageMetadata } from "@/lib/seo";
+import { JsonLd, faqPage } from "@/lib/jsonld";
 import { PRICING } from "@/lib/pricing";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "FAQ — BOQ+",
   description:
     "Straight answers for government tender contractors: data safety, portals supported, credits, refunds, and how BOQ+ works.",
-};
+  path: "/faq",
+});
 
 const faqs: { q: string; a: React.ReactNode }[] = [
   {
@@ -162,6 +165,7 @@ export default function FaqPage() {
         </p>
       }
     >
+      <JsonLd data={faqPage(faqs)} />
       {faqs.map((f, i) => (
         <section key={f.q}>
           <h2>

@@ -1,5 +1,43 @@
 # Decisions Log
 
+## 2026-10-13 — content release 1: privacy operator, store links, blog, search metadata
+
+Branch `content/release-1`, cut from `main`. The current design is kept: content
+and metadata only, plus the minimum markup the blog needs.
+
+- **Privacy:** the operator line now reads "BOQ+ by Verkzo, operated by Akshay
+  Pratap Singh Jamwal", in the policy and its meta description.
+- **Store links (`lib/links.ts`):**
+  - App Store links use `pt=128575647` with a `ct` per placement. Home is `website-home`;
+    each article is `blog-<campaign>`.
+  - **Apple caps `ct` at 30 characters.** App Store Connect's generator truncates
+    anything longer, which is why each article carries a short `campaign` code in
+    its frontmatter. The build fails if `blog-<campaign>` is longer than 30.
+  - Play links use the `utm_source=website|blog` referrer, with `utm_campaign` set
+    to `home` or the article slug. The Play badge is live and "coming soon" is gone.
+- **Blog:**
+  - Articles are Markdown files in `content/blog/` with frontmatter: title,
+    description, date, author, topic, reviewBy, campaign and sources.
+  - `lib/markdown.tsx` renders them to React elements, never raw HTML.
+  - Pages live at `/blog` and `/blog/<slug>`, built statically and styled with
+    the legal-page shell.
+  - Each article ends with one call to action, "Price your next BOQ with BOQ+".
+  - A visible BLOG link sits in the masthead, and Blog is in the footer, on
+    every page.
+- **Search:**
+  - `pageMetadata()` in `lib/seo.ts` gives every page a unique title and
+    description, a canonical URL and OG/Twitter cards.
+  - Share images are generated at build time (`lib/og.tsx`, in the dossier style).
+  - The sitemap includes `/blog` and published articles. `/test-files` stays
+    noindex and out of the sitemap.
+  - JSON-LD: Organization (Verkzo, brand BOQ+) and MobileApplication (with
+    prices only) on the home page, Article on posts, FAQPage on `/faq`.
+  - None of this tracks visitors.
+- **Search Console:** the DNS has two google-site-verification TXT records, but
+  akshayabbu1@gmail.com has no access to either `sc-domain:boq.co.in` or
+  `https://boq.co.in/`. The sitemap is not submitted yet; that needs the owning
+  account.
+
 ## 2026-09-11 — /test-files: sample BOQs for Play closed testers
 
 **What:** a public, no-login page at `/test-files` (`app/test-files/page.tsx`,

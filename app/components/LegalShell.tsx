@@ -6,12 +6,14 @@ export default function LegalShell({
   title,
   updated,
   intro,
+  clearance = ["BOQ+ / OFFICIAL RECORD", "PLAIN LANGUAGE, NO ASTERISKS"],
   children,
 }: {
   fileNo: string;
   title: string;
   updated: string;
   intro?: React.ReactNode;
+  clearance?: [string, string];
   children: React.ReactNode;
 }) {
   return (
@@ -29,8 +31,8 @@ export default function LegalShell({
         </aside>
         <div className="legal-head-main">
           <div className="legal-clearance">
-            <span>BOQ+ / OFFICIAL RECORD</span>
-            <i>PLAIN LANGUAGE, NO ASTERISKS</i>
+            <span>{clearance[0]}</span>
+            <i>{clearance[1]}</i>
           </div>
           <h1>{title}</h1>
           {intro && <div className="legal-intro">{intro}</div>}

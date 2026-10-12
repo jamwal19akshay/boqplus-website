@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import LegalShell from "../components/LegalShell";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Delete Your Account — BOQ+",
   description:
     "How to delete your BOQ+ account and data — from the app's settings, or by emailing akshay@boq.co.in.",
-};
+  path: "/delete-account",
+});
 
 export default function DeleteAccountPage() {
   return (

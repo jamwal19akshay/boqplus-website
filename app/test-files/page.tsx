@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import LegalShell from "../components/LegalShell";
+import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Closed Testing — Sample BOQ Files — BOQ+",
-  description:
-    "Sample BOQ files for BOQ+ closed testers: download one, open BOQ+ and test the workflow.",
+  ...pageMetadata({
+    title: "Closed Testing — Sample BOQ Files — BOQ+",
+    description:
+      "Sample BOQ files for BOQ+ closed testers: download one, open BOQ+ and test the workflow.",
+    path: "/test-files",
+  }),
   // Public so testers can open the link without signing in, but it is a
   // tester handout, not a page we want in search results.
   robots: { index: false, follow: false },

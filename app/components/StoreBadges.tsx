@@ -8,12 +8,23 @@ import { APP_STORE_URL, PLAY_STORE_LIVE, PLAY_STORE_URL } from "@/lib/links";
 // canvas (content is 564x168). The negative inline margin in .badge-play
 // cancels that horizontal padding so the two badges line up on their actual
 // edges; the sizes are chosen so both render at ~46px of visible badge height.
-export default function StoreBadges({ className }: { className?: string }) {
+//
+// Pass `appStoreUrl` / `playStoreUrl` to tag a placement with its own
+// campaign (e.g. each blog article); the defaults are the home-page links.
+export default function StoreBadges({
+  className,
+  appStoreUrl = APP_STORE_URL,
+  playStoreUrl = PLAY_STORE_URL,
+}: {
+  className?: string;
+  appStoreUrl?: string;
+  playStoreUrl?: string;
+}) {
   return (
     <div className={className ? `store-badges ${className}` : "store-badges"}>
       <a
         className="store-badge"
-        href={APP_STORE_URL}
+        href={appStoreUrl}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Download BOQ+ on the App Store"
@@ -30,7 +41,7 @@ export default function StoreBadges({ className }: { className?: string }) {
 
       <a
         className={PLAY_STORE_LIVE ? "store-badge" : "store-badge is-soon"}
-        href={PLAY_STORE_URL}
+        href={playStoreUrl}
         aria-label={
           PLAY_STORE_LIVE
             ? "Get BOQ+ on Google Play"

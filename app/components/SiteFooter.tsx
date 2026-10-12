@@ -7,6 +7,7 @@ export default function SiteFooter() {
       <img src="/brand/logo-full-dark.svg" alt="BOQ+" width={115} height={36} />
       <p>Made in India for the people who build India.</p>
       <nav>
+        <Link href="/blog">Blog</Link>
         <Link href="/privacy">Privacy</Link>
         <Link href="/terms">Terms</Link>
         <Link href="/refund">Refund</Link>

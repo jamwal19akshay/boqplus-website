@@ -39,13 +39,8 @@ export const metadata: Metadata = {
     "comparative statement",
     "contractor app India",
   ],
-  openGraph: {
-    title: "BOQ+ — The bid is won before the portal opens",
-    description:
-      "BOQ+ reads the comparative statements published on GePNIC and state e-procurement portals and shows the winning discount band, item by item, while you price your BOQ on your phone.",
-    url: "https://boq.co.in",
-    type: "website",
-  },
+  // Per-page title, description, canonical URL and share cards come from
+  // pageMetadata() in lib/seo.ts; these are only the fallbacks.
 };
 
 export default function RootLayout({
