@@ -260,10 +260,10 @@
   position: absolute;
   display: flex;
   align-items: center;
-  width: 104px;
 }
 .line {
-  flex: 1 1 auto;
+  flex: none;
+  width: 36px;
   height: 1px;
   background: #2e3d57;
 }
@@ -280,7 +280,7 @@
 }
 .left .txt {
   flex: none;
-  max-width: 78px;
+  white-space: nowrap;
   text-align: right;
   padding-right: 8px;
 }
@@ -290,15 +290,11 @@
 }
 .right .txt {
   flex: none;
-  max-width: 78px;
+  white-space: nowrap;
   padding-left: 8px;
 }
 @media (min-width: 1280px) {
-  .callout {
-    width: 160px;
-  }
-  .left .txt,
-  .right .txt {
-    max-width: 110px;
+  .line {
+    width: 64px;
   }
 }

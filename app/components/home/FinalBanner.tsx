@@ -5,7 +5,7 @@ export default function FinalBanner() {
   return (
     <section id="download" className="bg-amber py-[72px] md:py-24">
       <div className="mx-auto max-w-site px-4 text-center sm:px-6">
-        <h2 className="mx-auto max-w-3xl text-[32px] font-semibold leading-tight text-navy-950 md:text-[52px]">
+        <h2 className="mx-auto max-w-4xl text-[32px] font-semibold leading-tight text-navy-950 md:text-[52px]">
           Price your next tender with BOQ+
         </h2>
         <p className="mt-4 text-lg text-navy-900">

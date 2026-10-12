@@ -11,7 +11,7 @@ const NAV = [
 
 export default function SiteHeader() {
   return (
-    <header className="sticky top-0 z-50 border-b border-navy-800/80 bg-navy-950/95 backdrop-blur supports-[backdrop-filter]:bg-navy-950/80">
+    <header className="sticky top-0 z-50 border-b border-navy-800 bg-navy-950">
       <div className="mx-auto flex h-16 max-w-site items-center justify-between gap-6 px-4 sm:px-6">
         <Link href="/" aria-label="BOQ+ home" className="flex shrink-0 items-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}

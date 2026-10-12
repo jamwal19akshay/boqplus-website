@@ -16,7 +16,7 @@ const FEATURES: Feature[] = [
     title: "Fill rates from real rate books",
     body: "Choose CPWD DSR, MES SSR or your state's SOR, and BOQ+ matches each item and fills in its rate. Market rates from tender results fill the gaps. Every rate stays yours to check and change.",
     src: "/screens/ios/boq-filled.png",
-    alt: "BOQ+ app showing a priced bill of quantities for a street light installation, with quantity, rate and amount for each item and a Start Pricing button.",
+    alt: "BOQ+ app showing a priced bill of quantities for a street light installation, with quantity, rate and amount for each item.",
     caption: "Real app screen · sample BOQ",
   },
   {
@@ -81,14 +81,18 @@ export default function Features() {
                   i % 2 === 1 ? "md:order-1" : ""
                 }`}
               >
-                <Image
-                  src={f.src}
-                  alt={f.alt}
-                  width={720}
-                  height={1564}
-                  sizes="(min-width: 1024px) 300px, 70vw"
-                  className="h-auto w-[70vw] max-w-[300px] rounded-[28px] border border-navy-800 shadow-lg"
-                />
+                {/* Shows the top of the phone screen, where the content is;
+                    the empty lower part of each capture is cropped away. */}
+                <div className="relative aspect-[720/1000] w-[70vw] max-w-[300px] overflow-hidden rounded-[28px] border border-navy-800 shadow-lg">
+                  <Image
+                    src={f.src}
+                    alt={f.alt}
+                    width={720}
+                    height={1564}
+                    sizes="(min-width: 1024px) 300px, 70vw"
+                    className="absolute inset-x-0 top-0 h-auto w-full"
+                  />
+                </div>
                 <figcaption className="mt-5 text-[13px] text-slate-600">
                   {f.caption}
                 </figcaption>
