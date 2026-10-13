@@ -22,7 +22,8 @@ const routes: {
   { path: "/refund", changeFrequency: "yearly", priority: 0.3 },
 ];
 
-// /test-files is deliberately absent: it is a noindex tester handout.
+// /test-files is deliberately absent: it is a noindex tester handout. So is
+// /app, a noindex device redirect for social bio links.
 export default function sitemap(): MetadataRoute.Sitemap {
   const pages = routes.map(({ path, changeFrequency, priority }) => ({
     url: `${BASE_URL}${path}`,
