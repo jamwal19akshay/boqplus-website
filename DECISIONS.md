@@ -3,8 +3,9 @@
 ## 2026-10-13 — content release 2: app 3.0.0 free tier, prices, accurate data figures
 
 Branch `content/release-2`, stacked on `content/release-1`. Content only, with no
-layout or design changes. It deploys only after the founder confirms 3.0.0 is
-live on both stores.
+layout or design changes. It deploys when the founder says "submitting 3.0.0",
+just before both store builds are submitted, so App Review sees the website,
+Terms, Refund and FAQ matching the new free tier and prices.
 
 **Legal — for lawyer review:**
 - **Terms (§03, "Free tier" bullet): free-tier wording updated — for lawyer review.**
