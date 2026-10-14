@@ -234,12 +234,6 @@ export default function PrivacyPage() {
           use this data to train its models.
         </li>
         <li>
-          <strong>TypeSafe</strong> (Jev) — when we fill rates, the descriptions
-          of some BOQ items are sent to TypeSafe&apos;s model to decide which
-          published tender items they match. Only the item descriptions are sent,
-          never your name, firm or rates.
-        </li>
-        <li>
           <strong>Railway</strong> (servers and database) and{" "}
           <strong>Cloudflare</strong> (storage for PDF reports you generate).
         </li>
