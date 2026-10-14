@@ -14,7 +14,7 @@ export default function PrivacyPage() {
     <LegalShell
       fileNo="P-01"
       title="Privacy Policy"
-      updated="13 OCTOBER 2026"
+      updated="15 OCTOBER 2026"
       intro={
         <p>
           This policy explains, in plain language, what the BOQ+ app (Android
@@ -130,9 +130,9 @@ export default function PrivacyPage() {
               <td>Preventing abuse of the free tier</td>
             </tr>
             <tr>
-              <td>Text you type into tender search or city search</td>
+              <td>Text you type into tender, city or price search</td>
               <td>You, in the app</td>
-              <td>Showing matching tenders and cities</td>
+              <td>Showing matching tenders, cities and prices</td>
             </tr>
             <tr>
               <td>
@@ -224,8 +224,8 @@ export default function PrivacyPage() {
           ad measurement.
         </li>
         <li>
-          <strong>OneSignal</strong> — your BOQ+ user ID and push token — sending
-          tender alerts and deadline reminders.
+          <strong>OneSignal</strong> — your BOQ+ user ID, push token and plan
+          type — sending tender alerts and deadline reminders.
         </li>
         <li>
           <strong>Sentry</strong> — crash reports — fixing crashes.
@@ -263,8 +263,8 @@ export default function PrivacyPage() {
 
       <h2>06 — Storage, security and retention</h2>
       <p>
-        Data is encrypted in transit and at rest, with access controls and
-        logging. We maintain reasonable security safeguards as Section 8 of the
+        Data is encrypted in transit, and encrypted at rest on our servers, with
+        access controls and logging. We maintain reasonable security safeguards as Section 8 of the
         DPDP Act requires, and will notify the Data Protection Board of India and
         affected users of a personal data breach as the Act and its rules
         require.
