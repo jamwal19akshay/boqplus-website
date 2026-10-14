@@ -123,6 +123,19 @@ export default function PrivacyPage() {
             </tr>
             <tr>
               <td>
+                Device checks — on iPhone, an Apple DeviceCheck token; on
+                Android, the Android ID and a Google Play Integrity check
+              </td>
+              <td>The app, when you upload or export a BOQ</td>
+              <td>Preventing abuse of the free tier</td>
+            </tr>
+            <tr>
+              <td>Text you type into tender search or city search</td>
+              <td>You, in the app</td>
+              <td>Showing matching tenders and cities</td>
+            </tr>
+            <tr>
+              <td>
                 Crash reports — device model, OS and app version, and technical
                 error details. No screenshots and no BOQ content.
               </td>
