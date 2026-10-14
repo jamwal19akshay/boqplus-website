@@ -76,13 +76,8 @@ export default function RefundPage() {
       </h2>
       <ul>
         <li>
-          <strong>Validity:</strong> credits are valid for{" "}
-          <strong>
-            {PRICING.creditValidityMonths} months from the date of purchase
-          </strong>
-          . This is disclosed at the point of purchase, in the app, and on our
-          pricing section. Credits unused after{" "}
-          {PRICING.creditValidityMonths} months lapse and are not refundable.
+          <strong>Validity:</strong> credits <strong>never expire</strong>.
+          Unused credits stay on your account until you use them.
         </li>
         <li>
           <strong>Unused packs:</strong> if you have used <strong>none</strong>{" "}

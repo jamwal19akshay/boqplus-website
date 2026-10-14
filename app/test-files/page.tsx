@@ -44,7 +44,7 @@ const SAMPLES = [
     items: "104 items",
     size: "300 KB",
     description:
-      "A bigger public item-rate tender — electrical sub-station and HT/LT line work in 8 sections. Use it to try search, scrolling, pricing many lines, BidIQ and Market Analysis on a realistic-size BOQ.",
+      "A bigger public item-rate tender — electrical sub-station and HT/LT line work in 8 sections. Use it to try search, scrolling, pricing many lines and BidIQ on a realistic-size BOQ.",
   },
 ];
 
@@ -94,9 +94,6 @@ export default function TestFilesPage() {
         </li>
         <li>
           Open <strong>BidIQ</strong>
-        </li>
-        <li>
-          Open <strong>Market Analysis</strong>
         </li>
         <li>Save and reopen the BOQ</li>
         <li>Browse tenders and set tender preferences</li>

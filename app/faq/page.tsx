@@ -107,15 +107,13 @@ const faqs: { q: string; a: React.ReactNode }[] = [
     ),
   },
   {
-    q: "What happens when my credits expire?",
+    q: "Do credits expire?",
     a: (
       <>
-        Credits ({PRICING.credits} for {PRICING.creditBoqs} BOQs, for one-off
-        bids) are valid for{" "}
-        {PRICING.creditValidityMonths} months from purchase — this is stated at
-        purchase and on the pricing section, not hidden. Unused credits lapse
-        after {PRICING.creditValidityMonths} months. A completely unused pack can
-        be refunded within 7 days of purchase; see the{" "}
+        No. Credits ({PRICING.credits} for {PRICING.creditBoqs} BOQs, for
+        one-off bids) never expire — use them whenever you need them. A
+        completely unused pack can be refunded within 7 days of purchase; see
+        the{" "}
         <a href="/refund">Refund Policy</a>.
       </>
     ),

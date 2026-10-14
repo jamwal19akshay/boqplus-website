@@ -393,3 +393,6 @@ before publish.**
 - OG share image
 - Lawyer review of Privacy / Terms / Refund
 - Verify hero stats endpoint numbers against prod before publicising
+
+## 2026-10-15 — Credits never expire (supersedes the 12-month credit expiry above)
+Founder: "Credits no longer expire (Apple rule)". App Store guideline 3.1.1 says credits bought by in-app purchase may not expire. Terms, Refund, FAQ and pricing now say credits never expire. The apps and the backend get the same change. Also removed the last "Market Analysis" mentions from the test-files page, because BidIQ is now the single report.

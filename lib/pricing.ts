@@ -23,7 +23,6 @@ export const PRICING = {
 
   credits: "₹999",
   creditBoqs: 5,
-  creditValidityMonths: 12,
 } as const;
 
 // The free tier in one phrase, for places that describe it in a sentence.

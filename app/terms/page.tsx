@@ -88,9 +88,8 @@ export default function TermsPage() {
         <li>
           <strong>Credits:</strong> {PRICING.credits} buys{" "}
           {PRICING.creditBoqs} BOQ credits, each good for one full BOQ + BidIQ
-          run. Credits are valid for {PRICING.creditValidityMonths} months from
-          purchase, are consumed when a run is generated, and are
-          non-transferable.
+          run. Credits never expire, are consumed when a run is generated, and
+          are non-transferable.
         </li>
         <li>
           All prices include applicable taxes unless the store states otherwise.

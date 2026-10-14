@@ -74,7 +74,7 @@ export default function TariffSection() {
           <strong>{PRICING.credits}</strong>
           <em>{PRICING.creditBoqs} BOQs</em>
           <p>
-            For one-off bids. {PRICING.creditValidityMonths}-month validity.
+            For one-off bids. Credits never expire.
           </p>
           <a href="#final">
             ISSUE THIS FILE <b>→</b>
@@ -86,8 +86,7 @@ export default function TariffSection() {
         Same figures as the in-app paywall, fine print included. The annual
         introductory price is open to everyone, not a limited number of seats;
         it applies to your first year and renews at {PRICING.annualStandard} a
-        year thereafter. Credits lapse{" "}
-        {PRICING.creditValidityMonths} months after purchase. All purchases
+        year thereafter. Credits never expire. All purchases
         happen in the app, through the App Store or Google Play. All prices
         include applicable taxes unless the store states otherwise.
       </p>
