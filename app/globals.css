@@ -1890,3 +1890,46 @@ footer.site-footer > span {
     scroll-behavior: auto;
   }
 }
+
+/* /sources — data sources page. Both languages are in the HTML; the wrapper's
+   data-lang (set by SourcesLang) picks one. Without JS, English shows. */
+.src-hi { display: none; }
+.src-root[data-lang="hi"] .src-en { display: none; }
+.src-root[data-lang="hi"] .src-hi { display: inline; }
+.src-root[data-lang="hi"] p.src-hi,
+.src-root[data-lang="hi"] h2 .src-hi { display: block; }
+.legal-intro p.src-hi { display: none; }
+.legal-intro p.src-en { display: block; }
+html[lang="hi"] .legal-intro p.src-hi { display: block; }
+html[lang="hi"] .legal-intro p.src-en { display: none; }
+.src-toggle { display: inline-flex; border: 1px solid var(--ink); margin: 0 0 18px; }
+.src-toggle button {
+  font: 600 11px var(--mono);
+  letter-spacing: 0.08em;
+  padding: 8px 16px;
+  background: var(--white);
+  color: var(--ink);
+  border: 0;
+  cursor: pointer;
+}
+.src-toggle button[aria-pressed="true"] { background: var(--ink); color: var(--white); }
+.src-meta { font: 600 12px var(--mono); letter-spacing: 0.04em; }
+.src-caption { text-align: left; font: 600 11px var(--mono); letter-spacing: 0.06em; padding: 0 0 8px; }
+.src-table td small { display: block; margin-top: 4px; font-size: 12px; color: var(--ink); opacity: 0.75; overflow-wrap: anywhere; }
+.src-table td small.src-note { opacity: 1; border-left: 3px solid var(--amber); padding-left: 8px; }
+@media (max-width: 720px) {
+  .src-table thead { position: absolute; left: -9999px; }
+  .src-table, .src-table tbody, .src-table tr, .src-table td { display: block; width: 100%; }
+  .src-table tr { border: 1px solid var(--line); margin: 0 0 14px; }
+  .src-table td { border: 0; border-bottom: 1px solid var(--line); padding: 10px 12px; }
+  .src-table td:last-child { border-bottom: 0; }
+  .src-table td::before {
+    content: attr(data-l-en);
+    display: block;
+    font: 600 9px var(--mono);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .src-root[data-lang="hi"] .src-table td::before { content: attr(data-l-hi); }
+}

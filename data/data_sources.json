@@ -1,0 +1,1284 @@
+{
+ "version": "2026-10-15.1",
+ "sources": [
+  {
+   "id": "jktenders",
+   "name": "Jammu & Kashmir e-Procurement portal (GePNIC)",
+   "body": "Government of Jammu & Kashmir",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://jktenders.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "hptenders",
+   "name": "Himachal Pradesh e-Procurement portal (GePNIC)",
+   "body": "Government of Himachal Pradesh",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://hptenders.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "pbtenders",
+   "name": "Punjab e-Procurement portal (GePNIC)",
+   "body": "Government of Punjab",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://eproc.punjab.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "hrtenders",
+   "name": "Haryana e-Procurement portal (GePNIC)",
+   "body": "Government of Haryana",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://etenders.hry.nic.in/",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "Site root https://etenders.hry.nic.in/ answers 200 (title 'Haryana- eProcurement System'); the /nicgep/app path times out from the verification network (likely geo/bot block).",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "uptenders",
+   "name": "Uttar Pradesh e-Procurement portal (GePNIC)",
+   "body": "Government of Uttar Pradesh",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://etender.up.nic.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "mptenders",
+   "name": "Madhya Pradesh e-Procurement portal (GePNIC)",
+   "body": "Government of Madhya Pradesh",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://mptenders.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "rjtenders",
+   "name": "Rajasthan e-Procurement portal (GePNIC)",
+   "body": "Government of Rajasthan",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://eproc.rajasthan.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "mhtenders",
+   "name": "Maharashtra e-Procurement portal (GePNIC)",
+   "body": "Government of Maharashtra",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://mahatenders.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "odtenders",
+   "name": "Odisha e-Procurement portal (GePNIC)",
+   "body": "Government of Odisha",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://tendersodisha.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "kltenders",
+   "name": "Kerala e-Procurement portal (GePNIC)",
+   "body": "Government of Kerala",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://etenders.kerala.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "wbtenders",
+   "name": "West Bengal e-Procurement portal (GePNIC)",
+   "body": "Government of West Bengal",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://wbtenders.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "ddtenders",
+   "name": "Daman & Diu e-Procurement portal (GePNIC)",
+   "body": "Government of Daman & Diu (UT)",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://ddtenders.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "dltenders",
+   "name": "Delhi NCT e-Procurement portal (GePNIC)",
+   "body": "Government of NCT of Delhi",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://govtprocurement.delhi.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "gatenders",
+   "name": "Goa e-Procurement portal (GePNIC)",
+   "body": "Government of Goa",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://eprocure.goa.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "jhtenders",
+   "name": "Jharkhand e-Procurement portal (GePNIC)",
+   "body": "Government of Jharkhand",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://jharkhandtenders.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "latenders",
+   "name": "Ladakh e-Procurement portal (GePNIC)",
+   "body": "Government of Ladakh",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://tenders.ladakh.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "ldtenders",
+   "name": "Lakshadweep e-Procurement portal (GePNIC)",
+   "body": "Government of Lakshadweep",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://tendersutl.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "mntenders",
+   "name": "Manipur e-Procurement portal (GePNIC)",
+   "body": "Government of Manipur",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://manipurtenders.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "mltenders",
+   "name": "Meghalaya e-Procurement portal (GePNIC)",
+   "body": "Government of Meghalaya",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://meghalayatenders.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "mztenders",
+   "name": "Mizoram e-Procurement portal (GePNIC)",
+   "body": "Government of Mizoram",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://mizoramtenders.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "nltenders",
+   "name": "Nagaland e-Procurement portal (GePNIC)",
+   "body": "Government of Nagaland",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://nagalandtenders.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "pytenders",
+   "name": "Puducherry e-Procurement portal (GePNIC)",
+   "body": "Government of Puducherry",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://pudutenders.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "sktenders",
+   "name": "Sikkim e-Procurement portal (GePNIC)",
+   "body": "Government of Sikkim",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://sikkimtender.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "tntenders",
+   "name": "Tamil Nadu e-Procurement portal (GePNIC)",
+   "body": "Government of Tamil Nadu",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://tntenders.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "trtenders",
+   "name": "Tripura e-Procurement portal (GePNIC)",
+   "body": "Government of Tripura",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://tripuratenders.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "uktenders",
+   "name": "Uttarakhand e-Procurement portal (GePNIC)",
+   "body": "Government of Uttarakhand",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://uktenders.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "chtenders",
+   "name": "Chandigarh e-Procurement portal (GePNIC)",
+   "body": "Government of Chandigarh",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://etenders.chd.nic.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "astenders",
+   "name": "Assam e-Procurement portal (GePNIC)",
+   "body": "Government of Assam",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://assamtenders.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "antenders",
+   "name": "Andaman & Nicobar e-Procurement portal (GePNIC)",
+   "body": "Government of Andaman & Nicobar",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://eprocure.andamannicobar.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "artenders",
+   "name": "Arunachal Pradesh e-Procurement portal (GePNIC)",
+   "body": "Government of Arunachal Pradesh",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://arunachaltenders.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "dntenders",
+   "name": "Dadra & Nagar Haveli e-Procurement portal (GePNIC)",
+   "body": "Government of Dadra & Nagar Haveli (UT)",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://dnhtenders.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "coalindia",
+   "name": "Coal India Limited e-Procurement",
+   "body": "Coal India Limited (Ministry of Coal, Govt. of India)",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://coalindiatenders.nic.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "iocl",
+   "name": "Indian Oil Corporation e-Tender portal",
+   "body": "Indian Oil Corporation Limited (Ministry of Petroleum and Natural Gas)",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://iocletenders.nic.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "Tenders collected through the Central Public Procurement Portal listing feed.",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "cpcl",
+   "name": "Chennai Petroleum Corporation e-Tender portal",
+   "body": "Chennai Petroleum Corporation Limited (Indian Oil group)",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://cpcletenders.nic.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "Tenders collected through the Central Public Procurement Portal listing feed.",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "bhelprocure",
+   "name": "BHEL e-Procurement",
+   "body": "Bharat Heavy Electricals Limited (Ministry of Heavy Industries)",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://eprocurebhel.co.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "Official BHEL portal on the company's own .co.in domain (not .gov.in).",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "ntpc",
+   "name": "NTPC e-Tender portal",
+   "body": "NTPC Limited (Ministry of Power)",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://eprocurentpc.nic.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "eprocure",
+   "name": "Central Public Procurement Portal - eProcure (Central Government tenders: CPWD, BRO, Railways, etc.)",
+   "body": "Ministry of Finance, Dept. of Expenditure / NIC, Govt. of India",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://eprocure.gov.in/eprocure/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "pmgsy",
+   "name": "PMGSY e-Procurement",
+   "body": "National Rural Infrastructure Development Agency (Ministry of Rural Development)",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://pmgsytenders.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "Tenders collected through the Central Public Procurement Portal listing feed.",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "epublish",
+   "name": "Central Public Procurement Portal - ePublish (tender status and results)",
+   "body": "Ministry of Finance, Dept. of Expenditure / NIC, Govt. of India",
+   "category": "tender_results",
+   "used_for": [
+    "Tenders",
+    "Tender results"
+   ],
+   "url": "https://eprocure.gov.in/epublish/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "Tenders collected through the Central Public Procurement Portal listing feed. No tender-result files ingested yet.",
+   "enabled": true,
+   "category_label": "Tender results",
+   "category_label_hi": "टेंडर रिज़ल्ट",
+   "used_for_label": "Tenders and tender results",
+   "used_for_label_hi": "टेंडर और टेंडर रिज़ल्ट",
+   "name_hi": null
+  },
+  {
+   "id": "defproc",
+   "name": "Defence e-Procurement (MES and other defence tenders)",
+   "body": "Ministry of Defence, Govt. of India",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://defproc.gov.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "Tenders collected through the Central Public Procurement Portal listing feed.",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "gsl",
+   "name": "Goa Shipyard Limited e-Procurement",
+   "body": "Goa Shipyard Limited (Ministry of Defence)",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://eprocuregsl.nic.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "Tenders collected through the Central Public Procurement Portal listing feed.",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "hsl",
+   "name": "Hindustan Shipyard Limited e-Procurement",
+   "body": "Hindustan Shipyard Limited (Ministry of Defence)",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders"
+   ],
+   "url": "https://eprocurehsl.nic.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "Tenders collected through the Central Public Procurement Portal listing feed. No tender-result files ingested yet.",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders and alerts",
+   "used_for_label_hi": "टेंडर और अलर्ट",
+   "name_hi": null
+  },
+  {
+   "id": "mdl",
+   "name": "Mazagon Dock Shipbuilders e-Procurement",
+   "body": "Mazagon Dock Shipbuilders Limited (Ministry of Defence)",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://eprocuremdl.nic.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "Tenders collected through the Central Public Procurement Portal listing feed.",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "midhani",
+   "name": "MIDHANI e-Procurement",
+   "body": "Mishra Dhatu Nigam Limited (Ministry of Defence)",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://www.eprocuremidhani.nic.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "Tenders collected through the Central Public Procurement Portal listing feed.",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "grse",
+   "name": "Garden Reach Shipbuilders & Engineers e-Procurement",
+   "body": "Garden Reach Shipbuilders & Engineers Limited (Ministry of Defence)",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://eprocuregrse.co.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "Tenders collected through the Central Public Procurement Portal listing feed. Official GRSE portal on the company's own .co.in domain (not .gov.in).",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "beml",
+   "name": "BEML e-Procurement",
+   "body": "BEML Limited (Ministry of Defence)",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders",
+    "BidIQ and autofill (tender results)"
+   ],
+   "url": "https://eprocurebeml.nic.in/nicgep/app",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "Tenders collected through the Central Public Procurement Portal listing feed.",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders, BidIQ and autofill (public tender results)",
+   "used_for_label_hi": "टेंडर, BidIQ और ऑटोफ़िल (सार्वजनिक टेंडर रिज़ल्ट)",
+   "name_hi": null
+  },
+  {
+   "id": "cppp",
+   "name": "Central Public Procurement Portal (CPPP)",
+   "body": "Ministry of Finance, Dept. of Expenditure / NIC, Govt. of India",
+   "category": "tender_portal",
+   "used_for": [
+    "Tenders"
+   ],
+   "url": "https://eprocure.gov.in/cppp/",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "Central and state tender listings (portal_source cppp). The cppp_states tab of the same site is frozen: historical rows only.",
+   "enabled": true,
+   "category_label": "Tender portals",
+   "category_label_hi": "टेंडर पोर्टल",
+   "used_for_label": "Tenders and alerts",
+   "used_for_label_hi": "टेंडर और अलर्ट",
+   "name_hi": null
+  },
+  {
+   "id": "cpwd_dsr_2023_v2_civil",
+   "name": "CPWD Delhi Schedule of Rates 2023, Vol 2 (Civil)",
+   "body": "Central Public Works Department (CPWD), Govt. of India",
+   "category": "cpwd",
+   "used_for": [
+    "Rate books",
+    "Autofill (SSR rates)"
+   ],
+   "url": "https://cpwd.gov.in/WriteReadData/Publication/DSR_Vol_2_Civil.pdf",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "Direct file URL changed (see Vol 1); SHA-256 matches books.yaml.",
+   "enabled": true,
+   "in_app_bundle": true,
+   "file_url": "https://cpwd.gov.in/Publication/DSR_Vol_2_Civil.pdf",
+   "category_label": "CPWD",
+   "category_label_hi": "CPWD",
+   "used_for_label": "Rate books and autofill",
+   "used_for_label_hi": "रेट बुक और ऑटोफ़िल",
+   "name_hi": null
+  },
+  {
+   "id": "cpwd_dsr_em_2025",
+   "name": "CPWD Delhi Schedule of Rates (E&M) 2025",
+   "body": "Central Public Works Department (CPWD), Govt. of India",
+   "category": "cpwd",
+   "used_for": [
+    "Rate books",
+    "Autofill (SSR rates)"
+   ],
+   "url": "https://cpwd.gov.in/Documents/cpwd_publication.aspx",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "Points to CPWD's publications index; the exact E&M 2025 file URL was not recorded and was not found there on 2026-10-15. DSR E&M 2025 publication page (exact file URL not recorded); supersedes DSR E&M 2014/2022",
+   "enabled": true,
+   "in_app_bundle": true,
+   "file_url": "https://cpwd.gov.in",
+   "category_label": "CPWD",
+   "category_label_hi": "CPWD",
+   "used_for_label": "Rate books and autofill",
+   "used_for_label_hi": "रेट बुक और ऑटोफ़िल",
+   "name_hi": null
+  },
+  {
+   "id": "cpwd_dsr_enm_2014",
+   "name": "CPWD Delhi Schedule of Rates E&M 2014",
+   "body": "Central Public Works Department (CPWD), Govt. of India",
+   "category": "cpwd",
+   "used_for": [
+    "Rate books",
+    "Autofill (SSR rates)"
+   ],
+   "url": "https://cpwd.gov.in/WriteReadData/Publication/DSREnM14.pdf",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "Direct file URL changed (see Vol 1); SHA-256 matches books.yaml.",
+   "enabled": true,
+   "in_app_bundle": true,
+   "file_url": "https://cpwd.gov.in/Publication/DSREnM14.pdf",
+   "category_label": "CPWD",
+   "category_label_hi": "CPWD",
+   "used_for_label": "Rate books and autofill",
+   "used_for_label_hi": "रेट बुक और ऑटोफ़िल",
+   "name_hi": null
+  },
+  {
+   "id": "hp_pwd_sor_2020",
+   "name": "Himachal Pradesh PWD Schedule of Rates 2020",
+   "body": "HP Public Works Department",
+   "category": "rate_book",
+   "used_for": [
+    "Rate books",
+    "Autofill (SSR rates)"
+   ],
+   "url": "https://hppwd.hp.gov.in/hp-public-works-department-schedule-of-rates-2020",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "Official HP PWD page for Schedule of Rates 2020 (URL was not recorded before; found and verified 2026-10-15). ssr-data/SOURCES.md has no row for this file; the original URL was not recorded",
+   "enabled": true,
+   "in_app_bundle": true,
+   "file_url": null,
+   "category_label": "State and department rate books",
+   "category_label_hi": "राज्य और विभागों की रेट बुक",
+   "used_for_label": "Rate books and autofill",
+   "used_for_label_hi": "रेट बुक और ऑटोफ़िल",
+   "name_hi": null
+  },
+  {
+   "id": "ir_ussor_2019",
+   "name": "Indian Railways Unified Standard Schedule of Rates 2019 (Formation, Bridge, P.Way)",
+   "body": "Ministry of Railways (Railway Board)",
+   "category": "rate_book",
+   "used_for": [
+    "Rate books",
+    "Autofill (SSR rates)"
+   ],
+   "url": "https://indianrailways.gov.in/railwayboard/uploads/directorate/civil_engg/pdf/2019/IRUSSOR_SOR_24_12_2019.pdf",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "in_app_bundle": true,
+   "file_url": "https://indianrailways.gov.in/railwayboard/uploads/directorate/civil_engg/pdf/2019/IRUSSOR_SOR_24_12_2019.pdf",
+   "category_label": "State and department rate books",
+   "category_label_hi": "राज्य और विभागों की रेट बुक",
+   "used_for_label": "Rate books and autofill",
+   "used_for_label_hi": "रेट बुक और ऑटोफ़िल",
+   "name_hi": null
+  },
+  {
+   "id": "jk_pwd_sor_2022",
+   "name": "Jammu & Kashmir Schedule of Rates 2022 (JKSOR 2022; supersedes JKSR 2020)",
+   "body": "J&K Public Works (R&B) Department",
+   "category": "rate_book",
+   "used_for": [
+    "Rate books",
+    "Autofill (SSR rates)"
+   ],
+   "url": "https://jkpwdrb.nic.in/",
+   "url_status": "could_not_verify_from_here",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "J&K PW(R&B) department site as listed by the J&K government portal. Could not be verified from here: jkpwdrb.nic.in does not resolve in DNS (NXDOMAIN at 8.8.8.8) on 2026-10-15; the original PDF was retrieved via the Wayback Machine. Founder to re-check in a browser on an Indian network. retrieved via Wayback Machine (site was unreachable from the download network)",
+   "enabled": true,
+   "in_app_bundle": true,
+   "file_url": "https://jkpwdrb.nic.in/pdfs/Schedule_of_rates.pdf",
+   "category_label": "State and department rate books",
+   "category_label_hi": "राज्य और विभागों की रेट बुक",
+   "used_for_label": "Rate books and autofill",
+   "used_for_label_hi": "रेट बुक और ऑटोफ़िल",
+   "name_hi": null
+  },
+  {
+   "id": "ka_csr_2023_24_v2_buildings",
+   "name": "Karnataka Common Schedule of Rates 2023-24, Vol 2 (Buildings)",
+   "body": "Karnataka Public Works, Ports & Inland Water Transport Dept.",
+   "category": "rate_book",
+   "used_for": [
+    "Rate books",
+    "Autofill (SSR rates)"
+   ],
+   "url": "https://kpwd.karnataka.gov.in/storage/pdf-files/PWDSR-Vol-IIBuildings-GrandFinale-15-11-2023.pdf",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "in_app_bundle": true,
+   "file_url": "https://kpwd.karnataka.gov.in/storage/pdf-files/PWDSR-Vol-IIBuildings-GrandFinale-15-11-2023.pdf",
+   "category_label": "State and department rate books",
+   "category_label_hi": "राज्य और विभागों की रेट बुक",
+   "used_for_label": "Rate books and autofill",
+   "used_for_label_hi": "रेट बुक और ऑटोफ़िल",
+   "name_hi": null
+  },
+  {
+   "id": "mh_pwd_ssr_2022_23",
+   "name": "Maharashtra PWD State Schedule of Rates 2022-23 (civil)",
+   "body": "Maharashtra Public Works Department",
+   "category": "rate_book",
+   "used_for": [
+    "Rate books",
+    "Autofill (SSR rates)"
+   ],
+   "url": "https://cdnbbsr.s3waas.gov.in/s3ea80421fc06a2ed5c7adc1018e0026df/uploads/2025/07/202507031303590066.pdf",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "in_app_bundle": true,
+   "file_url": "https://cdnbbsr.s3waas.gov.in/s3ea80421fc06a2ed5c7adc1018e0026df/uploads/2025/07/202507031303590066.pdf",
+   "category_label": "State and department rate books",
+   "category_label_hi": "राज्य और विभागों की रेट बुक",
+   "used_for_label": "Rate books and autofill",
+   "used_for_label_hi": "रेट बुक और ऑटोफ़िल",
+   "name_hi": null
+  },
+  {
+   "id": "mh_pwd_ssr_electrical",
+   "name": "Maharashtra PWD State Schedule of Rates (Electrical)",
+   "body": "Maharashtra Public Works Department (Electrical)",
+   "category": "rate_book",
+   "used_for": [
+    "Rate books",
+    "Autofill (SSR rates)"
+   ],
+   "url": "https://cdnbbsr.s3waas.gov.in/s3ea80421fc06a2ed5c7adc1018e0026df/uploads/2025/03/20250317247923314.pdf",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "",
+   "enabled": true,
+   "in_app_bundle": true,
+   "file_url": "https://cdnbbsr.s3waas.gov.in/s3ea80421fc06a2ed5c7adc1018e0026df/uploads/2025/03/20250317247923314.pdf",
+   "category_label": "State and department rate books",
+   "category_label_hi": "राज्य और विभागों की रेट बुक",
+   "used_for_label": "Rate books and autofill",
+   "used_for_label_hi": "रेट बुक और ऑटोफ़िल",
+   "name_hi": null
+  },
+  {
+   "id": "mes_ssr_part2_2020",
+   "name": "MES Standard Schedule of Rates Part II (Rates) 2020",
+   "body": "Military Engineer Services (MES), Ministry of Defence",
+   "category": "rate_book",
+   "used_for": [
+    "Rate books",
+    "Autofill (SSR rates)"
+   ],
+   "url": "https://mes.gov.in/",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "MES home page. The MES Publication page (/works-mes-publication) redirects to a login, so there is no public direct link; the copy BOQ+ uses was obtained elsewhere. copy of the official MES SSR-II 2020 (bilingual Hindi/English) obtained elsewhere; mes.gov.in",
+   "enabled": true,
+   "in_app_bundle": true,
+   "file_url": null,
+   "category_label": "State and department rate books",
+   "category_label_hi": "राज्य और विभागों की रेट बुक",
+   "used_for_label": "Rate books and autofill",
+   "used_for_label_hi": "रेट बुक और ऑटोफ़िल",
+   "name_hi": null
+  },
+  {
+   "id": "ts_sor_2022_23",
+   "name": "Telangana Common Schedule of Rates 2022-23 (Panchayat Raj Engg. Dept.)",
+   "body": "Telangana Panchayat Raj Engineering Department",
+   "category": "rate_book",
+   "used_for": [
+    "Rate books",
+    "Autofill (SSR rates)"
+   ],
+   "url": "https://pred.telangana.gov.in/",
+   "url_status": "could_not_verify_from_here",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "Telangana Panchayat Raj Engineering Dept. Could not be verified from here: the host resolves but refuses connections from the verification network (likely geo block). Founder to re-check from India.",
+   "enabled": true,
+   "in_app_bundle": true,
+   "file_url": "https://pred.telangana.gov.in/assets/pdf/1-SSR_s-2014-15_TO_2022-23/21-SSR-2022-23/Schedule%20of%20Rates%20Yr%202022-23.pdf",
+   "category_label": "State and department rate books",
+   "category_label_hi": "राज्य और विभागों की रेट बुक",
+   "used_for_label": "Rate books and autofill",
+   "used_for_label_hi": "रेट बुक और ऑटोफ़िल",
+   "name_hi": null
+  },
+  {
+   "id": "cpwd_dsr_2023_v1_civil",
+   "name": "CPWD Delhi Schedule of Rates 2023, Vol 1 (Civil)",
+   "body": "Central Public Works Department (CPWD), Govt. of India",
+   "category": "cpwd",
+   "used_for": [
+    "Rate books",
+    "Autofill (SSR rates)"
+   ],
+   "url": "https://cpwd.gov.in/WriteReadData/Publication/DSR_Vol_1_Civil.pdf",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "Direct file URL changed: the earlier /Publication/ path is rejected by the CPWD firewall; the /WriteReadData/Publication/ path serves the PDF and its SHA-256 matches books.yaml (verified 2026-10-15). Publications index: https://cpwd.gov.in/Documents/cpwd_publication.aspx",
+   "enabled": true,
+   "in_app_bundle": true,
+   "file_url": "https://cpwd.gov.in/Publication/DSR_Vol_1_Civil.pdf",
+   "category_label": "CPWD",
+   "category_label_hi": "CPWD",
+   "used_for_label": "Rate books and autofill",
+   "used_for_label_hi": "रेट बुक और ऑटोफ़िल",
+   "name_hi": null
+  },
+  {
+   "id": "cpwd_site",
+   "name": "CPWD official website (publications, cost index, circulars)",
+   "body": "Central Public Works Department (CPWD), Govt. of India",
+   "category": "cpwd",
+   "used_for": [
+    "Prices tab",
+    "Rate books"
+   ],
+   "url": "https://cpwd.gov.in/",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "Home page of the department that publishes DSR, the Building Cost Index and PAR-2025.",
+   "enabled": true,
+   "category_label": "CPWD",
+   "category_label_hi": "CPWD",
+   "used_for_label": "Prices tab and rate books",
+   "used_for_label_hi": "Prices टैब और रेट बुक",
+   "name_hi": "केंद्रीय लोक निर्माण विभाग (CPWD) की वेबसाइट"
+  },
+  {
+   "id": "cpwd_bci_2026_04",
+   "name": "CPWD Building Cost Index, Delhi: 101 as on 1 Apr 2026 (OM DG/Cost Index/14)",
+   "body": "Central Public Works Department (CPWD), Govt. of India",
+   "category": "cpwd",
+   "used_for": [
+    "Prices tab"
+   ],
+   "url": "https://cpwd.gov.in/WriteReadData/cost_index/70600.pdf",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "Time factor input (latest reading used).",
+   "enabled": true,
+   "category_label": "CPWD",
+   "category_label_hi": "CPWD",
+   "used_for_label": "Prices tab (reference rates)",
+   "used_for_label_hi": "Prices टैब (संदर्भ रेट)",
+   "name_hi": null
+  },
+  {
+   "id": "cpwd_bci_2025_10",
+   "name": "CPWD Building Cost Index, Delhi: 97 as on 1 Oct 2025 (OM DG/Cost Index/13)",
+   "body": "Central Public Works Department (CPWD), Govt. of India",
+   "category": "cpwd",
+   "used_for": [
+    "Prices tab"
+   ],
+   "url": "https://cpwd.gov.in/WriteReadData/cost_index/69815.pdf",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "Earlier reading, recorded in the dataset inputs.",
+   "enabled": true,
+   "category_label": "CPWD",
+   "category_label_hi": "CPWD",
+   "used_for_label": "Prices tab (reference rates)",
+   "used_for_label_hi": "Prices टैब (संदर्भ रेट)",
+   "name_hi": null
+  },
+  {
+   "id": "cpwd_par2025_annex6",
+   "name": "CPWD PAR-2025 Annexure VI, Correction Slip No. 03 (62/SE(TAS)/PAR/2026/200-H, 19 Aug 2026)",
+   "body": "Central Public Works Department (CPWD), Govt. of India",
+   "category": "cpwd",
+   "used_for": [
+    "Prices tab"
+   ],
+   "url": "https://cpwd.gov.in/WriteReadData/10ca_cir/71563.pdf",
+   "url_status": "ok",
+   "verified_at": "2026-10-14T21:29Z",
+   "notes": "Links the DSR 2023 price level to 1 Apr 2025.",
+   "enabled": true,
+   "category_label": "CPWD",
+   "category_label_hi": "CPWD",
+   "used_for_label": "Prices tab (reference rates)",
+   "used_for_label_hi": "Prices टैब (संदर्भ रेट)",
+   "name_hi": null
+  }
+ ]
+}
