@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import LegalShell from "../components/LegalShell";
 import SourcesLang from "./SourcesLang";
 import { pageMetadata } from "@/lib/seo";
-// Build-time copy of backend data/public/data_sources.json (commit 4a688b0).
+// Build-time copy of backend data/public/data_sources.json (commit df5f9b7).
 import data from "@/data/data_sources.json";
 
 export const dynamic = "force-static";
