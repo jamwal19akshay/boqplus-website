@@ -1919,7 +1919,7 @@ html[lang="hi"] .legal-intro p.src-en { display: none; }
 .src-table td small.src-note { opacity: 1; border-left: 3px solid var(--amber); padding-left: 8px; }
 @media (max-width: 720px) {
   .src-table thead { position: absolute; left: -9999px; }
-  .src-table, .src-table tbody, .src-table tr, .src-table td { display: block; width: 100%; }
+  .src-table, .src-table tbody, .src-table tr, .src-table td, .src-table caption { display: block; width: 100%; }
   .src-table tr { border: 1px solid var(--line); margin: 0 0 14px; }
   .src-table td { border: 0; border-bottom: 1px solid var(--line); padding: 10px 12px; }
   .src-table td:last-child { border-bottom: 0; }
