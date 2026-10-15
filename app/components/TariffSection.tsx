@@ -59,7 +59,8 @@ export default function TariffSection() {
           <em>first year</em>
           <p>
             Introductory price for your first year. {PRICING.annualStandard} a
-            year from year two.
+            year from year two. That&rsquo;s about {PRICING.annualIntroPerDay} a
+            day in the first year.
           </p>
           <a href="#final">
             ISSUE THIS FILE <b>→</b>

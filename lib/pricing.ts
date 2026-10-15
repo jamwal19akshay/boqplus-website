@@ -18,6 +18,8 @@ export const PRICING = {
 
   annualIntro: "₹7,999",
   annualStandard: "₹11,999",
+  // ₹7,999 / 365 = ₹21.9. Shown only in small print below the billed price.
+  annualIntroPerDay: "₹22",
 
   quarterly: "₹3,999",
 
