@@ -198,8 +198,12 @@ export default function PrivacyPage() {
         </li>
       </ul>
       <p>
-        No advertising ID or app activity is sent to Meta unless you allow
-        tracking. If you say no, Google gets no advertising ID or ad
+        No advertising ID is sent to Meta unless you allow tracking. If you
+        don&apos;t allow it, the iPhone app may still tell Meta that a BOQ was
+        exported or an account was created, without your advertising ID or any
+        BOQ details; from version 3.0.1 nothing is sent to Meta unless you
+        allow tracking. Android sends nothing to Meta unless you allow ad
+        measurement. If you say no, Google gets no advertising ID or ad
         measurement data either, and BOQ+ works exactly the same. Separately,
         Apple&apos;s ad attribution (iPhone) and
         the Google Play install referrer (Android) tell us which campaign led to
@@ -225,9 +229,9 @@ export default function PrivacyPage() {
       </p>
       <ul>
         <li>
-          <strong>Meta Platforms</strong> (Facebook SDK) — app events and
-          advertising identifier, <strong>only with your permission</strong> —
-          ad measurement.
+          <strong>Meta Platforms</strong> (Facebook SDK) — app events (and
+          your advertising identifier <strong>only with your
+          permission</strong>) — ad measurement.
         </li>
         <li>
           <strong>OneSignal</strong> — your BOQ+ user ID, push token and plan
