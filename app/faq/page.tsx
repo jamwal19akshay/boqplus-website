@@ -66,8 +66,8 @@ const faqs: { q: string; a: React.ReactNode }[] = [
       <>
         From comparative statements — the sheets departments publish after tender
         opening showing every bidder and every amount. BOQ+ reads thousands of
-        them and turns them into rate bands, winning-discount distributions, and
-        competitor profiles. Where the data is thin for your department or item,
+        them and turns them into rate bands and the winning-bid ranges on similar
+        tenders. Where the data is thin for your department or item,
         the app says so on screen instead of inventing a number.
       </>
     ),

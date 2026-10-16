@@ -1,8 +1,6 @@
-import { MARKET_CAPTURE } from "@/lib/stats";
-
 export default function RecordSection() {
   return (
-    <section className="record-section" id="record">
+    <section className="record-section no-exhibit" id="record">
       <div className="margin-code">
         <b>01</b>
         <span>THE PUBLIC RECORD</span>
@@ -21,18 +19,6 @@ export default function RecordSection() {
           <br />
           Now you do too.
         </div>
-      </div>
-
-      <div className="evidence-phone">
-        <span className="evidence-tag">EXHIBIT A · ACTUAL APP SCREEN</span>
-        <div className="phone-shell">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/screens/app/market-report.png"
-            alt={`BOQ+ Market Report showing ${MARKET_CAPTURE.comparatives} comparative statements, tender value and winning discount distribution`}
-          />
-        </div>
-        <p>Market Intelligence Report · all portals · Jul 2026</p>
       </div>
     </section>
   );

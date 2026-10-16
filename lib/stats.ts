@@ -13,11 +13,10 @@ export const DATA_STATS = {
   asOf: "11 Oct 2026",
 } as const;
 
-// Headline market figures, exactly as shown on the Market Intelligence Report
-// capture (public/screens/android/04-market-intelligence-report.png). The
-// landing page states these are read off that screen, so they must stay in
-// lock-step with the screenshot — if the capture is refreshed, update these
-// together with it.
+// Headline market figures from the production results database (the in-app
+// Market overview / Market Intelligence Report that once showed them was
+// removed in app 3.0.0 builds 53 / 9). Only medianDiscount is still used, on
+// the hero result slip, labelled "JUL 2026".
 //
 // Last verified against the production database on 20 July 2026: exact match
 // (45,584 distinct comparatives · avg 3.52 bidders · ₹14,277 Cr summed L1

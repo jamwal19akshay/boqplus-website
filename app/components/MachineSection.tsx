@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { DATA_STATS } from "@/lib/stats";
 import { PRICING } from "@/lib/pricing";
 
 const PLATES = [
@@ -10,12 +9,6 @@ const PLATES = [
     image: "fill-rates.png",
     note: "45 / 45 items rated",
     copy: "A hundred empty rates become one controlled working surface. Scenario, estimate, rate and amount stay together.",
-  },
-  {
-    label: "Read the market",
-    image: "market-report.png",
-    note: `${DATA_STATS.tenderResults} tender results`,
-    copy: "See the centre of the market before you decide where to stand: winning bands, competition and bidder behaviour.",
   },
   {
     label: "Find the work",
@@ -44,7 +37,7 @@ export default function MachineSection() {
           <span>THE FIELD MACHINE</span>
         </div>
         <h2>
-          Four views.
+          Three views.
           <br />
           One working evening.
         </h2>

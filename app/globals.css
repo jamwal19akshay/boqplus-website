@@ -486,6 +486,9 @@ h1 span {
   gap: 55px;
   padding: 150px 36px 130px;
 }
+.record-section.no-exhibit {
+  grid-template-columns: 80px 1fr;
+}
 .record-copy {
   padding-top: 8px;
 }
@@ -1499,7 +1502,8 @@ footer.site-footer > span {
   .hero-ledger {
     grid-column: 2;
   }
-  .record-section {
+  .record-section,
+  .record-section.no-exhibit {
     grid-template-columns: 60px 1fr;
   }
   .evidence-phone {
@@ -1646,7 +1650,8 @@ footer.site-footer > span {
   .hero-ledger div:nth-child(3) {
     border-top: 1px solid;
   }
-  .record-section {
+  .record-section,
+  .record-section.no-exhibit {
     grid-template-columns: 1fr;
     padding: 90px 20px;
   }
