@@ -198,9 +198,10 @@ export default function PrivacyPage() {
         </li>
       </ul>
       <p>
-        If you say no, nothing is sent to Meta or Google for ad measurement and
-        BOQ+ works
-        exactly the same. Separately, Apple&apos;s ad attribution (iPhone) and
+        No advertising ID or app activity is sent to Meta unless you allow
+        tracking. If you say no, Google gets no advertising ID or ad
+        measurement data either, and BOQ+ works exactly the same. Separately,
+        Apple&apos;s ad attribution (iPhone) and
         the Google Play install referrer (Android) tell us which campaign led to
         an install. They don&apos;t follow you across other apps.
       </p>
