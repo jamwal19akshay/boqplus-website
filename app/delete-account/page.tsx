@@ -14,7 +14,7 @@ export default function DeleteAccountPage() {
     <LegalShell
       fileNo="D-01"
       title="Delete Your Account"
-      updated="13 OCTOBER 2026"
+      updated="16 OCTOBER 2026"
       intro={
         <p>
           You can delete your BOQ+ account and the data attached to it at any
@@ -106,7 +106,7 @@ export default function DeleteAccountPage() {
         </li>
         <li>
           <strong>Market-index data</strong> extracted from comparative
-          statements. These are figures the procuring department has already
+          statements you chose to share. These are figures the procuring department has already
           published — bidder names, bid amounts, and results. They are retained
           in <strong>de-identified</strong> form and are not linked to your
           account, so deleting your account does not withdraw them from the

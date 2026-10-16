@@ -15,7 +15,7 @@ export default function TermsPage() {
     <LegalShell
       fileNo="T-01"
       title="Terms of Service"
-      updated="13 OCTOBER 2026"
+      updated="16 OCTOBER 2026"
       intro={
         <p>
           These terms are a binding agreement between you and BOQ+ governing the
@@ -108,9 +108,10 @@ export default function TermsPage() {
         You retain ownership of BOQs, rates, and documents you upload. You grant
         us a licence to process them to provide the service. When you upload a
         comparative statement, you confirm it is a document published by a
-        procuring authority; the already-public bid data in it (bidder names,
-        amounts, results) is added to our market index in a form not linked to
-        your account, as described in the <a href="/privacy">Privacy Policy</a>.
+        procuring authority. If you choose to share it, the already-public bid
+        data in it (bidder names, amounts, results) is added to our market index
+        in a form not linked to your account; if you do not, it is used only for
+        your own BidIQ, as described in the <a href="/privacy">Privacy Policy</a>.
         Your own BOQs, rates, and track record are never shown to other users.
       </p>
 

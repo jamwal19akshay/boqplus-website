@@ -20,7 +20,8 @@ const faqs: { q: string; a: React.ReactNode }[] = [
         track record are private to your account. What is shared into the market
         index is only data that government departments have{" "}
         <em>already published</em> in comparative statements — bidder names and
-        bid amounts after tender opening. Details in the{" "}
+        bid amounts after tender opening — and an uploaded statement is added
+        only if you choose to share it. Details in the{" "}
         <a href="/privacy">Privacy Policy</a>.
       </>
     ),

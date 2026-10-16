@@ -1,5 +1,14 @@
 # Decisions Log
 
+## 2026-10-16 — Privacy, Terms, FAQ, Delete-account: market data only from comparatives users agree to share
+
+Branch `content/privacy-market-data`. Founder: the privacy policy must match the code.
+
+**Legal — for lawyer review:**
+- **Privacy ("A note on comparative statements"):** the old text said every uploaded comparative statement is added to the market index. The code asks before every comparative upload ("Help improve BOQ+ market data?", Yes / No, nothing preselected the first time) and sends `share_consent`; the server stores rows with `shared = share_consent` (default FALSE) and every shared-market read path and the corpus rebuild filter `shared IS TRUE` (backend `app/api/intelligence.py:1327,1457`, `app/models.py` ComparativeItem.shared, `scripts/build_market_corpus.py:105,179`). Now: only comparatives the user chooses to share are added; "No" means used only for their own BidIQ and track record. BOQ files, entered rates and track record are never added to the market index.
+- **Privacy retention, Delete-account "Market-index data", Terms §04, FAQ "Who sees my rates":** same qualifier ("you chose to share" / "only if you choose to share it").
+- Page dates updated to 16 October 2026 (Privacy, Terms, Delete account).
+
 ## 2026-10-16 — Terms and Support match the 3.0.0 app (Market overview removed)
 
 Branch `content/remove-market-report`.

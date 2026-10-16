@@ -14,7 +14,7 @@ export default function PrivacyPage() {
     <LegalShell
       fileNo="P-01"
       title="Privacy Policy"
-      updated="15 OCTOBER 2026"
+      updated="16 OCTOBER 2026"
       intro={
         <p>
           This policy explains, in plain language, what the BOQ+ app (Android
@@ -164,11 +164,16 @@ export default function PrivacyPage() {
         Comparative statements are documents published by government departments
         after a tender opens. They contain firm names and bid amounts of the
         bidders — information the department has already made public through the
-        procurement process. When you upload one, we extract those
-        already-published figures into our market index so every user (including
-        you) sees accurate rate bands and competition data. Other users can see
-        the market data, never <em>who uploaded it</em>, and never your own
-        BOQs, rates, or track record.
+        procurement process. Each time you upload one, the app asks whether to
+        share it. Only if you choose &ldquo;Yes, use this chart to improve rates
+        for everyone&rdquo; do we add those already-published figures to our
+        market index, which every user (including you) sees as rate bands and
+        competition data. If you choose &ldquo;No, use it only for my
+        BidIQ&rdquo;, the figures are used only for your own BidIQ and track
+        record and are not shared with other users. Other users can see the
+        market data, never <em>who uploaded it</em>. Your BOQ files, the rates
+        you enter, and your track record are never added to the market index or
+        shown to other users.
       </p>
 
       <h2>03 — Ad measurement</h2>
@@ -275,8 +280,8 @@ export default function PrivacyPage() {
         while your account is active. After account deletion, personal data is
         erased or anonymised within 90 days, except records we must keep under
         law (e.g. tax and purchase records). Market-index data from
-        government-published comparative statements is kept in de-identified
-        form and is not linked to your account.
+        government-published comparative statements you chose to share is kept
+        in de-identified form and is not linked to your account.
       </p>
 
       <h2>07 — Your rights under the DPDP Act</h2>
