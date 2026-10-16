@@ -1,5 +1,15 @@
 # Decisions Log
 
+## 2026-10-16 — Terms and Support match the 3.0.0 app (Market overview removed)
+
+Branch `content/remove-market-report`.
+
+**Legal — for lawyer review:**
+- **Terms (disclaimer, "information and analysis, not advice or guarantees"): "win probabilities, and competitor profiles" → "winning-bid ranges" — for lawyer review.**
+  The sentence now reads: "Rate suggestions, Below % bands and winning-bid ranges are statistical outputs from historical public data." Why: the app no longer shows win probabilities or competitor profiles; the free Market overview (named contractors) is removed in app 3.0.0 builds 53 / 9 (founder decision, 16 Oct). BidIQ shows factual winning-bid ranges on similar tenders.
+
+**Support FAQ ("How do I use rate suggestions?"):** the old answer said subscribers see one amber chip with "the market average and typical L1 rate". The 3.0.0 apps show amber chips above the keyboard while editing a rate on a priced BOQ: the selected SoR/SSR book's rate and "Market L1" (typical lowest winning rate, with evidence dots). No "market average" chip exists. Answer rewritten to match (iOS `BoqTableView.swift` rateSuggestionBar; Android `BoqTableScreen.kt` suggestion bar).
+
 ## 2026-10-13 — content release 2: app 3.0.0 free tier, prices, accurate data figures
 
 Branch `content/release-2`, stacked on `content/release-1`. Content only, with no

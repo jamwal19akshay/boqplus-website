@@ -41,8 +41,8 @@ export default function TermsPage() {
         <li>
           BOQ+ provides{" "}
           <strong>information and analysis, not advice or guarantees</strong>.
-          Rate suggestions, Below&nbsp;% bands, win probabilities, and competitor
-          profiles are statistical outputs from historical public data. You are
+          Rate suggestions, Below&nbsp;% bands and winning-bid ranges are
+          statistical outputs from historical public data. You are
           solely responsible for every rate you submit and every bid decision you
           make.
         </li>

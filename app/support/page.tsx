@@ -25,7 +25,7 @@ const items: Qa[] = [
   },
   {
     q: "How do I use rate suggestions?",
-    a: "On the BOQ table screen, subscribers see an amber chip above the keyboard showing the market average and typical L1 rate for that item. Tap the chip to fill the rate automatically.",
+    a: "When you edit a rate on a priced BOQ, amber chips appear above the keyboard: the matching rate from your selected SoR/SSR book and, where past tender results exist, \"Market L1\" — the typical lowest winning rate for similar items, with dots showing how much evidence it rests on. Tap a chip to fill the rate.",
   },
   {
     q: "How do I upload a comparative statement?",
