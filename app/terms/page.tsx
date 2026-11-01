@@ -15,7 +15,7 @@ export default function TermsPage() {
     <LegalShell
       fileNo="T-01"
       title="Terms of Service"
-      updated="16 OCTOBER 2026"
+      updated="1 NOVEMBER 2026"
       intro={
         <p>
           These terms are a binding agreement between you and BOQ+ governing the
@@ -138,9 +138,9 @@ export default function TermsPage() {
       <p>
         We aim for high availability but the service is provided &ldquo;as
         is&rdquo; and &ldquo;as available&rdquo;. We may add, change, or withdraw
-        features with reasonable notice for material changes. Offline BOQ fill
-        keeps working without connectivity; intelligence features require a
-        connection.
+        features with reasonable notice for material changes. Some features,
+        such as rate-book autofill and calculators, work without a connection;
+        most others, including opening and saving BOQs, need one.
       </p>
 
       <h2>07 — Limitation of liability</h2>

@@ -38,6 +38,16 @@ const faqs: { q: string; a: React.ReactNode }[] = [
     ),
   },
   {
+    q: "Can I upload the BOQ+ export to the portal?",
+    a: (
+      <>
+        No. The export (Excel on Android, CSV on iPhone, plus PDF) is a
+        reference copy. Copy your final rates into the portal&apos;s own BOQ file
+        and upload that.
+      </>
+    ),
+  },
+  {
     q: "Which portals and departments do you support?",
     a: (
       <>
@@ -135,9 +145,11 @@ const faqs: { q: string; a: React.ReactNode }[] = [
     q: "Does it work without internet?",
     a: (
       <>
-        BOQ filling works fully offline — at site, in the bus, wherever. You need
-        a connection once to fetch a tender or generate BidIQ analysis, and
-        things sync when network returns.
+        Partly. Rate-book autofill and the calculators work without internet.
+        Opening a BOQ, fetching tenders, uploading a BOQ, BidIQ and live market
+        rates need a connection. Each rate you enter is saved to your account as
+        you go. If the signal drops, the app keeps trying to save; keep it open
+        until it reconnects, or unsaved rates can be lost.
       </>
     ),
   },
@@ -145,11 +157,11 @@ const faqs: { q: string; a: React.ReactNode }[] = [
     q: "What does uploading my tender results actually get me?",
     a: (
       <>
-        Two things. Your private track record — real win rate and typical margin
-        vs L1 — starts building. And the recommendations you see get tuned to
-        your firm&apos;s pattern instead of a market average. The honest trade:
-        BOQ+ runs on real results, and contractors who feed it theirs get the
-        sharpest numbers.
+        Your private track record — your win rate and how far you were from L1
+        — builds from the results you add. You also choose whether a result
+        helps improve BOQ+ market rates for everyone, or is used only for your
+        own BidIQ. Your BOQs, rates and track record stay private to your
+        account.
       </>
     ),
   },
@@ -170,7 +182,7 @@ export default function FaqPage() {
     <LegalShell
       fileNo="Q-01"
       title="Frequently Asked Questions"
-      updated="13 OCTOBER 2026"
+      updated="1 NOVEMBER 2026"
       intro={
         <p>
           The questions careful contractors actually ask before trusting an app
