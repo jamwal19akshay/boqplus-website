@@ -1476,8 +1476,12 @@ footer.site-footer > span {
   border-bottom: 0;
   background: none;
 }
-.legal-prose .blog-sources {
+.legal-prose .blog-sources,
+.legal-prose .blog-related {
   font-size: 14.5px;
+}
+.legal-prose .blog-related {
+  margin: 48px 0 0;
 }
 
 /* --- Responsive ---------------------------------------------------------- */

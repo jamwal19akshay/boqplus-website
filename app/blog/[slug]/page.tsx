@@ -1,8 +1,9 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import LegalShell from "../../components/LegalShell";
 import StoreBadges from "../../components/StoreBadges";
-import { formatDate, getPost, getPosts } from "@/lib/blog";
-import { JsonLd, ORGANIZATION_ID, organization } from "@/lib/jsonld";
+import { formatDate, getPost, getPosts, relatedPosts } from "@/lib/blog";
+import { JsonLd, ORGANIZATION_ID, breadcrumbList, organization } from "@/lib/jsonld";
 import { appStoreUrl, playStoreUrl } from "@/lib/links";
 import { Markdown } from "@/lib/markdown";
 import { SITE_URL, pageMetadata } from "@/lib/seo";
@@ -33,6 +34,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
   if (!post) notFound();
 
   const url = `${SITE_URL}/blog/${post.slug}`;
+  const related = relatedPosts(post.slug);
   const article = {
     "@context": "https://schema.org",
     "@graph": [
@@ -51,6 +53,11 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
         articleSection: post.topic,
         inLanguage: "en-IN",
       },
+      breadcrumbList([
+        { name: "Home", path: "/" },
+        { name: "Blog", path: "/blog" },
+        { name: post.title, path: `/blog/${post.slug}` },
+      ]),
     ],
   };
 
@@ -88,6 +95,24 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
           </ul>
         </section>
       )}
+
+      {/* Onward links: every article reaches its siblings and the index, so
+          a reader (and a crawler) never lands on a dead end. */}
+      <nav className="blog-related" aria-label="More articles">
+        <h2>More from the BOQ+ blog</h2>
+        {related.length > 0 && (
+          <ul>
+            {related.map((p) => (
+              <li key={p.slug}>
+                <Link href={`/blog/${p.slug}`}>{p.title}</Link>
+              </li>
+            ))}
+          </ul>
+        )}
+        <p>
+          <Link href="/blog">All articles</Link>
+        </p>
+      </nav>
 
       {/* The article's one call to action. Store links are tagged per article
           so installs from each guide are attributable in the store consoles. */}

@@ -1,10 +1,11 @@
 import Link from "next/link";
 import LegalShell from "../components/LegalShell";
 import { formatDate, getPosts } from "@/lib/blog";
-import { pageMetadata } from "@/lib/seo";
+import { JsonLd, ORGANIZATION_ID, breadcrumbList, organization } from "@/lib/jsonld";
+import { SITE_URL, pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
-  title: "Blog — BOQ+",
+  title: "BOQ+ Blog — BOQ, Pricing and Tender Guides for Contractors",
   description:
     "Practical guides for contractors bidding on Indian government e-tenders: filling BOQs, pricing items and avoiding the mistakes that get bids rejected.",
   path: "/blog",
@@ -12,6 +13,33 @@ export const metadata = pageMetadata({
 
 export default function BlogIndex() {
   const posts = getPosts();
+  // One page lists every article (newest first): at a post a day that is
+  // still a light page for a year, and a single crawlable list beats
+  // paginated archives for getting each article found.
+  const blog = {
+    "@context": "https://schema.org",
+    "@graph": [
+      organization,
+      {
+        "@type": "Blog",
+        name: "BOQ+ Blog",
+        url: `${SITE_URL}/blog`,
+        inLanguage: "en-IN",
+        publisher: { "@id": ORGANIZATION_ID },
+        blogPost: posts.map((p) => ({
+          "@type": "BlogPosting",
+          headline: p.title,
+          url: `${SITE_URL}/blog/${p.slug}`,
+          datePublished: p.date,
+          dateModified: p.updated ?? p.date,
+        })),
+      },
+      breadcrumbList([
+        { name: "Home", path: "/" },
+        { name: "Blog", path: "/blog" },
+      ]),
+    ],
+  };
   return (
     <LegalShell
       fileNo="B-00"
@@ -25,6 +53,7 @@ export default function BlogIndex() {
         </p>
       }
     >
+      <JsonLd data={blog} />
       <h2>Articles</h2>
       <div className="sample-files">
         {posts.map((p) => (

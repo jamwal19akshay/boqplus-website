@@ -1,5 +1,5 @@
 import Masthead from "./components/Masthead";
-import { JsonLd, mobileApplication, organization } from "@/lib/jsonld";
+import { JsonLd, mobileApplication, organization, website } from "@/lib/jsonld";
 import { pageMetadata } from "@/lib/seo";
 import OpeningSheet from "./components/OpeningSheet";
 import DispatchLine from "./components/DispatchLine";
@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <main id="top">
       <JsonLd
-        data={{ "@context": "https://schema.org", "@graph": [organization, mobileApplication] }}
+        data={{ "@context": "https://schema.org", "@graph": [organization, website, mobileApplication] }}
       />
       <Masthead />
       <OpeningSheet />

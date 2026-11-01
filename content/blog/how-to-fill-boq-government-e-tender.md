@@ -1,7 +1,8 @@
 ---
-title: How to Fill a BOQ for Government E-Tenders: A Step-by-Step Guide
+title: How to Fill a BOQ for an E-Tender: A Step-by-Step Guide
 description: A practical guide for contractors to filling and uploading the BOQ (price bid) on government e-procurement portals, with common mistakes to avoid.
 date: 2026-10-13
+updated: 2026-11-01
 author: BOQ+ Team
 topic: BOQ basics
 reviewBy: 2027-04-13

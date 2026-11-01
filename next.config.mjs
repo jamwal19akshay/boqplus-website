@@ -32,6 +32,15 @@ const nextConfig = {
     // existed on this site; /support is the contact page.
     const contact = ["/contact", "/contact.html"];
     return [
+      // www.boq.co.in served the whole site with a 200, so every page existed
+      // at two hosts. Canonical tags already name the apex; this makes the
+      // www host agree, path and query intact.
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.boq.co.in" }],
+        destination: "https://boq.co.in/:path*",
+        permanent: true,
+      },
       ...legal.map((page) => ({
         source: `/${page}.html`,
         destination: `/${page}`,

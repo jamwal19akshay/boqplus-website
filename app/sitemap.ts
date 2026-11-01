@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getPosts } from "@/lib/blog";
+import { getPosts, lastBlogUpdate } from "@/lib/blog";
 
 const BASE_URL = "https://boq.co.in";
 
@@ -28,7 +28,8 @@ const routes: {
 export default function sitemap(): MetadataRoute.Sitemap {
   const pages = routes.map(({ path, changeFrequency, priority }) => ({
     url: `${BASE_URL}${path}`,
-    lastModified: LAST_MODIFIED,
+    // The blog index changes with every article, not with the site.
+    lastModified: path === "/blog" ? (lastBlogUpdate() ?? LAST_MODIFIED) : LAST_MODIFIED,
     changeFrequency,
     priority,
   }));

@@ -1,5 +1,40 @@
 # Decisions Log
 
+## 2026-11-01 — SEO audit: www redirect, structured data, blog ready for daily posts, lighter home page
+
+Branch `seo/audit-2026-11-01`. Founder asked for a technical SEO audit and fixes ahead of a daily
+data-driven blog. Metadata, structure and performance only; marketing copy and design unchanged.
+
+- **www host:** `www.boq.co.in` served every page with a 200 (duplicate host). `next.config.mjs` now
+  308-redirects any www request to the same path on the apex. Canonicals already named the apex.
+- **Structured data:** home adds `WebSite` to its graph; `/blog` gets `Blog` (every post as
+  `BlogPosting`) + `BreadcrumbList`; each article adds `BreadcrumbList` (Home › Blog › article).
+- **Blog at scale:**
+  - One `/blog` page lists every article, newest first. No pagination: one crawlable list is
+    better for discovery, and at a post a day it stays light for a year. Revisit near 300 posts.
+  - Each article ends with "More from the BOQ+ blog": up to three related articles (same topic
+    first, then newest) plus "All articles", so no article is a dead end.
+  - Sitemap `lastmod` for `/blog` follows the newest article date instead of the fixed site date.
+  - `lib/markdown.tsx` renders pipe tables (header, `|---|` divider, rows) inside the legal
+    pages' scroll box, for articles that carry figures.
+- **Titles:** founder rule, no "government" in blog titles. "How to Fill a BOQ for Government
+  E-Tenders" became "How to Fill a BOQ for an E-Tender"; the slug stays, so no link breaks.
+  `lib/blog.test.ts` fails if a title breaks the rule. The `/blog` title was the bare "Blog — BOQ+"
+  and is now "BOQ+ Blog — BOQ, Pricing and Tender Guides for Contractors".
+- **404:** a real not-found page (Next adds `noindex`) with links home, to the blog, FAQ and
+  Support, replacing Next's bare default.
+- **Speed:**
+  - The three app screens were 1344×2992 PNGs, 757 KB in total, shown at no more than 370 px. They
+    are now 900 px WebP copies, about 250 KB. The PNGs stay in `public/` for anything that links them.
+  - The screens and the footer logo load lazily, so React no longer preloads them ahead of the
+    hero. The home page now preloads 3 images, down from 6.
+- **Language:** `<html lang="en-IN">`, matching `og:locale` and JSON-LD `inLanguage`. The only Hindi
+  text is the `/sources` toggle, already marked `lang="hi"`. No separate Hindi pages exist yet, so
+  `hreflang` is left out until there is a Hindi URL to point at.
+- **Checked and fine:** robots.txt, the sitemap (every public page; `/test-files` and `/app` are
+  noindex and absent), unique titles and descriptions, OG/Twitter cards, one `h1` per page, alt
+  text, viewport, and the http→https redirect.
+
 ## 2026-10-16 — Privacy, Terms, FAQ, Delete-account: market data only from comparatives users agree to share
 
 Branch `content/privacy-market-data`. Founder: the privacy policy must match the code.

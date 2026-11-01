@@ -53,7 +53,7 @@ export default function RootLayout({
     // --display/--sans/--mono on :root in terms of them, and a variable scoped
     // to <body> is not visible to a :root rule.
     <html
-      lang="en"
+      lang="en-IN"
       className={`${archivoBlack.variable} ${plexSans.variable} ${plexMono.variable}`}
     >
       <body>{children}</body>

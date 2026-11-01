@@ -3,22 +3,26 @@
 import { useState } from "react";
 import { PRICING } from "@/lib/pricing";
 
+// Screens are 900px-wide WebP copies of the PNG captures beside them (the
+// phone shell is at most 370px wide, so 900px covers 2.4x displays at a third
+// of the PNG weight). Both images sit below the fold: loading="lazy" also
+// stops React preloading them ahead of the hero.
 const PLATES = [
   {
     label: "Fill the BOQ",
-    image: "fill-rates.png",
+    image: "fill-rates.webp",
     note: "45 / 45 items rated",
     copy: "A hundred empty rates become one controlled working surface. Scenario, estimate, rate and amount stay together.",
   },
   {
     label: "Find the work",
-    image: "tenders.png",
+    image: "tenders.webp",
     note: "GePNIC + state portals",
     copy: "Live opportunities stripped of portal friction. Department, location, value and deadline—before you open the detail.",
   },
   {
     label: "Keep the lesson",
-    image: "track-record.png",
+    image: "track-record.webp",
     note: "Your record compounds",
     copy: "The next bid should not begin from zero. Wins, losses and margins become your private operating memory.",
   },
@@ -70,6 +74,10 @@ export default function MachineSection() {
             <img
               src={`/screens/app/${plate.image}`}
               alt={`${plate.label} screen in BOQ+`}
+              width={900}
+              height={2004}
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <span className="screen-caption">
@@ -92,7 +100,7 @@ export default function MachineSection() {
 
         <div className="ghost-plate" aria-hidden="true">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={`/screens/app/${ghost.image}`} alt="" />
+          <img src={`/screens/app/${ghost.image}`} alt="" loading="lazy" decoding="async" />
         </div>
       </div>
     </section>

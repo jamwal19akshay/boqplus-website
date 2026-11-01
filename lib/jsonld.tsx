@@ -83,3 +83,28 @@ export function faqPage(items: { q: string; a: ReactNode }[]) {
     })),
   };
 }
+
+export const WEBSITE_ID = `${SITE_URL}/#website`;
+
+export const website = {
+  "@type": "WebSite",
+  "@id": WEBSITE_ID,
+  name: "BOQ+",
+  url: SITE_URL,
+  inLanguage: "en-IN",
+  publisher: { "@id": ORGANIZATION_ID },
+};
+
+// Trail from the home page to the current page, e.g. Home › Blog › Article.
+// The last crumb is the page itself.
+export function breadcrumbList(crumbs: { name: string; path: string }[]) {
+  return {
+    "@type": "BreadcrumbList",
+    itemListElement: crumbs.map((c, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: c.name,
+      item: `${SITE_URL}${c.path}`,
+    })),
+  };
+}

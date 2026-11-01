@@ -94,6 +94,27 @@ export function getPost(slug: string): Post | undefined {
   return getPosts().find((p) => p.slug === slug);
 }
 
+// Up to `n` other articles for the foot of a post: same topic first (newest
+// first), then the newest of the rest, so every article links onward even
+// when its topic has no siblings yet.
+export function relatedPosts(slug: string, n = 3): Post[] {
+  const posts = getPosts();
+  const post = posts.find((p) => p.slug === slug);
+  const others = posts.filter((p) => p.slug !== slug);
+  const sameTopic = others.filter((p) => p.topic === post?.topic);
+  const rest = others.filter((p) => p.topic !== post?.topic);
+  return [...sameTopic, ...rest].slice(0, n);
+}
+
+// Last time the blog changed: the newest publication or edit date. Feeds the
+// sitemap entry for /blog, which changes whenever an article does.
+export function lastBlogUpdate(): string | undefined {
+  return getPosts()
+    .map((p) => p.updated ?? p.date)
+    .sort()
+    .at(-1);
+}
+
 // "2026-10-13" → "13 October 2026" (fixed, not locale-dependent).
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July",
   "August", "September", "October", "November", "December"];
