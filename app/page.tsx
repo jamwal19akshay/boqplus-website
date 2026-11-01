@@ -13,7 +13,7 @@ import ClosingSheet from "./components/ClosingSheet";
 import SiteFooter from "./components/SiteFooter";
 
 export const metadata = pageMetadata({
-  title: "BOQ+ — The bid is won before the portal opens",
+  title: "BOQ+ — Price tender BOQs with real winning rates",
   description:
     "BOQ+ reads the comparative statements published on GePNIC and state e-procurement portals and shows the winning discount band, item by item, while you price your BOQ on your phone.",
   path: "/",

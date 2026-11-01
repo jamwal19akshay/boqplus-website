@@ -25,7 +25,7 @@ const plexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://boq.co.in"),
-  title: "BOQ+ — The bid is won before the portal opens",
+  title: "BOQ+ — Price tender BOQs with real winning rates",
   description:
     "BOQ+ reads the comparative statements published on GePNIC and state e-procurement portals and shows the winning discount band, item by item, while you price your BOQ on your phone.",
   keywords: [
