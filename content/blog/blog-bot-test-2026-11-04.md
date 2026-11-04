@@ -6,6 +6,7 @@ author: BOQ+ Team
 topic: How-to guides
 reviewBy: 2027-05-04
 campaign: blog-bot-test-2026-261105
+draft: true
 sources:
   - BOQ+ tender database, figures as of 4 November 2026
 ---
