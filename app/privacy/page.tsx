@@ -14,7 +14,7 @@ export default function PrivacyPage() {
     <LegalShell
       fileNo="P-01"
       title="Privacy Policy"
-      updated="16 OCTOBER 2026"
+      updated="11 NOVEMBER 2026"
       intro={
         <p>
           This policy explains, in plain language, what the BOQ+ app (Android
@@ -81,8 +81,14 @@ export default function PrivacyPage() {
               <td>
                 We read the file to extract its items, then{" "}
                 <strong>delete the file right after reading</strong>. We keep the
-                extracted items, the file name and a fingerprint so you can keep
-                working on it.
+                extracted items, the file name and a fingerprint (a code computed
+                from the file) so you can keep working on it. If the same file is
+                uploaded again, by you or anyone else, we reuse the items already
+                extracted instead of reading it again; we never keep the file
+                itself for this. If a file fails to read and you choose{" "}
+                <strong>&ldquo;Send this file to BOQ+&rdquo;</strong>, we keep that
+                one file privately for up to 30 days to fix the problem, then
+                delete it. Only the BOQ+ team can see it.
               </td>
             </tr>
             <tr>
@@ -253,8 +259,9 @@ export default function PrivacyPage() {
         <li>
           <strong>Anthropic</strong> — when our parser can&apos;t read a BOQ
           layout on its own, the column headers and a few sample rows are sent to
-          Anthropic&apos;s AI model to identify the columns. Anthropic does not
-          use this data to train its models.
+          Anthropic&apos;s AI model to identify the columns; the layout it finds
+          is saved so the same layout is read without AI next time. Anthropic
+          does not use this data to train its models.
         </li>
         <li>
           <strong>Railway</strong> (servers and database) and{" "}
@@ -281,7 +288,8 @@ export default function PrivacyPage() {
       </p>
       <p>
         Uploaded BOQ files and comparative statements are deleted right after
-        they are read. Crash reports are kept for up to 90 days. We keep the rest
+        they are read; a file you chose to send us after a failed upload is
+        deleted within 30 days, or straight away if you delete your account. Crash reports are kept for up to 90 days. We keep the rest
         while your account is active. After account deletion, personal data is
         erased or anonymised within 90 days, except records we must keep under
         law (e.g. tax and purchase records). Market-index data from
