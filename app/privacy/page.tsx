@@ -14,7 +14,7 @@ export default function PrivacyPage() {
     <LegalShell
       fileNo="P-01"
       title="Privacy Policy"
-      updated="11 NOVEMBER 2026"
+      updated="12 NOVEMBER 2026"
       intro={
         <p>
           This policy explains, in plain language, what the BOQ+ app (Android
@@ -260,8 +260,10 @@ export default function PrivacyPage() {
           <strong>Anthropic</strong> — when our parser can&apos;t read a BOQ
           layout on its own, the column headers and a few sample rows are sent to
           Anthropic&apos;s AI model to identify the columns; the layout it finds
-          is saved so the same layout is read without AI next time. Anthropic
-          does not use this data to train its models.
+          is saved so the same layout is read without AI next time. Scanned
+          PDFs (photos of pages) may be sent in full, up to 30 pages, so the
+          model can read them. Anthropic does not use this data to train its
+          models.
         </li>
         <li>
           <strong>Railway</strong> (servers and database) and{" "}
