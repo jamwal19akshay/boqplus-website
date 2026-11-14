@@ -36,17 +36,23 @@ const rupees = (price: string) => price.replace(/[^0-9]/g, "");
 // whichever app build is current.
 export const mobileApplication = {
   "@type": "MobileApplication",
-  name: "BOQ+",
+  name: "BOQ+ Tender BOQ Rates",
+  alternateName: "BOQ+",
   url: SITE_URL,
   description:
-    "Fill government tender BOQs on your phone with rates from CPWD DSR, state SOR rate books and published tender results, and see what other contractors bid.",
+    "Upload a tender BOQ, even a scanned PDF, with no sign-in. It opens priced with Suggested rates from 72,000+ past government tender results, which you check and edit. Percentage tenders show the typical winning range. Not affiliated with any government entity.",
   operatingSystem: "iOS, Android",
   applicationCategory: "BusinessApplication",
   inLanguage: "en-IN",
   downloadUrl: [APP_STORE_LISTING, PLAY_STORE_LISTING],
   publisher: { "@id": ORGANIZATION_ID },
   offers: [
-    { "@type": "Offer", name: "Free", price: "0", priceCurrency: "INR" },
+    {
+      "@type": "Offer",
+      name: "Free: first BOQ opens priced",
+      price: "0",
+      priceCurrency: "INR",
+    },
     { "@type": "Offer", name: "Quarterly", price: rupees(PRICING.quarterly), priceCurrency: "INR" },
     { "@type": "Offer", name: "Annual (first year)", price: rupees(PRICING.annualIntro), priceCurrency: "INR" },
     {

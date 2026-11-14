@@ -68,4 +68,4 @@ Rules differ between departments. The tender document is final, so follow the NI
 
 ## Try BOQ+
 
-See exact item rates for your own tender in BOQ+. Install the app: your first 3 BOQ previews are free.
+See exact item rates for your own tender in BOQ+. Install the app: your first BOQ opens priced, free.

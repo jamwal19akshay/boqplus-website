@@ -9,13 +9,15 @@ import MachineSection from "./components/MachineSection";
 import TenderWire from "./components/TenderWire";
 import NightShift from "./components/NightShift";
 import TariffSection from "./components/TariffSection";
+import HowItWorks from "./components/HowItWorks";
+import StickyDownload from "./components/StickyDownload";
 import ClosingSheet from "./components/ClosingSheet";
 import SiteFooter from "./components/SiteFooter";
 
 export const metadata = pageMetadata({
-  title: "BOQ+ — Price tender BOQs with real winning rates",
+  title: "Tender BOQ Rates App: Upload a BOQ, It Opens Priced | BOQ+",
   description:
-    "BOQ+ reads the comparative statements published on GePNIC and state e-procurement portals and shows the winning discount band, item by item, while you price your BOQ on your phone.",
+    "Upload a tender BOQ, even a scanned PDF, no sign-in. It opens priced with rates from 72,000+ past tender results you check and edit. % tenders: typical winning range.",
   path: "/",
 });
 
@@ -28,6 +30,7 @@ export default function Home() {
       <Masthead />
       <OpeningSheet />
       <DispatchLine />
+      <HowItWorks />
       <RecordSection />
       <RateRuler />
       <MachineSection />
@@ -36,6 +39,7 @@ export default function Home() {
       <TariffSection />
       <ClosingSheet />
       <SiteFooter />
+      <StickyDownload />
     </main>
   );
 }

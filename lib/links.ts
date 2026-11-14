@@ -10,8 +10,8 @@
 // Campaigns once at least five Apple Accounts have installed through a link.
 //
 // Android: the listing for com.verkzo.boq is public (open testing, open to
-// anyone) — verified 13 October 2026, title "BOQ+ — Fill Your Tender BOQ On
-// Your Phone". `referrer` is the URL-encoded UTM string Play passes to the
+// anyone) — verified 13 October 2026, title then "BOQ+ — Fill Your Tender BOQ On
+// Your Phone"; since 3.0.2 the store name is "BOQ+ Tender BOQ Rates". `referrer` is the URL-encoded UTM string Play passes to the
 // Install Referrer API and shows in Play Console's acquisition reports.
 
 // Plain listing URLs — for structured data, where tracking tokens mean nothing.
@@ -32,3 +32,9 @@ export function playStoreUrl(source: string, campaign: string, medium = "organic
 export const APP_STORE_URL = appStoreUrl("website-home");
 export const PLAY_STORE_URL = playStoreUrl("website", "home");
 export const PLAY_STORE_LIVE = true;
+
+// Per-placement links for the other site-wide download spots.
+export const APP_STORE_URL_FOOTER = appStoreUrl("website-footer");
+export const PLAY_STORE_URL_FOOTER = playStoreUrl("website", "footer");
+export const APP_STORE_URL_STICKY = appStoreUrl("website-sticky");
+export const PLAY_STORE_URL_STICKY = playStoreUrl("website", "sticky");

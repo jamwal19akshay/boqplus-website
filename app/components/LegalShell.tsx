@@ -1,5 +1,6 @@
 import Masthead from "./Masthead";
 import SiteFooter from "./SiteFooter";
+import StickyDownload from "./StickyDownload";
 
 export default function LegalShell({
   fileNo,
@@ -7,6 +8,7 @@ export default function LegalShell({
   updated,
   intro,
   clearance = ["BOQ+ / OFFICIAL RECORD", "PLAIN LANGUAGE, NO ASTERISKS"],
+  downloads = true,
   children,
 }: {
   fileNo: string;
@@ -14,6 +16,9 @@ export default function LegalShell({
   updated: string;
   intro?: React.ReactNode;
   clearance?: [string, string];
+  // Store badges in the footer plus the phone sticky bar. Articles turn this
+  // off: they end with their own, campaign-tagged call to action.
+  downloads?: boolean;
   children: React.ReactNode;
 }) {
   return (
@@ -45,7 +50,8 @@ export default function LegalShell({
         <article className="legal-prose">{children}</article>
       </div>
 
-      <SiteFooter />
+      <SiteFooter downloads={downloads} />
+      {downloads && <StickyDownload />}
     </main>
   );
 }

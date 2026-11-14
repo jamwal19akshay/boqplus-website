@@ -1,6 +1,5 @@
 import StoreBadges from "./StoreBadges";
 import { DATA_STATS, MARKET_CAPTURE } from "@/lib/stats";
-import { PRICING } from "@/lib/pricing";
 
 export default function OpeningSheet() {
   return (
@@ -21,30 +20,29 @@ export default function OpeningSheet() {
           <i>PUBLIC RECORD / PRIVATE EDGE</i>
         </div>
         <h1>
-          The bid is won
+          Tender apps list tenders.
           <br />
-          <span>before the portal</span>
-          <br />
-          opens.
+          <span>BOQ+ prices the BOQ.</span>
         </h1>
+        <div className="opening-store">
+          <span>GET THE APP &middot; YOUR FIRST BOQ OPENS PRICED, FREE</span>
+          <StoreBadges className="large" />
+        </div>
         <div className="opening-copy">
           <p>
-            BOQ+ reads the government&rsquo;s published result trail&mdash;who bid,
-            who won, and at what rate&mdash;then puts that intelligence beside the
-            BOQ you are pricing tonight.
+            Got a tender BOQ on WhatsApp and a deadline? Upload it, even a
+            scanned PDF, with no sign-in. It opens priced on your phone, with{" "}
+            <em>Suggested</em> rates built from {DATA_STATS.tenderResults} past
+            government tender results. You check, edit or accept every rate.
           </p>
           <div className="opening-actions">
-            <a href="#machine" className="seal-button">
-              UNSEAL {PRICING.freeBoqPreviews} FREE BOQ PREVIEWS <b>↘</b>
+            <a href="#how" className="underlined">
+              See how it works
             </a>
             <a href="#record" className="underlined">
               Examine the evidence
             </a>
           </div>
-        </div>
-        <div className="opening-store">
-          <span>GET THE APP</span>
-          <StoreBadges />
         </div>
       </div>
 

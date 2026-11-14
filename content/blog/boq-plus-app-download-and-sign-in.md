@@ -43,9 +43,9 @@ Signing in saves your BOQs to your account. This means they follow you to anothe
 
 You can look around without signing in. The sign-in screen has an 'Explore without signing in' option. On later sign-in prompts, the same choice is shown as 'Continue as Guest'.
 
-Uploading a BOQ needs a signed-in account. If you are a guest and try to upload, the app asks you to sign in at that point.
+You can also upload a BOQ as a guest. No sign-in is needed to upload.
 
-When a guest signs in, the guest's BOQs and free-preview count are carried into the account. So anything you did as a guest is not left behind.
+When a guest signs in, the guest's BOQs are carried into the account. So anything you did as a guest is not left behind.
 
 ### Setup questions after first sign-in
 
@@ -63,7 +63,7 @@ Here is a simple order for a first-time user:
 
 1. Install the app from the store for your phone, using the badge on the home page.
 2. Look around as a guest to see how the screens work.
-3. Sign in when you are ready to upload a BOQ. Use Google on Android, or Apple or Google on iPhone.
+3. Upload a BOQ as a guest, or sign in to save your BOQs to your account. Use Google on Android, or Apple or Google on iPhone.
 4. Answer the three setup questions about your state, departments and city.
 5. Upload your BOQ.
 
@@ -83,4 +83,4 @@ Account deletion is available inside the app under Settings. There is also a del
 
 ## Try BOQ+
 
-See exact item rates for your own tender in BOQ+. Install the app: your first 3 BOQ previews are free.
+See exact item rates for your own tender in BOQ+. Install the app: your first BOQ opens priced, free.

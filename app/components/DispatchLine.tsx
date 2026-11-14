@@ -1,13 +1,11 @@
-import { PRICING } from "@/lib/pricing";
-
 export default function DispatchLine() {
   return (
     <div className="dispatch-line">
       <div>NEW TENDERS ENTER THE RECORD DAILY</div>
       <span>●</span>
-      <div>BIDIQ READS THE WINNING BAND</div>
+      <div>UPLOAD WITHOUT SIGN-IN</div>
       <span>●</span>
-      <div>{PRICING.freeBoqPreviews} FREE BOQ PREVIEWS + {PRICING.freeExports} EXPORTS</div>
+      <div>YOUR FIRST BOQ OPENS PRICED, FREE</div>
       <span>●</span>
       <div aria-hidden="true">NEW TENDERS ENTER THE RECORD DAILY</div>
     </div>

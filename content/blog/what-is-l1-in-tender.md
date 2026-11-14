@@ -80,4 +80,4 @@ The ranking shows the order of prices among technically qualified bids. It does 
 
 ## Try BOQ+
 
-BOQ+ helps you price tender BOQs on your phone with rates from CPWD DSR, state SOR rate books and published tender results. Install it and try it free: 3 BOQ previews and 3 exports, plus calculators, SSR rate books and tender alerts.
+BOQ+ helps you price tender BOQs on your phone with rates from CPWD DSR, state SOR rate books and published tender results. Install it and try it free: your first BOQ opens priced, with no sign-in needed to upload.

@@ -1,5 +1,19 @@
 # Decisions Log
 
+## 2026-11-14 — Site matches app 3.0.2 (branch `site-302`, not deployed)
+
+Store-listing wording, figures as of 13 Nov 2026. New free tier: no sign-in to upload, first BOQ opens
+priced free with "Suggested" rates, then free previews; % tenders show the typical winning range
+("Rough range" when thin). Prices unchanged in value (5 credits ₹999, Quarterly ₹3,999, Annual ₹7,999
+first year then ₹11,999). `lib/pricing.ts` drops freeBoqPreviews/freeExports; `lib/stats.ts` holds the
+new figures. Home: new h1, prominent store badges in hero/closing/footer, phone sticky bar (campaign
+`sticky`/`footer`), "How it works" section, independent-app note in every footer. Titles/descriptions
+rewritten; JSON-LD updated; blog CTA and offer sentences fixed (6 posts + 11 CTA lines).
+
+**Legal — for lawyer review:** Terms §03 "Free tier" and Refund §01 now read the new FREE_TIER_SUMMARY
+(dates not bumped). Removed the "3 exports, calculators, SSR rate books, tender alerts" free-tier claim:
+not in the 3.0.2 listing wording, unverified.
+
 ## 2026-11-01 — SEO audit: www redirect, structured data, blog ready for daily posts, lighter home page
 
 Branch `seo/audit-2026-11-01`. Founder asked for a technical SEO audit and fixes ahead of a daily

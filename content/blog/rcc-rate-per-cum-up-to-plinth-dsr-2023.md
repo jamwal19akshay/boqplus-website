@@ -89,4 +89,4 @@ How this item compares with others in the same Kerala tender data: RCC 1:1.5:3 b
 
 ## Try BOQ+
 
-See exact item rates for your own tender in BOQ+. Install the app: your first 3 BOQ previews are free.
+See exact item rates for your own tender in BOQ+. Install the app: your first BOQ opens priced, free.

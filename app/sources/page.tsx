@@ -13,8 +13,8 @@ const DISCLAIMER_HI =
   "BOQ+ एक स्वतंत्र ऐप है। यह किसी भी सरकारी संस्था से संबद्ध नहीं है, उसके द्वारा समर्थित नहीं है और उसका प्रतिनिधित्व भी नहीं करता।";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Data sources | BOQ+",
-  description: `${DISCLAIMER_EN} Every official source of government information shown in BOQ+, with links.`,
+  title: "Data Sources: GePNIC, CPPP, CPWD DSR and State SOR Links | BOQ+",
+  description: `${DISCLAIMER_EN} Official portals and rate books behind BOQ+, with links.`,
   path: "/sources",
 });
 

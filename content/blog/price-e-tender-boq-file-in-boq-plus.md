@@ -20,16 +20,16 @@ BOQ+ handles both item-rate BOQs, where you enter a rate for each line, and perc
 
 ### Before you start
 
-- Have the BOQ file ready. BOQ+ reads Excel files (.xls and .xlsx, up to 5 MB) and digital PDFs (up to 10 MB).
-- Be signed in. Uploading a BOQ needs a signed-in account.
-- Know how you will start pricing. Opening a BOQ is a free preview. Starting to price needs a Quarterly or Annual plan, or 1 purchased BOQ credit.
+- Have the BOQ file ready. BOQ+ reads Excel files (.xls and .xlsx, up to 5 MB) and PDFs, including scanned PDFs (up to 10 MB).
+- No sign-in is needed. You can upload as a guest.
+- Know what is free. Your first BOQ opens priced, free. After that, a locked BOQ shows the rates already in your file and how many lines BOQ+ has rates for. To price more BOQs, use a Quarterly or Annual plan, or BOQ credits.
 
 ### Upload the file
 
 1. Open the BOQs tab and tap the round + button. The phone's file picker opens straight away.
 2. Choose the BOQ file. A GePNIC .xls downloaded from the tender page can be uploaded as it is.
 3. If the Excel file has more than one sheet, BOQ+ asks which sheet holds the BOQ. Pick the sheet with the line items.
-4. If you are using the app as a guest, BOQ+ asks you to sign in first. It keeps your chosen file while you do.
+4. You do not need to sign in. BOQ+ reads the file as a guest.
 
 On Android, you can also open a BOQ file with BOQ+ from another app, or share it to BOQ+ from apps such as WhatsApp or Google Drive.
 
@@ -41,9 +41,7 @@ Do this check before you enter any rates. Read the item descriptions and quantit
 
 ### Start pricing
 
-To start pricing, tap Start Pricing. This is included with a Quarterly or Annual plan, or it uses 1 purchased BOQ credit.
-
-The free plan covers previews. Starting to price needs a plan or a purchased credit, so check which one you have before you tap.
+Your first BOQ opens priced, free. Where BOQ+ is confident, a line gets a rate marked "Suggested". Check it, edit it or accept it. Lines without a confident rate are left for you to fill. For more BOQs after the first, a Quarterly or Annual plan or BOQ credits are needed.
 
 ### Fill in the rates
 
@@ -69,8 +67,8 @@ For the form itself, see [how to fill a BOQ for an e-tender](/blog/how-to-fill-b
 
 - Screens and button names may change between app versions.
 - This guide follows the 3.0.0 apps. Android and iPhone differ in small details, which are noted where they matter.
-- Free previews and starting to price are different steps. The free plan covers previews. Starting to price needs a plan or a purchased credit.
+- Your first BOQ opens priced, free. After that, free previews show the rates already in your file; pricing more BOQs needs a plan or BOQ credits.
 
 ## Try BOQ+
 
-See exact item rates for your own tender in BOQ+. Install the app: your first 3 BOQ previews are free.
+See exact item rates for your own tender in BOQ+. Install the app: your first BOQ opens priced, free.

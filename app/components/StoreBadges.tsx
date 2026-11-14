@@ -27,7 +27,7 @@ export default function StoreBadges({
         href={appStoreUrl}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Download BOQ+ on the App Store"
+        aria-label="Download BOQ+ Tender BOQ Rates on the App Store"
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -44,7 +44,7 @@ export default function StoreBadges({
         href={playStoreUrl}
         aria-label={
           PLAY_STORE_LIVE
-            ? "Get BOQ+ on Google Play"
+            ? "Get BOQ+ Tender BOQ Rates on Google Play"
             : "BOQ+ on Google Play — coming soon"
         }
         aria-disabled={PLAY_STORE_LIVE ? undefined : true}

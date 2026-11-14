@@ -5,7 +5,7 @@ const BASE_URL = "https://boq.co.in";
 
 // Hard-coded rather than `new Date()` so an unrelated redeploy doesn't claim
 // every page changed. Bump when a page's content actually changes.
-const LAST_MODIFIED = "2026-10-15";
+const LAST_MODIFIED = "2026-11-14";
 
 const routes: {
   path: string;

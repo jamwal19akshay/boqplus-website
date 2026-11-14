@@ -50,6 +50,6 @@ The hardest part of a BOQ isn't the form — it's the price. Quote too high and 
 
 ## How BOQ+ helps
 
-BOQ+ reads your tender's BOQ on your phone and suggests rates from real government tender results — what contractors actually quoted in similar work in your state — alongside official rate books. For percentage tenders, it shows the range contractors in your state typically bid. You can check, adjust and export your priced BOQ in minutes, then fill your final figures in the official file.
+BOQ+ reads your tender's BOQ on your phone and shows Suggested rates from real government tender results — what contractors actually quoted in similar work in your state — alongside official rate books. For percentage tenders, it shows the range contractors in your state typically bid. You can check, adjust and export your priced BOQ in minutes, then fill your final figures in the official file.
 
 *Always follow the instructions on your tender's portal — procedures can differ between departments and states.*

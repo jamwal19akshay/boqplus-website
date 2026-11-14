@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { PRICING } from "@/lib/pricing";
 
 // Screens are 900px-wide WebP copies of the PNG captures beside them (the
 // phone shell is at most 370px wide, so 900px covers 2.4x displays at a third
@@ -12,7 +11,7 @@ const PLATES = [
     label: "Fill the BOQ",
     image: "fill-rates.webp",
     note: "45 / 45 items rated",
-    copy: "A hundred empty rates become one controlled working surface. Scenario, estimate, rate and amount stay together.",
+    copy: "Upload a BOQ and it opens priced. Lines with a confident rate carry a Suggested rate you check, edit or accept; the rest are left for you to fill, with Auto-fill for the empty lines.",
   },
   {
     label: "Find the work",
@@ -94,7 +93,7 @@ export default function MachineSection() {
             <strong>{plate.note}</strong>
           </div>
           <a href="#price">
-            Preview {PRICING.freeBoqPreviews} BOQs free <b>↗</b>
+            Price your first BOQ free <b>↗</b>
           </a>
         </div>
 

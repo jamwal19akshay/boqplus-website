@@ -68,4 +68,4 @@ Past results describe the past. They are not a prediction of any future tender. 
 
 ## Try BOQ+
 
-See exact item rates for your own tender in BOQ+. Install the app: your first 3 BOQ previews are free.
+See exact item rates for your own tender in BOQ+. Install the app: your first BOQ opens priced, free.

@@ -64,6 +64,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
   return (
     <LegalShell
       fileNo="B-01"
+      downloads={false}
       title={post.title}
       updated={formatDate(post.updated ?? post.date).toUpperCase()}
       clearance={["BOQ+ / FIELD NOTES", post.topic.toUpperCase()]}

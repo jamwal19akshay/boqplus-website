@@ -26,15 +26,17 @@ const plexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://boq.co.in"),
-  title: "BOQ+ — Price tender BOQs with real winning rates",
+  title: "Tender BOQ Rates App: Upload a BOQ, It Opens Priced | BOQ+",
   description:
-    "BOQ+ reads the comparative statements published on GePNIC and state e-procurement portals and shows the winning discount band, item by item, while you price your BOQ on your phone.",
+    "Upload a tender BOQ, even a scanned PDF, no sign-in. It opens priced with rates from 72,000+ past tender results you check and edit. % tenders: typical winning range.",
   keywords: [
-    "BOQ",
+    "tender BOQ rates app",
+    "BOQ rate analysis app",
+    "percentage tender winning percentage",
+    "CPWD DSR rates app",
+    "GePNIC BOQ",
     "government tender",
-    "GePNIC",
     "eTender",
-    "CPWD DSR",
     "MES SSR",
     "L1",
     "comparative statement",

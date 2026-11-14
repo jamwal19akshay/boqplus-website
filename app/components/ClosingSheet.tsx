@@ -1,5 +1,4 @@
 import StoreBadges from "./StoreBadges";
-import { PRICING } from "@/lib/pricing";
 
 export default function ClosingSheet() {
   return (
@@ -18,13 +17,13 @@ export default function ClosingSheet() {
         <em>either way.</em>
       </h2>
       <p>Be on the right line of it.</p>
-      <a href="#price" className="seal-button invert">
-        START WITH {PRICING.freeBoqPreviews} FREE BOQ PREVIEWS <b>↗</b>
-      </a>
       <div className="store-line">
-        <StoreBadges />
-        <small>ON ANDROID AND IPHONE</small>
+        <StoreBadges className="large" />
+        <small>ON ANDROID AND IPHONE &middot; YOUR FIRST BOQ OPENS PRICED, FREE</small>
       </div>
+      <a href="#price" className="underlined invert-link">
+        See pricing
+      </a>
     </section>
   );
 }

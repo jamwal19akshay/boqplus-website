@@ -5,13 +5,64 @@ import { JsonLd, faqPage } from "@/lib/jsonld";
 import { FREE_TIER_SUMMARY, PRICING } from "@/lib/pricing";
 
 export const metadata: Metadata = pageMetadata({
-  title: "FAQ — BOQ+",
+  title: "BOQ+ FAQ: Tender BOQ Rates, Percentage Tenders, Pricing",
   description:
-    "Straight answers for government tender contractors: data safety, portals supported, credits, refunds, and how BOQ+ works.",
+    "Answers on uploading a BOQ without sign-in, Suggested rates, winning percentage ranges, GePNIC and CPWD DSR data, prices (5 credits ₹999, Quarterly, Annual) and refunds.",
   path: "/faq",
 });
 
 const faqs: { q: string; a: React.ReactNode }[] = [
+  {
+    q: "Do I have to sign in to upload a BOQ?",
+    a: (
+      <>
+        No. You can explore and upload as a guest, with no sign-in. Upload a
+        tender BOQ from WhatsApp, email or Files: Excel (.xls or .xlsx, as
+        downloaded from GePNIC, CPPP and state portals) or PDF, including
+        scanned PDFs.
+      </>
+    ),
+  },
+  {
+    q: "What does BOQ+ do with my BOQ? What is a Suggested rate?",
+    a: (
+      <>
+        Your first BOQ opens priced, free. Where BOQ+ is confident, the line
+        gets a rate marked &ldquo;Suggested&rdquo;, built from past government
+        tender results. You check it, edit it or accept it. Lines without a
+        confident rate are left for you to fill, and Auto-fill can fill the
+        empty lines. Suggested rates are evidence-based estimates from past
+        bids, not guesses and not guarantees, and the final rate is always your
+        decision.
+      </>
+    ),
+  },
+  {
+    q: "What is the winning percentage in a percentage tender, and how does BOQ+ show it?",
+    a: (
+      <>
+        In a percentage tender you quote one figure, a percentage above or below
+        the department&apos;s estimate, and the lowest (L1) bidder wins. For
+        these tenders BOQ+ shows the typical winning percentage range, above or
+        below the estimate, from similar past tenders (about 54,000 past tenders
+        with winning percentages, as of 13 November 2026). When history is thin
+        the range is labelled &ldquo;Rough range&rdquo;.
+      </>
+    ),
+  },
+  {
+    q: "Can BOQ+ price a GePNIC BOQ? Does it have CPWD DSR rates?",
+    a: (
+      <>
+        Yes to both. BOQ+ reads the Excel BOQ from GePNIC, CPPP and state
+        portals, as downloaded. It carries CPWD DSR, MES SSR and state SOR rate
+        books, and builds Suggested rates from 2.4 million+ quoted rates in
+        72,000+ government tender results across 48 tender portals (as of 13
+        November 2026). See <a href="/sources">Data sources</a> for the
+        official sources behind it.
+      </>
+    ),
+  },
   {
     q: "Is my BOQ and rate data safe? Will other contractors see my rates?",
     a: (
@@ -55,7 +106,8 @@ const faqs: { q: string; a: React.ReactNode }[] = [
         e-procurement portals built on it — across departments like PWD,
         PDD/electricity distribution, irrigation, and rural development. The BOQ
         filler itself works with any portal&apos;s Excel BOQ (.xlsx/.xls),
-        uploaded exactly as downloaded.
+        uploaded exactly as downloaded, and with PDF BOQs, including scanned
+        PDFs.
       </>
     ),
   },
@@ -84,12 +136,12 @@ const faqs: { q: string; a: React.ReactNode }[] = [
     ),
   },
   {
-    q: "Will BOQ+ guarantee I win as L1?",
+    q: "Does BOQ+ promise I will win as L1?",
     a: (
       <>
         No, and be suspicious of anyone who promises that. BOQ+ shows you what
         the market has actually been bidding so your Below&nbsp;% is a decision
-        made with data instead of a guess. The bid, and the result, are yours.
+        made with data instead of a guess. BOQ+ does not forecast tender outcomes. The bid, and the result, are yours.
       </>
     ),
   },
@@ -97,10 +149,11 @@ const faqs: { q: string; a: React.ReactNode }[] = [
     q: "What can I use for free, and what do plans cost?",
     a: (
       <>
-        Free: {FREE_TIER_SUMMARY}. No card needed. Plans: Quarterly{" "}
-        {PRICING.quarterly}; Annual {PRICING.annualIntro} for the first year,
-        then {PRICING.annualStandard} a year; or {PRICING.credits} for{" "}
-        {PRICING.creditBoqs} BOQs, for one-off bids. All purchases happen in the
+        Free: {FREE_TIER_SUMMARY}. No card needed. To price more BOQs:{" "}
+        {PRICING.creditBoqs} BOQ credits {PRICING.credits} (credits never
+        expire, good for one-off bids); Quarterly {PRICING.quarterly}; or
+        Annual {PRICING.annualIntro} for the first year (introductory offer),
+        then {PRICING.annualStandard} a year. All purchases happen in the
         app, through the App Store or Google Play.
       </>
     ),
@@ -146,8 +199,8 @@ const faqs: { q: string; a: React.ReactNode }[] = [
     a: (
       <>
         Partly. Rate-book autofill and the calculators work without internet.
-        Opening a BOQ, fetching tenders, uploading a BOQ, BidIQ and live market
-        rates need a connection. Each rate you enter is saved to your account as
+        Opening a BOQ, fetching tenders, uploading a BOQ (including scanned PDFs,
+        which are read online), BidIQ and live market rates need a connection. Each rate you enter is saved to your account as
         you go. If the signal drops, the app keeps trying to save; keep it open
         until it reconnects, or unsaved rates can be lost.
       </>
@@ -169,7 +222,8 @@ const faqs: { q: string; a: React.ReactNode }[] = [
     q: "Who is behind BOQ+? How do I reach a human?",
     a: (
       <>
-        BOQ+ is an independent Indian product, not tied to any government body.
+        BOQ+ is an independent app. It is not affiliated with, endorsed by, or
+        representing any government entity.
         Email <a href="mailto:akshay@boq.co.in">akshay@boq.co.in</a> — real
         replies, within one working day.
       </>
@@ -182,7 +236,7 @@ export default function FaqPage() {
     <LegalShell
       fileNo="Q-01"
       title="Frequently Asked Questions"
-      updated="1 NOVEMBER 2026"
+      updated="14 NOVEMBER 2026"
       intro={
         <p>
           The questions careful contractors actually ask before trusting an app
