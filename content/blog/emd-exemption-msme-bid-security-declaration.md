@@ -71,4 +71,4 @@ For reference, typical EMD under GFR is 2% to 5%. CPWD works use 2% of estimated
 
 ## Try BOQ+
 
-See exact item rates for your own tender in BOQ+. Install the app: your first 3 BOQ previews are free.
+See exact item rates for your own tender in BOQ+. Install the app: your first BOQ opens priced, free.
