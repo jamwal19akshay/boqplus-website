@@ -109,6 +109,18 @@ export default function PrivacyPage() {
             </tr>
             <tr>
               <td>
+                Quotations and estimates you make in the app — your business
+                profile, logo, signature, clients, lines and amounts
+              </td>
+              <td>You, in the app</td>
+              <td>
+                Making the PDF. These stay on your phone; we don&apos;t receive
+                them. Our server only records that a document was made (its type
+                and an ID, not its contents), to count the free documents.
+              </td>
+            </tr>
+            <tr>
+              <td>
                 App usage events — e.g. app opened, BOQ uploaded, report viewed,
                 plans screen viewed, purchase made
               </td>
@@ -262,8 +274,11 @@ export default function PrivacyPage() {
           Anthropic&apos;s AI model to identify the columns; the layout it finds
           is saved so the same layout is read without AI next time. Scanned
           PDFs (photos of pages) may be sent in full, up to 30 pages, so the
-          model can read them. Anthropic does not use this data to train its
-          models.
+          model can read them. When you import an estimate into &ldquo;Make a
+          quotation&rdquo;, a photo or scanned PDF of it (up to 10 pages) is sent
+          to Anthropic&apos;s AI model so the lines can be read; it is read in
+          memory and not stored by us. Anthropic does not use this data to train
+          its models.
         </li>
         <li>
           <strong>Railway</strong> (servers and database) and{" "}
@@ -289,8 +304,8 @@ export default function PrivacyPage() {
         require.
       </p>
       <p>
-        Uploaded BOQ files and comparative statements are deleted right after
-        they are read; a file you chose to send us after a failed upload is
+        Uploaded BOQ files, comparative statements and estimates imported into
+        a quotation are deleted right after they are read; a file you chose to send us after a failed upload is
         deleted within 30 days, or straight away if you delete your account. Crash reports are kept for up to 90 days. We keep the rest
         while your account is active. After account deletion, personal data is
         erased or anonymised within 90 days, except records we must keep under
