@@ -14,16 +14,25 @@ export default function PrivacyPage() {
     <LegalShell
       fileNo="P-01"
       title="Privacy Policy"
-      updated="19 NOVEMBER 2026"
+      updated="[RELEASE DATE]"
       intro={
         <p>
           This policy explains, in plain language, what the BOQ+ app (Android
           and iOS) and boq.co.in collect, why, who we share it with, and your
           rights under India&apos;s Digital Personal Data Protection Act, 2023
-          (&ldquo;DPDP Act&rdquo;).
+          (&ldquo;DPDP Act&rdquo;). A Hindi summary (हिन्दी) is at the end of
+          this page.
         </p>
       }
     >
+      <p className="legal-callout">
+        <strong>Three plain statements.</strong> (1) Your rates, priced BOQs and
+        quotations are never shared with anyone. (2) You choose, each time,
+        whether to share a blank tender BOQ with other bidders on the same
+        tender. (3) If we can&apos;t read a file, we&apos;ll ask before keeping
+        it.
+      </p>
+
       <h2>01 — Who we are</h2>
       <p>
         BOQ+ by Verkzo, operated by Akshay Pratap Singh Jamwal (&ldquo;we&rdquo;,
@@ -85,10 +94,43 @@ export default function PrivacyPage() {
                 from the file) so you can keep working on it. If the same file is
                 uploaded again, by you or anyone else, we reuse the items already
                 extracted instead of reading it again; we never keep the file
-                itself for this. If a file fails to read and you choose{" "}
-                <strong>&ldquo;Send this file to BOQ+&rdquo;</strong>, we keep that
-                one file privately for up to 30 days to fix the problem, then
-                delete it. Only the BOQ+ team can see it.
+                itself for this. If a file fails to read, the app asks whether to
+                save it (see the next rows).
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Files we couldn&apos;t read, <strong>only if you say Yes</strong>{" "}
+                for that file — the file itself, its type and size
+              </td>
+              <td>You, per file, when you tap &ldquo;Yes, save it&rdquo;</td>
+              <td>
+                Fixing and improving how BOQ+ reads files, and telling you when
+                your file can be read. Kept up to 90 days, and deleted sooner once
+                handled or when you delete it. Only the BOQ+ team can see it. It
+                is never shared. If you tap No, nothing is kept.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                A blank BOQ item list, <strong>only if you tap Share</strong> for
+                that upload — item numbers, descriptions, quantities and units
+              </td>
+              <td>You, per upload</td>
+              <td>
+                Adding it to the shared blank-BOQ library (see below) so other
+                bidders on the same tender can price it. No rates, amounts,
+                names or contact details are included.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Which Terms and Privacy Policy version you accepted, and when
+              </td>
+              <td>You, at the sign-up screen</td>
+              <td>
+                Keeping a record that you accepted, and asking again when the
+                terms change
               </td>
             </tr>
             <tr>
@@ -175,6 +217,37 @@ export default function PrivacyPage() {
         We do not collect your contacts, SMS, call logs, photos or precise
         location. We never sell your data. We never send your BOQs, rates, firm
         name or email to advertising companies.
+      </p>
+
+      <h3>Shared blank-BOQ library</h3>
+      <p>
+        When a tender BOQ is read, the app may ask whether to share it, blank,
+        with other BOQ+ users on the same tender. You are asked for each upload;
+        Share and Don&apos;t share are equally prominent and nothing is
+        pre-selected. If you tap Share, we store only the item list (item
+        numbers, descriptions, quantities, units) with the tender, portal and
+        department. We do not store or show your rates, prices, name, email,
+        firm or anything from your scenarios, quotations or exports. Phone
+        numbers, email addresses and links in item descriptions are removed, and
+        a BOQ that has any rate or amount from the source file is refused. Other
+        users see the source (tender, portal, department) and &ldquo;shared by a
+        BOQ+ user&rdquo;, never who. Internally we keep a link to the sharing
+        account only so we can handle takedown requests; it is never shown to
+        any user. Always check the official government portal for the official
+        tender document; documents downloaded through BOQ+ may contain mistakes.
+        To have a document removed, write to{" "}
+        <a href="mailto:akshay@boq.co.in">akshay@boq.co.in</a>; we remove it
+        promptly.
+      </p>
+
+      <h3>Opening a government portal inside BOQ+</h3>
+      <p>
+        The in-app portal browser shows the official portal, which is operated
+        by the government department concerned. You log in and solve any captcha
+        yourself. We do not see or store your portal login or password, we do not
+        read what you type, and cookies are cleared when you close the browser.
+        A file you download there is uploaded to BOQ+ only if you tap &ldquo;Price
+        this BOQ in BOQ+&rdquo;.
       </p>
 
       <h3>A note on comparative statements</h3>
@@ -292,7 +365,9 @@ export default function PrivacyPage() {
       <p>
         Some of these companies process data outside India, under contract, as
         the DPDP Act permits. We never share your BOQs, rates or track record
-        with other users or with anyone for their own use.
+        with other users or with anyone for their own use. The only thing other
+        users can ever see from you is a blank item list that you chose to
+        share, without your name.
       </p>
 
       <h2>06 — Storage, security and retention</h2>
@@ -305,8 +380,9 @@ export default function PrivacyPage() {
       </p>
       <p>
         Uploaded BOQ files, comparative statements and estimates imported into
-        a quotation are deleted right after they are read; a file you chose to send us after a failed upload is
-        deleted within 30 days, or straight away if you delete your account. Crash reports are kept for up to 90 days. We keep the rest
+        a quotation are deleted right after they are read; a file you chose to save after a failed read is
+        kept up to 90 days and deleted sooner once handled, when you delete it
+        (Settings or email), or straight away if you delete your account. Crash reports are kept for up to 90 days. We keep the rest
         while your account is active. After account deletion, personal data is
         erased or anonymised within 90 days, except records we must keep under
         law (e.g. tax and purchase records). Market-index data from
@@ -322,8 +398,9 @@ export default function PrivacyPage() {
         </li>
         <li>
           <strong>Correction and erasure:</strong> correct inaccurate data or ask
-          us to delete it. You can edit your firm profile in-app and delete any
-          uploaded BOQ yourself.
+          us to delete it. You can edit your firm profile in-app, delete any
+          uploaded BOQ yourself, and delete saved files in Settings. To remove a
+          blank BOQ you shared, email us.
         </li>
         <li>
           <strong>Account deletion:</strong> delete your account from the
@@ -336,8 +413,8 @@ export default function PrivacyPage() {
         </li>
         <li>
           <strong>Grievance redressal:</strong> write to{" "}
-          <a href="mailto:akshay@boq.co.in">akshay@boq.co.in</a>; we aim to
-          respond within 15 days. If you are not satisfied, you may complain to
+          <a href="mailto:akshay@boq.co.in">akshay@boq.co.in</a>; we respond
+          within 90 days. If you are not satisfied, you may complain to
           the <strong>Data Protection Board of India</strong>.
         </li>
         <li>
@@ -358,6 +435,52 @@ export default function PrivacyPage() {
         the change takes effect and update the date above. Continued use after
         notice means acceptance; if you disagree, you can delete your account.
       </p>
+
+      <h2 id="hindi">हिन्दी — सारांश</h2>
+      <div lang="hi">
+        <p>
+          यह हिन्दी सार आपकी सुविधा के लिए है। किसी अंतर की स्थिति में ऊपर का अंग्रेज़ी
+          पाठ मान्य होगा।
+        </p>
+        <p className="legal-callout">
+          <strong>तीन सीधी बातें।</strong> (1) आपके रेट, प्राइस किए गए BOQ और कोटेशन किसी
+          के साथ कभी शेयर नहीं होते। (2) हर बार आप तय करते हैं कि खाली टेंडर BOQ उसी टेंडर के
+          दूसरे बिडर्स के साथ शेयर करना है या नहीं। (3) अगर हम कोई फ़ाइल नहीं पढ़ पाए, तो उसे रखने
+          से पहले हम पूछेंगे।
+        </p>
+        <h3>साझा खाली-BOQ लाइब्रेरी</h3>
+        <p>
+          सिर्फ़ तब जब आप उस अपलोड के लिए Share दबाएँ, हम केवल खाली आइटम सूची रखते हैं: आइटम
+          नंबर, विवरण, मात्रा और इकाई, साथ में टेंडर, पोर्टल और विभाग। आपके रेट, कीमतें, नाम, ईमेल या
+          फ़र्म कभी नहीं। दूसरे यूज़र्स को स्रोत और &ldquo;BOQ+ यूज़र द्वारा शेयर किया&rdquo; दिखता है,
+          किसने शेयर किया यह कभी नहीं। आधिकारिक टेंडर दस्तावेज़ के लिए हमेशा सरकारी पोर्टल देखें।
+          BOQ+ से डाउनलोड किए गए दस्तावेज़ों में गलतियाँ हो सकती हैं। हटवाने के लिए{" "}
+          <a href="mailto:akshay@boq.co.in">akshay@boq.co.in</a> पर लिखें; हम तुरंत हटा देते हैं।
+        </p>
+        <h3>न पढ़ी जा सकने वाली फ़ाइलें</h3>
+        <p>
+          हर फ़ाइल के लिए हम अलग से पूछते हैं। &ldquo;हाँ&rdquo; कहने पर फ़ाइल अधिकतम 90 दिन रखी
+          जाती है, और काम पूरा होते ही या आपके डिलीट करते ही पहले हटा दी जाती है। इसका उपयोग सिर्फ़
+          BOQ+ को बेहतर करने के लिए होता है और यह कभी शेयर नहीं होती। आप इसे Settings में या ईमेल से
+          कभी भी डिलीट कर सकते हैं। &ldquo;नहीं&rdquo; कहने पर कुछ नहीं रखा जाता।
+        </p>
+        <h3>शर्तें मानना</h3>
+        <p>
+          साइन-अप पर आप उपयोग की शर्तों और गोपनीयता नीति पर टिक करते हैं। हम केवल यह दर्ज करते हैं कि
+          आपने कौन-सा संस्करण कब माना।
+        </p>
+        <h3>ऐप के अंदर सरकारी पोर्टल</h3>
+        <p>
+          पोर्टल संबंधित सरकारी विभाग चलाता है। पोर्टल का लॉगिन और पासवर्ड हम न देखते हैं न सेव करते
+          हैं। लॉगिन और कैप्चा आप खुद करते हैं।
+        </p>
+        <h3>आपके अधिकार (DPDP अधिनियम, 2023)</h3>
+        <p>
+          आप अपने व्यक्तिगत डेटा की जानकारी, सुधार और मिटाने का अनुरोध कर सकते हैं, और शिकायत दर्ज
+          कर सकते हैं। संपर्क: <a href="mailto:akshay@boq.co.in">akshay@boq.co.in</a>। हम 90 दिनों के
+          भीतर जवाब देते हैं। असंतुष्ट होने पर आप भारतीय डेटा संरक्षण बोर्ड में शिकायत कर सकते हैं।
+        </p>
+      </div>
 
       <p>
         <em>
