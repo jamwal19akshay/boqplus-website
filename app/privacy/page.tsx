@@ -413,8 +413,8 @@ export default function PrivacyPage() {
         </li>
         <li>
           <strong>Grievance redressal:</strong> write to{" "}
-          <a href="mailto:akshay@boq.co.in">akshay@boq.co.in</a>; we respond
-          within 90 days. If you are not satisfied, you may complain to
+          <a href="mailto:akshay@boq.co.in">akshay@boq.co.in</a>; we aim to respond
+          within 15 days, and always within 90 days. If you are not satisfied, you may complain to
           the <strong>Data Protection Board of India</strong>.
         </li>
         <li>
@@ -477,8 +477,8 @@ export default function PrivacyPage() {
         <h3>आपके अधिकार (DPDP अधिनियम, 2023)</h3>
         <p>
           आप अपने व्यक्तिगत डेटा की जानकारी, सुधार और मिटाने का अनुरोध कर सकते हैं, और शिकायत दर्ज
-          कर सकते हैं। संपर्क: <a href="mailto:akshay@boq.co.in">akshay@boq.co.in</a>। हम 90 दिनों के
-          भीतर जवाब देते हैं। असंतुष्ट होने पर आप भारतीय डेटा संरक्षण बोर्ड में शिकायत कर सकते हैं।
+          कर सकते हैं। संपर्क: <a href="mailto:akshay@boq.co.in">akshay@boq.co.in</a>। हम 15 दिनों के
+          भीतर जवाब देने की कोशिश करते हैं, और हमेशा 90 दिनों के भीतर। असंतुष्ट होने पर आप भारतीय डेटा संरक्षण बोर्ड में शिकायत कर सकते हैं।
         </p>
       </div>
 

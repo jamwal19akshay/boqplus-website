@@ -283,8 +283,8 @@ export default function TermsPage() {
         Under India&apos;s Digital Personal Data Protection Act, 2023 you may
         ask for access to your personal data, ask us to correct it, ask us to
         erase it, and make a grievance. Write to{" "}
-        <a href="mailto:akshay@boq.co.in">akshay@boq.co.in</a>. We respond within
-        90 days. Details are in our <a href="/privacy">Privacy Policy</a>.
+        <a href="mailto:akshay@boq.co.in">akshay@boq.co.in</a>. We aim to respond within
+        15 days, and always within 90 days. Details are in our <a href="/privacy">Privacy Policy</a>.
       </p>
 
       <h2 id="hindi">हिन्दी — सारांश</h2>
@@ -342,8 +342,8 @@ export default function TermsPage() {
         <h3>आपके डेटा अधिकार (DPDP अधिनियम, 2023)</h3>
         <p>
           आप अपने व्यक्तिगत डेटा की जानकारी, सुधार और मिटाने का अनुरोध कर सकते हैं, और शिकायत दर्ज
-          कर सकते हैं। संपर्क: <a href="mailto:akshay@boq.co.in">akshay@boq.co.in</a>। हम 90 दिनों के
-          भीतर जवाब देते हैं।
+          कर सकते हैं। संपर्क: <a href="mailto:akshay@boq.co.in">akshay@boq.co.in</a>। हम 15 दिनों के
+          भीतर जवाब देने की कोशिश करते हैं, और हमेशा 90 दिनों के भीतर।
         </p>
       </div>
     </LegalShell>
