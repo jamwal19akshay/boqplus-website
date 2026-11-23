@@ -35,6 +35,10 @@ const items: Qa[] = [
     q: "How do I cancel my subscription?",
     a: "From your Play Store or App Store subscription settings — not inside the app. You keep access until the end of the paid period.",
   },
+  {
+    q: "How do I get a document removed from the shared tender library?",
+    a: "Email akshay@boq.co.in with the tender reference and which document. We remove it promptly, and a removed document is no longer offered to anyone. The library holds only blank tender BOQs that users chose to share: rates, amounts and contact details are stripped, and we never show who shared a file. Always check the official government portal for the official tender document. Documents downloaded through BOQ+ may contain mistakes.",
+  },
 ];
 
 export default function SupportPage() {
@@ -42,7 +46,7 @@ export default function SupportPage() {
     <LegalShell
       fileNo="S-01"
       title="Support"
-      updated="14 NOVEMBER 2026"
+      updated="23 NOVEMBER 2026"
       intro={
         <p>
           How-to answers, and a real inbox behind them. We reply to every support

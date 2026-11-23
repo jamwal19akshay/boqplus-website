@@ -14,7 +14,7 @@ export default function PrivacyPage() {
     <LegalShell
       fileNo="P-01"
       title="Privacy Policy"
-      updated="[RELEASE DATE]"
+      updated="23 NOVEMBER 2026"
       intro={
         <p>
           This policy explains, in plain language, what the BOQ+ app (Android

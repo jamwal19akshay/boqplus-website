@@ -15,7 +15,7 @@ export default function TermsPage() {
     <LegalShell
       fileNo="T-01"
       title="Terms of Service"
-      updated="[RELEASE DATE]"
+      updated="23 NOVEMBER 2026"
       intro={
         <p>
           These terms are a binding agreement between you and BOQ+ governing the
